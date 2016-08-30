@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Weaning Myself from Microsoft, Google, Apple Etc. | Dan Gillmor</title>
+<link rel="profile" href="http://microformats.org/profile/specs" />
+<link rel="profile" href="http://microformats.org/profile/hatom" />
+<link rel="pingback" href="http://dangillmor.com/xmlrpc.php" />
+
+<link rel="alternate" type="application/rss+xml" title="Dan Gillmor &raquo; Feed" href="http://dangillmor.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Dan Gillmor &raquo; Comments Feed" href="http://dangillmor.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Dan Gillmor &raquo; Weaning Myself from Microsoft, Google, Apple Etc. Comments Feed" href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/dangillmor.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=99ee574c47176f372c838f4c4dee3c0d"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='contact-form-7-css'  href='http://dangillmor.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='indieweb-css'  href='http://dangillmor.com/wp-content/plugins/indieweb/css/indieweb.css?ver=99ee574c47176f372c838f4c4dee3c0d' type='text/css' media='all' />
+<link rel='stylesheet' id='sempress-style-css'  href='http://dangillmor.com/wp-content/themes/sempress/style.css?ver=99ee574c47176f372c838f4c4dee3c0d' type='text/css' media='all' />
+<script type='text/javascript' src='http://dangillmor.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://dangillmor.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='http://dangillmor.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://dangillmor.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://dangillmor.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='David Carr, R.I.P.' href='http://dangillmor.com/2015/02/13/david-carr-r-i-p/' />
+<link rel='next' title='Guardian&#8217;s climate-change campaign is a vital kind of journalism: takes a stand and fights for what it believes' href='http://dangillmor.com/2015/03/08/guardians-climate-change-campaign-is-a-vital-kind-of-journalism-takes-a-stand-and-fights-for-what-it-believes/' />
+
+<link rel="canonical" href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/" />
+<link rel='shortlink' href='http://dangillmor.com/?p=2629' />
+<link rel="alternate" type="application/json+oembed" href="http://dangillmor.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fdangillmor.com%2F2015%2F03%2F01%2Fweaning-myself-from-microsoft-google-apple-etc%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://dangillmor.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fdangillmor.com%2F2015%2F03%2F01%2Fweaning-myself-from-microsoft-google-apple-etc%2F&#038;format=xml" />
+<script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//dangillmor.com/?wordfence_logHuman=1&hid=4E37D0005430462BCCBA610D3A3F5685');
+</script>  <style type="text/css" id="sempress-custom-colors">
+    body { text-shadow: 0 1px 0 #ffffff; }
+    body, a { color: #03010c; }
+    .widget, #access {
+      border-bottom: 1px solid #000000;
+      -moz-box-shadow: #ffffff 0 1px 0 0;
+      -webkit-box-shadow: #ffffff 0 1px 0 0;
+      box-shadow: #ffffff 0 1px 0 0;
+    }
+    article.comment {
+      border-top: 1px solid #ffffff;
+      -moz-box-shadow: #000000 0 -1px 0 0;
+      -webkit-box-shadow: #000000 0 -1px 0 0;
+      box-shadow: #000000 0 -1px 0 0;
+    }
+  </style>
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+<link rel="amphtml" href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/amp/" /></head>
+
+<body class="single single-post postid-2629 single-format-standard custom-background multi-column h-entry hentry h-as-article" itemscope="" itemtype="http://schema.org/BlogPosting">
+<div id="page">
+  <header id="branding" role="banner">
+    <h1 id="site-title"><a href="http://dangillmor.com/" title="Dan Gillmor" rel="home">Dan Gillmor</a></h1>
+    <h2 id="site-description">Just in case you were wondering&#8230;</h2>
+    
+        
+    <nav id="access" role="navigation">
+      <h1 class="assistive-text section-heading"><a href="#access" title="Main menu">Main menu</a></h1>
+      <div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
+
+      <div class="menu-blog-container"><ul id="menu-blog" class="menu"><li id="menu-item-812" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-812"><a href="http://dangillmor.com/blog/">Blog</a></li>
+<li id="menu-item-809" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-809"><a href="http://dangillmor.com/about/">About Dan</a></li>
+<li id="menu-item-806" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-806"><a href="http://dangillmor.com/projects/">Mediactive</a></li>
+<li id="menu-item-808" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-808"><a href="http://dangillmor.com/speaking/">Speaking/Calendar</a></li>
+<li id="menu-item-807" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-807"><a href="http://dangillmor.com/contact/">Contact</a></li>
+</ul></div>    </nav><!-- #access -->
+  </header><!-- #branding -->
+
+  <div id="main">
+
+    <section id="primary">
+      <main id="content" role="main">
+
+      
+          <nav id="nav-above">
+    <h1 class="assistive-text section-heading">Post navigation</h1>
+
+  
+    <div class="nav-previous"><a href="http://dangillmor.com/2015/02/13/david-carr-r-i-p/" rel="prev"><span class="meta-nav">&larr;</span> David Carr, R.I.P.</a></div>    <div class="nav-next"><a href="http://dangillmor.com/2015/03/08/guardians-climate-change-campaign-is-a-vital-kind-of-journalism-takes-a-stand-and-fights-for-what-it-believes/" rel="next">Guardian&#8217;s climate-change campaign is a vital kind of journalism: takes a stand and fights for what it believes <span class="meta-nav">&rarr;</span></a></div>
+  
+  </nav><!-- #nav-above -->
+  
+        <article id="post-2629" class="post-2629 post type-post status-publish format-standard category-liberty category-permission-taken category-tech">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/" class="u-url url" title="Permalink to Weaning Myself from Microsoft, Google, Apple Etc." rel="bookmark" itemprop="url">Weaning Myself from Microsoft, Google, Apple Etc.</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/" title="7:00 am" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2015-03-01T07:00:08+00:00" itemprop="dateModified">March 1, 2015</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dsgill123/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p>My new piece at Medium&#8217;s Backchannel technology site is the beginning of an exploration into <a href="https://medium.com/backchannel/why-i-m-saying-goodbye-to-apple-google-and-microsoft-78af12071bd">why I&#8217;m trying to avoid the big companies&#8217; technology lock-in</a>.</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/liberty/" rel="category tag">Liberty</a>, <a href="http://dangillmor.com/category/permission-taken/" rel="category tag">Permission Taken</a>, <a href="http://dangillmor.com/category/tech/" rel="category tag">Tech</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comments">32 Comments</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-2629 -->
+          <nav id="nav-below">
+    <h1 class="assistive-text section-heading">Post navigation</h1>
+
+  
+    <div class="nav-previous"><a href="http://dangillmor.com/2015/02/13/david-carr-r-i-p/" rel="prev"><span class="meta-nav">&larr;</span> David Carr, R.I.P.</a></div>    <div class="nav-next"><a href="http://dangillmor.com/2015/03/08/guardians-climate-change-campaign-is-a-vital-kind-of-journalism-takes-a-stand-and-fights-for-what-it-believes/" rel="next">Guardian&#8217;s climate-change campaign is a vital kind of journalism: takes a stand and fights for what it believes <span class="meta-nav">&rarr;</span></a></div>
+  
+  </nav><!-- #nav-below -->
+  
+          <div id="comments">
+  
+  
+      <h2 id="comments-title">
+      32 thoughts on &ldquo;<span>Weaning Myself from Microsoft, Google, Apple Etc.</span>&rdquo;    </h2>
+
+    
+    <ol class="commentlist">
+        <li class="webmention even thread-even depth-1 h-as-comment p-comment h-entry comment" id="li-comment-32373">
+    <article id="comment-32373" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='https://brid-gy.appspot.com/repost/twitter/dangillmor/572048716481236993/572049128022278146' rel='external nofollow' class='u-url url'>David Parry</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comment-32373"><time class="updated published u-updated u-published" datetime="2015-03-01T07:01:54+00:00" itemprop="commentTime">
+          March 1, 2015 at 7:01 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p><a href="https://twitter.com/academicdave/status/572049128022278146" rel="nofollow">retweeted this.</a></p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/?replytocom=32373#respond' onclick='return addComment.moveForm( "comment-32373", "32373", "respond", "2629" )' aria-label='Reply to David Parry'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention odd alt thread-odd thread-alt depth-1 h-as-comment p-comment h-entry comment" id="li-comment-32382">
+    <article id="comment-32382" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='https://brid-gy.appspot.com/repost/twitter/dangillmor/572048716481236993/572051106555039745' rel='external nofollow' class='u-url url'>patrickcarlson</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comment-32382"><time class="updated published u-updated u-published" datetime="2015-03-01T07:09:46+00:00" itemprop="commentTime">
+          March 1, 2015 at 7:09 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p><a href="https://twitter.com/FarFromUrth/status/572051106555039745" rel="nofollow">retweeted this.</a></p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/?replytocom=32382#respond' onclick='return addComment.moveForm( "comment-32382", "32382", "respond", "2629" )' aria-label='Reply to patrickcarlson'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention even thread-even depth-1 h-as-comment p-comment h-entry comment" id="li-comment-32391">
+    <article id="comment-32391" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='https://brid-gy.appspot.com/repost/twitter/dangillmor/572048716481236993/572051490132635648' rel='external nofollow' class='u-url url'>Jorge Caraballo C.</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comment-32391"><time class="updated published u-updated u-published" datetime="2015-03-01T07:11:18+00:00" itemprop="commentTime">
+          March 1, 2015 at 7:11 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p><a href="https://twitter.com/jorgecaraballo/status/572051490132635648" rel="nofollow">retweeted this.</a></p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/?replytocom=32391#respond' onclick='return addComment.moveForm( "comment-32391", "32391", "respond", "2629" )' aria-label='Reply to Jorge Caraballo C.'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention odd alt thread-odd thread-alt depth-1 h-as-comment p-comment h-entry comment" id="li-comment-32370">
+    <article id="comment-32370" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='https://brid-gy.appspot.com/repost/twitter/dangillmor/572048716481236993/572052207236857859' rel='external nofollow' class='u-url url'>Jose Gonzalez</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comment-32370"><time class="updated published u-updated u-published" datetime="2015-03-01T07:14:09+00:00" itemprop="commentTime">
+          March 1, 2015 at 7:14 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p><a href="https://twitter.com/jose602/status/572052207236857859" rel="nofollow">retweeted this.</a></p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/?replytocom=32370#respond' onclick='return addComment.moveForm( "comment-32370", "32370", "respond", "2629" )' aria-label='Reply to Jose Gonzalez'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention even thread-even depth-1 h-as-comment p-comment h-entry comment" id="li-comment-32366">
+    <article id="comment-32366" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='https://brid-gy.appspot.com/repost/twitter/dangillmor/572048716481236993/572053407562924032' rel='external nofollow' class='u-url url'>Scott Malkie</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comment-32366"><time class="updated published u-updated u-published" datetime="2015-03-01T07:18:55+00:00" itemprop="commentTime">
+          March 1, 2015 at 7:18 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p><a href="https://twitter.com/scottmalkie/status/572053407562924032" rel="nofollow">retweeted this.</a></p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/?replytocom=32366#respond' onclick='return addComment.moveForm( "comment-32366", "32366", "respond", "2629" )' aria-label='Reply to Scott Malkie'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention odd alt thread-odd thread-alt depth-1 h-as-comment p-comment h-entry comment" id="li-comment-32372">
+    <article id="comment-32372" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='https://brid-gy.appspot.com/repost/twitter/dangillmor/572048716481236993/572053648966078464' rel='external nofollow' class='u-url url'>Menelaos Tzafalias</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comment-32372"><time class="updated published u-updated u-published" datetime="2015-03-01T07:19:52+00:00" itemprop="commentTime">
+          March 1, 2015 at 7:19 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p><a href="https://twitter.com/tzaf/status/572053648966078464" rel="nofollow">retweeted this.</a></p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/?replytocom=32372#respond' onclick='return addComment.moveForm( "comment-32372", "32372", "respond", "2629" )' aria-label='Reply to Menelaos Tzafalias'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention even thread-even depth-1 h-as-comment p-comment h-entry comment" id="li-comment-32378">
+    <article id="comment-32378" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='https://brid-gy.appspot.com/repost/twitter/dangillmor/572048716481236993/572054870208999424' rel='external nofollow' class='u-url url'>Schmüdde</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comment-32378"><time class="updated published u-updated u-published" datetime="2015-03-01T07:24:43+00:00" itemprop="commentTime">
+          March 1, 2015 at 7:24 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p><a href="https://twitter.com/dschmudde/status/572054870208999424" rel="nofollow">retweeted this.</a></p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/?replytocom=32378#respond' onclick='return addComment.moveForm( "comment-32378", "32378", "respond", "2629" )' aria-label='Reply to Schmüdde'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention odd alt thread-odd thread-alt depth-1 h-as-comment p-comment h-entry comment" id="li-comment-32376">
+    <article id="comment-32376" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='https://brid-gy.appspot.com/repost/twitter/dangillmor/572048716481236993/572058094202699776' rel='external nofollow' class='u-url url'>Roberto Resoli</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comment-32376"><time class="updated published u-updated u-published" datetime="2015-03-01T07:37:32+00:00" itemprop="commentTime">
+          March 1, 2015 at 7:37 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p><a href="https://twitter.com/rresoli/status/572058094202699776" rel="nofollow">retweeted this.</a></p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/?replytocom=32376#respond' onclick='return addComment.moveForm( "comment-32376", "32376", "respond", "2629" )' aria-label='Reply to Roberto Resoli'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention even thread-even depth-1 h-as-comment p-comment h-entry comment" id="li-comment-32375">
+    <article id="comment-32375" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='https://brid-gy.appspot.com/repost/twitter/dangillmor/572048716481236993/572063750896934912' rel='external nofollow' class='u-url url'>kaips1</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comment-32375"><time class="updated published u-updated u-published" datetime="2015-03-01T08:00:01+00:00" itemprop="commentTime">
+          March 1, 2015 at 8:00 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p><a href="https://twitter.com/kaips1/status/572063750896934912" rel="nofollow">retweeted this.</a></p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/?replytocom=32375#respond' onclick='return addComment.moveForm( "comment-32375", "32375", "respond", "2629" )' aria-label='Reply to kaips1'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention odd alt thread-odd thread-alt depth-1 h-as-comment p-comment h-entry comment" id="li-comment-32380">
+    <article id="comment-32380" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='https://brid-gy.appspot.com/repost/twitter/dangillmor/572048716481236993/572081948346224640' rel='external nofollow' class='u-url url'>Mats Henricson</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comment-32380"><time class="updated published u-updated u-published" datetime="2015-03-01T09:12:19+00:00" itemprop="commentTime">
+          March 1, 2015 at 9:12 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p><a href="https://twitter.com/matshenricson/status/572081948346224640" rel="nofollow">retweeted this.</a></p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/?replytocom=32380#respond' onclick='return addComment.moveForm( "comment-32380", "32380", "respond", "2629" )' aria-label='Reply to Mats Henricson'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention even thread-even depth-1 h-as-comment p-comment h-entry comment" id="li-comment-32371">
+    <article id="comment-32371" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='https://brid-gy.appspot.com/repost/twitter/dangillmor/572048716481236993/572118882070216704' rel='external nofollow' class='u-url url'>Nancy McGuire</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comment-32371"><time class="updated published u-updated u-published" datetime="2015-03-01T11:39:05+00:00" itemprop="commentTime">
+          March 1, 2015 at 11:39 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p><a href="https://twitter.com/WordChem/status/572118882070216704" rel="nofollow">retweeted this.</a></p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/?replytocom=32371#respond' onclick='return addComment.moveForm( "comment-32371", "32371", "respond", "2629" )' aria-label='Reply to Nancy McGuire'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention odd alt thread-odd thread-alt depth-1 h-as-comment p-comment h-entry comment" id="li-comment-32381">
+    <article id="comment-32381" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='https://brid-gy.appspot.com/repost/twitter/dangillmor/572048716481236993/572120442019979265' rel='external nofollow' class='u-url url'>BAVC</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comment-32381"><time class="updated published u-updated u-published" datetime="2015-03-01T11:45:17+00:00" itemprop="commentTime">
+          March 1, 2015 at 11:45 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p><a href="https://twitter.com/BAVC/status/572120442019979265" rel="nofollow">retweeted this.</a></p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/?replytocom=32381#respond' onclick='return addComment.moveForm( "comment-32381", "32381", "respond", "2629" )' aria-label='Reply to BAVC'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention even thread-even depth-1 h-as-comment p-comment h-entry comment" id="li-comment-32387">
+    <article id="comment-32387" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='https://brid-gy.appspot.com/repost/twitter/dangillmor/572048716481236993/572133146302537728' rel='external nofollow' class='u-url url'>Paul</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comment-32387"><time class="updated published u-updated u-published" datetime="2015-03-01T12:35:46+00:00" itemprop="commentTime">
+          March 1, 2015 at 12:35 pm          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p><a href="https://twitter.com/ITmrgreer/status/572133146302537728" rel="nofollow">retweeted this.</a></p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/?replytocom=32387#respond' onclick='return addComment.moveForm( "comment-32387", "32387", "respond", "2629" )' aria-label='Reply to Paul'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention odd alt thread-odd thread-alt depth-1 h-as-comment p-comment h-entry comment" id="li-comment-32367">
+    <article id="comment-32367" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='https://brid-gy.appspot.com/repost/twitter/dangillmor/572048716481236993/572137423183867904' rel='external nofollow' class='u-url url'>Todd Fisk</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comment-32367"><time class="updated published u-updated u-published" datetime="2015-03-01T12:52:46+00:00" itemprop="commentTime">
+          March 1, 2015 at 12:52 pm          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p><a href="https://twitter.com/toddwfisk/status/572137423183867904" rel="nofollow">retweeted this.</a></p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/?replytocom=32367#respond' onclick='return addComment.moveForm( "comment-32367", "32367", "respond", "2629" )' aria-label='Reply to Todd Fisk'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1 h-as-comment p-comment h-entry" id="li-comment-32365">
+    <article id="comment-32365" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+          <img alt='' src='http://2.gravatar.com/avatar/ede785a95941671a6de324ba2d593b60?s=50&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/ede785a95941671a6de324ba2d593b60?s=100&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-50 photo' height='50' width='50' />          <cite class="fn p-name" itemprop="name"><a href='http://billbennett.co.nz' rel='external nofollow' class='u-url url'>Bill Bennett</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comment-32365"><time class="updated published u-updated u-published" datetime="2015-03-01T14:36:15+00:00" itemprop="commentTime">
+          March 1, 2015 at 2:36 pm          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>This makes perfect sense for a while until you hit the point where being religious about avoiding lock-in gets in the way of being able to work sensibly. </p>
+<p>At least that&#8217;s how it is for me working as a freelance journalist. </p>
+<p>Some examples:<br />
+&#8211; There are plenty of good alternatives to Word or Google Docs, but sooner or later an editor wants me to work on a collaborative document or, spit, do that horrible tracking thing in Word. Sticking with Open Source suddenly isn&#8217;t an option.</p>
+<p>&#8211; A Word document turns up using some weird proprietary feature that an alternative program simply can&#8217;t handle. </p>
+<p>&#8211; When I work in someone&#8217;s office even simple stuff like printing can quickly become tricky if the office system is rigidly proprietary. </p>
+<p>The odd thing is I prefer writing using a good text editor and something like Markdown. OK, I mainly do use Markdown. But if I send a text or Markdown document to an editor I usually get a call back asking for it as a Word document. That&#8217;s cool, most tools allow you to save Markdown as Word, but then I get messages back complaining about ugly layout and font choices. Sure, this shouldn&#8217;t be an issue, but it is and I get marked as &#8216;unprofessional&#8217; by people who just don&#8217;t know any better.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/?replytocom=32365#respond' onclick='return addComment.moveForm( "comment-32365", "32365", "respond", "2629" )' aria-label='Reply to Bill Bennett'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  <ul class="children">
+  <li class="comment byuser comment-author-dsgill123 bypostauthor odd alt depth-2 h-as-comment p-comment h-entry" id="li-comment-32395">
+    <article id="comment-32395" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+          <img alt='' src='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=50&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=100&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-50 photo' height='50' width='50' />          <cite class="fn p-name" itemprop="name">Dan Gillmor</cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comment-32395"><time class="updated published u-updated u-published" datetime="2015-03-02T06:59:22+00:00" itemprop="commentTime">
+          March 2, 2015 at 6:59 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>No question about this &#8212; my books were edited in Word. I had no alternative that worked well enough or was fully supported.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/?replytocom=32395#respond' onclick='return addComment.moveForm( "comment-32395", "32395", "respond", "2629" )' aria-label='Reply to Dan Gillmor'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="webmention even thread-odd thread-alt depth-1 h-as-comment p-comment h-entry comment" id="li-comment-32368">
+    <article id="comment-32368" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='https://brid-gy.appspot.com/like/twitter/dangillmor/572048716481236993/5219021' rel='external nofollow' class='u-url url'>Diego Barros</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comment-32368"><time class="updated published u-updated u-published" datetime="2015-03-02T00:15:58+00:00" itemprop="commentTime">
+          March 2, 2015 at 12:15 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>favorited this.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/?replytocom=32368#respond' onclick='return addComment.moveForm( "comment-32368", "32368", "respond", "2629" )' aria-label='Reply to Diego Barros'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention odd alt thread-even depth-1 h-as-comment p-comment h-entry comment" id="li-comment-32369">
+    <article id="comment-32369" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='https://brid-gy.appspot.com/like/twitter/dangillmor/572048716481236993/113217266' rel='external nofollow' class='u-url url'>kara y. frame</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comment-32369"><time class="updated published u-updated u-published" datetime="2015-03-02T00:16:02+00:00" itemprop="commentTime">
+          March 2, 2015 at 12:16 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>favorited this.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/?replytocom=32369#respond' onclick='return addComment.moveForm( "comment-32369", "32369", "respond", "2629" )' aria-label='Reply to kara y. frame'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention even thread-odd thread-alt depth-1 h-as-comment p-comment h-entry comment" id="li-comment-32374">
+    <article id="comment-32374" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='https://brid-gy.appspot.com/like/twitter/dangillmor/572048716481236993/5693282' rel='external nofollow' class='u-url url'>Matthew Gregg</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comment-32374"><time class="updated published u-updated u-published" datetime="2015-03-02T00:17:33+00:00" itemprop="commentTime">
+          March 2, 2015 at 12:17 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>favorited this.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/?replytocom=32374#respond' onclick='return addComment.moveForm( "comment-32374", "32374", "respond", "2629" )' aria-label='Reply to Matthew Gregg'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention odd alt thread-even depth-1 h-as-comment p-comment h-entry comment" id="li-comment-32377">
+    <article id="comment-32377" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='https://brid-gy.appspot.com/like/twitter/dangillmor/572048716481236993/22543612' rel='external nofollow' class='u-url url'>Behzod Sirjani</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comment-32377"><time class="updated published u-updated u-published" datetime="2015-03-02T00:17:47+00:00" itemprop="commentTime">
+          March 2, 2015 at 12:17 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>favorited this.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/?replytocom=32377#respond' onclick='return addComment.moveForm( "comment-32377", "32377", "respond", "2629" )' aria-label='Reply to Behzod Sirjani'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention even thread-odd thread-alt depth-1 h-as-comment p-comment h-entry comment" id="li-comment-32379">
+    <article id="comment-32379" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='https://brid-gy.appspot.com/like/twitter/dangillmor/572048716481236993/15476003' rel='external nofollow' class='u-url url'>ericbalasbas</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comment-32379"><time class="updated published u-updated u-published" datetime="2015-03-02T00:18:03+00:00" itemprop="commentTime">
+          March 2, 2015 at 12:18 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>favorited this.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/?replytocom=32379#respond' onclick='return addComment.moveForm( "comment-32379", "32379", "respond", "2629" )' aria-label='Reply to ericbalasbas'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention odd alt thread-even depth-1 h-as-comment p-comment h-entry comment" id="li-comment-32383">
+    <article id="comment-32383" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='https://brid-gy.appspot.com/like/twitter/dangillmor/572048716481236993/15850273' rel='external nofollow' class='u-url url'>kmartino</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comment-32383"><time class="updated published u-updated u-published" datetime="2015-03-02T00:18:44+00:00" itemprop="commentTime">
+          March 2, 2015 at 12:18 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>favorited this.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/?replytocom=32383#respond' onclick='return addComment.moveForm( "comment-32383", "32383", "respond", "2629" )' aria-label='Reply to kmartino'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention even thread-odd thread-alt depth-1 h-as-comment p-comment h-entry comment" id="li-comment-32384">
+    <article id="comment-32384" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='https://brid-gy.appspot.com/like/twitter/dangillmor/572048716481236993/380700305' rel='external nofollow' class='u-url url'>Innovation Hub</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comment-32384"><time class="updated published u-updated u-published" datetime="2015-03-02T00:18:55+00:00" itemprop="commentTime">
+          March 2, 2015 at 12:18 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>favorited this.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/?replytocom=32384#respond' onclick='return addComment.moveForm( "comment-32384", "32384", "respond", "2629" )' aria-label='Reply to Innovation Hub'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention odd alt thread-even depth-1 h-as-comment p-comment h-entry comment" id="li-comment-32385">
+    <article id="comment-32385" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='https://brid-gy.appspot.com/like/twitter/dangillmor/572048716481236993/12091862' rel='external nofollow' class='u-url url'>Jose Gonzalez</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comment-32385"><time class="updated published u-updated u-published" datetime="2015-03-02T00:19:03+00:00" itemprop="commentTime">
+          March 2, 2015 at 12:19 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>favorited this.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/?replytocom=32385#respond' onclick='return addComment.moveForm( "comment-32385", "32385", "respond", "2629" )' aria-label='Reply to Jose Gonzalez'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention even thread-odd thread-alt depth-1 h-as-comment p-comment h-entry comment" id="li-comment-32386">
+    <article id="comment-32386" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='https://brid-gy.appspot.com/like/twitter/dangillmor/572048716481236993/57303648' rel='external nofollow' class='u-url url'>subi chaturvedi</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comment-32386"><time class="updated published u-updated u-published" datetime="2015-03-02T00:19:14+00:00" itemprop="commentTime">
+          March 2, 2015 at 12:19 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>favorited this.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/?replytocom=32386#respond' onclick='return addComment.moveForm( "comment-32386", "32386", "respond", "2629" )' aria-label='Reply to subi chaturvedi'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention odd alt thread-even depth-1 h-as-comment p-comment h-entry comment" id="li-comment-32388">
+    <article id="comment-32388" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='https://brid-gy.appspot.com/like/twitter/dangillmor/572048716481236993/1334038506' rel='external nofollow' class='u-url url'>Roberto Resoli</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comment-32388"><time class="updated published u-updated u-published" datetime="2015-03-02T00:19:35+00:00" itemprop="commentTime">
+          March 2, 2015 at 12:19 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>favorited this.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/?replytocom=32388#respond' onclick='return addComment.moveForm( "comment-32388", "32388", "respond", "2629" )' aria-label='Reply to Roberto Resoli'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention even thread-odd thread-alt depth-1 h-as-comment p-comment h-entry comment" id="li-comment-32389">
+    <article id="comment-32389" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='https://brid-gy.appspot.com/like/twitter/dangillmor/572048716481236993/7067102' rel='external nofollow' class='u-url url'>David Parry</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comment-32389"><time class="updated published u-updated u-published" datetime="2015-03-02T00:19:41+00:00" itemprop="commentTime">
+          March 2, 2015 at 12:19 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>favorited this.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/?replytocom=32389#respond' onclick='return addComment.moveForm( "comment-32389", "32389", "respond", "2629" )' aria-label='Reply to David Parry'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention odd alt thread-even depth-1 h-as-comment p-comment h-entry comment" id="li-comment-32390">
+    <article id="comment-32390" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='https://brid-gy.appspot.com/like/twitter/dangillmor/572048716481236993/88408565' rel='external nofollow' class='u-url url'>Hannah Stewart</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comment-32390"><time class="updated published u-updated u-published" datetime="2015-03-02T00:19:47+00:00" itemprop="commentTime">
+          March 2, 2015 at 12:19 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>favorited this.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/?replytocom=32390#respond' onclick='return addComment.moveForm( "comment-32390", "32390", "respond", "2629" )' aria-label='Reply to Hannah Stewart'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention even thread-odd thread-alt depth-1 h-as-comment p-comment h-entry comment" id="li-comment-32392">
+    <article id="comment-32392" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='https://brid-gy.appspot.com/like/twitter/dangillmor/572048716481236993/2332498667' rel='external nofollow' class='u-url url'>Manolo Merenda</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comment-32392"><time class="updated published u-updated u-published" datetime="2015-03-02T00:19:58+00:00" itemprop="commentTime">
+          March 2, 2015 at 12:19 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>favorited this.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/?replytocom=32392#respond' onclick='return addComment.moveForm( "comment-32392", "32392", "respond", "2629" )' aria-label='Reply to Manolo Merenda'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention odd alt thread-even depth-1 h-as-comment p-comment h-entry comment" id="li-comment-32393">
+    <article id="comment-32393" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='https://brid-gy.appspot.com/like/twitter/dangillmor/572048716481236993/9729292' rel='external nofollow' class='u-url url'>roostah</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comment-32393"><time class="updated published u-updated u-published" datetime="2015-03-02T00:20:08+00:00" itemprop="commentTime">
+          March 2, 2015 at 12:20 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>favorited this.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/?replytocom=32393#respond' onclick='return addComment.moveForm( "comment-32393", "32393", "respond", "2629" )' aria-label='Reply to roostah'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention even thread-odd thread-alt depth-1 h-as-comment p-comment h-entry comment" id="li-comment-32394">
+    <article id="comment-32394" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='https://brid-gy.appspot.com/like/twitter/dangillmor/572048716481236993/19291285' rel='external nofollow' class='u-url url'>Jack</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comment-32394"><time class="updated published u-updated u-published" datetime="2015-03-02T03:41:06+00:00" itemprop="commentTime">
+          March 2, 2015 at 3:41 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>favorited this.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/?replytocom=32394#respond' onclick='return addComment.moveForm( "comment-32394", "32394", "respond", "2629" )' aria-label='Reply to Jack'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1 h-as-comment p-comment h-entry" id="li-comment-32396">
+    <article id="comment-32396" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+          <img alt='' src='http://0.gravatar.com/avatar/?s=50&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/?s=100&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-50 photo avatar-default' height='50' width='50' />          <cite class="fn p-name" itemprop="name"><a href='https://brid-gy.appspot.com/comment/twitter/dangillmor/572048716481236993/572472768790462464' rel='external nofollow' class='u-url url'>Olivier</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#comment-32396"><time class="updated published u-updated u-published" datetime="2015-03-02T11:05:18+00:00" itemprop="commentTime">
+          March 2, 2015 at 11:05 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p><a href="https://twitter.com/dangillmor" rel="nofollow">@dangillmor</a> Tizen is a good solution imo <a href="https://wiki.tizen.org/wiki/Devices" rel="nofollow">wiki.tizen.org/wiki/Devices</a></p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/?replytocom=32396#respond' onclick='return addComment.moveForm( "comment-32396", "32396", "respond", "2629" )' aria-label='Reply to Olivier'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+    </ol>
+
+    
+  
+  
+  				<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2015/03/01/weaning-myself-from-microsoft-google-apple-etc/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="http://dangillmor.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+					<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input autocomplete="nickname name"  id="author" name="author" type="text" value="" size="30" maxlength="245" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input autocomplete="email"  id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input autocomplete="url"  id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='2629' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="490654fd6d" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="155"/></p>				</form>
+					</div><!-- #respond -->
+		
+</div><!-- #comments -->
+
+      
+      </main><!-- #content -->
+    </section><!-- #primary -->
+
+  <aside id="sidebar">
+    <div id="secondary" class="widget-area" role="complementary">
+            <section id="text-423219941" class="widget widget_text">			<div class="textwidget"><img src="http://dangillmor.com/wp-content/uploads/2014/11/danpic1aa.png" alt="Dan Gillmor picture" />
+
+<p>
+<a rel="author me"
+href="https://plus.google.com/+DanGillmor">  </a></p></div>
+		</section>    </div><!-- #secondary .widget-area -->
+
+        <div id="tertiary" class="widget-area" role="complementary">
+      <section id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="http://dangillmor.com/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form></section><section id="categories-406917141" class="widget widget_categories"><h3 class="widget-title">Categories</h3><label class="screen-reader-text" for="cat">Categories</label><select name='cat' id='cat' class='postform' >
+	<option value='-1'>Select Category</option>
+	<option class="level-0" value="14">Arizona</option>
+	<option class="level-0" value="39">ASU</option>
+	<option class="level-0" value="4">Customer Service</option>
+	<option class="level-0" value="30">Education</option>
+	<option class="level-0" value="3">Etcetera</option>
+	<option class="level-0" value="15">Events</option>
+	<option class="level-0" value="42">Journalism</option>
+	<option class="level-0" value="20">Liberty</option>
+	<option class="level-0" value="10">Media</option>
+	<option class="level-0" value="40">MOOC</option>
+	<option class="level-0" value="7">People</option>
+	<option class="level-0" value="29">Permission Taken</option>
+	<option class="level-0" value="43">Personal</option>
+	<option class="level-0" value="1">Policy</option>
+	<option class="level-0" value="37">Privacy</option>
+	<option class="level-0" value="27">Projects</option>
+	<option class="level-0" value="6">Silicon Valley</option>
+	<option class="level-0" value="38">Tech</option>
+</select>
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "cat" );
+	function onCatChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
+			location.href = "http://dangillmor.com/?cat=" + dropdown.options[ dropdown.selectedIndex ].value;
+		}
+	}
+	dropdown.onchange = onCatChange;
+})();
+/* ]]> */
+</script>
+
+</section>		<section id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+					<li>
+				<a href="http://dangillmor.com/2016/08/27/indie-web-camp/">Indie Web Camp</a>
+						</li>
+					<li>
+				<a href="http://dangillmor.com/2016/07/12/witnessing-activism-journalism-and-the-boundaries-of-free-speech-in-the-facebook-age/">Witnessing, activism, journalism &#8212; and the boundaries of free speech in the Facebook age</a>
+						</li>
+					<li>
+				<a href="http://dangillmor.com/2016/06/08/decentralized-web-summit-day-one/">Decentralized Web Summit &#8212; Day One</a>
+						</li>
+					<li>
+				<a href="http://dangillmor.com/2016/06/07/decentralized-web-summit/">Decentralized Web Summit &#8212; Builders Day</a>
+						</li>
+					<li>
+				<a href="http://dangillmor.com/2016/04/09/journalists-stop-complaining-about-facebook-and-do-something-about-it/">Journalists: Stop complaining about Facebook, and do something about it</a>
+						</li>
+				</ul>
+		</section>		    </div><!-- #tertiary .widget-area -->
+      </aside>
+  </div><!-- #main -->
+
+  <footer id="colophon" role="contentinfo">
+    <div id="site-generator">
+            This site is powered by <a href="http://wordpress.org/" rel="generator">WordPress</a> and styled with <a href="http://notizblog.org/projects/sempress/">SemPress</a>    </div>
+  </footer><!-- #colophon -->
+</div><!-- #page -->
+
+<script type='text/javascript' src='http://dangillmor.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.11'></script>
+<script type='text/javascript' src='http://dangillmor.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/dangillmor.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"sending":"Sending ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://dangillmor.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.5'></script>
+<script type='text/javascript' src='http://dangillmor.com/wp-includes/js/comment-reply.min.js?ver=99ee574c47176f372c838f4c4dee3c0d'></script>
+<script type='text/javascript' src='http://dangillmor.com/wp-includes/js/wp-embed.min.js?ver=99ee574c47176f372c838f4c4dee3c0d'></script>
+
+</body>
+</html>

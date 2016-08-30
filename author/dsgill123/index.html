@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Dan Gillmor | Dan Gillmor</title>
+<link rel="profile" href="http://microformats.org/profile/specs" />
+<link rel="profile" href="http://microformats.org/profile/hatom" />
+<link rel="pingback" href="http://dangillmor.com/xmlrpc.php" />
+
+<link rel="alternate" type="application/rss+xml" title="Dan Gillmor &raquo; Feed" href="http://dangillmor.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Dan Gillmor &raquo; Comments Feed" href="http://dangillmor.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Dan Gillmor &raquo; Posts by Dan Gillmor Feed" href="http://dangillmor.com/author/dsgill123/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/dangillmor.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=99ee574c47176f372c838f4c4dee3c0d"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='contact-form-7-css'  href='http://dangillmor.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='indieweb-css'  href='http://dangillmor.com/wp-content/plugins/indieweb/css/indieweb.css?ver=99ee574c47176f372c838f4c4dee3c0d' type='text/css' media='all' />
+<link rel='stylesheet' id='sempress-style-css'  href='http://dangillmor.com/wp-content/themes/sempress/style.css?ver=99ee574c47176f372c838f4c4dee3c0d' type='text/css' media='all' />
+<script type='text/javascript' src='http://dangillmor.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://dangillmor.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='http://dangillmor.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://dangillmor.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://dangillmor.com/wp-includes/wlwmanifest.xml" /> 
+
+<script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//dangillmor.com/?wordfence_logHuman=1&hid=3AF22391143372FB05FAB2DE39757C95');
+</script>  <style type="text/css" id="sempress-custom-colors">
+    body { text-shadow: 0 1px 0 #ffffff; }
+    body, a { color: #03010c; }
+    .widget, #access {
+      border-bottom: 1px solid #000000;
+      -moz-box-shadow: #ffffff 0 1px 0 0;
+      -webkit-box-shadow: #ffffff 0 1px 0 0;
+      box-shadow: #ffffff 0 1px 0 0;
+    }
+    article.comment {
+      border-top: 1px solid #ffffff;
+      -moz-box-shadow: #000000 0 -1px 0 0;
+      -webkit-box-shadow: #000000 0 -1px 0 0;
+      box-shadow: #000000 0 -1px 0 0;
+    }
+  </style>
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+</head>
+
+<body class="archive author author-dsgill123 author-28 custom-background multi-column hfeed h-feed feed" itemscope="" itemtype="http://schema.org/Blog">
+<div id="page">
+  <header id="branding" role="banner">
+    <h1 id="site-title" itemprop="name" class="p-title"><a href="http://dangillmor.com/" title="Dan Gillmor" rel="home" itemprop="url" class="u-url url">Dan Gillmor</a></h1>
+    <h2 id="site-description" itemprop="description" class="p-summary e-content">Just in case you were wondering&#8230;</h2>
+    
+        
+    <nav id="access" role="navigation">
+      <h1 class="assistive-text section-heading"><a href="#access" title="Main menu">Main menu</a></h1>
+      <div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
+
+      <div class="menu-blog-container"><ul id="menu-blog" class="menu"><li id="menu-item-812" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-812"><a href="http://dangillmor.com/blog/">Blog</a></li>
+<li id="menu-item-809" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-809"><a href="http://dangillmor.com/about/">About Dan</a></li>
+<li id="menu-item-806" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-806"><a href="http://dangillmor.com/projects/">Mediactive</a></li>
+<li id="menu-item-808" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-808"><a href="http://dangillmor.com/speaking/">Speaking/Calendar</a></li>
+<li id="menu-item-807" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-807"><a href="http://dangillmor.com/contact/">Contact</a></li>
+</ul></div>    </nav><!-- #access -->
+  </header><!-- #branding -->
+
+  <div id="main">
+
+    <section id="primary">
+      <main id="content" role="main">
+
+      
+        
+        <header class="page-header author vcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <h1 class="page-title">Author Archives: <a class="url u-url fn p-fn n p-name" href="http://dangillmor.com/author/dsgill123/" title="Dan Gillmor" rel="me author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></h1>
+          <img alt='' src='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' />                </header>
+
+        
+          <nav id="nav-above">
+    <h1 class="assistive-text section-heading">Post navigation</h1>
+
+  
+        <div class="nav-previous"><a href="http://dangillmor.com/author/dsgill123/page/2/"  rel="prev"><span class="meta-nav">&larr;</span> Older posts</a></div>
+    
+    
+  
+  </nav><!-- #nav-above -->
+  
+                
+          <article id="post-3238" class="post-3238 post type-post status-publish format-standard category-liberty category-permission-taken category-tech h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2016/08/27/indie-web-camp/" class="u-url url" title="Permalink to Indie Web Camp" rel="bookmark" itemprop="url">Indie Web Camp</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2016/08/27/indie-web-camp/" title="8:10 am" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2016-08-27T08:10:33+00:00" itemprop="dateModified">August 27, 2016</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dsgill123/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p>I&#8217;m at the <a href="http://indieweb.org">IndieWebCamp</a> &#8212; a meeting of people who believe in &#8220;a people-focused alternative to the &#8216;corporate web'&#8221; &#8212; in New York City. This is a small but vital movement aimed at restoring (some) control of our data and communications to the people who create it at the edges of the countless networks that comprise the Internet.</p>
+<p>I <a href="http://www.slate.com/blogs/future_tense/2014/04/25/indiewebcamps_create_tools_for_a_new_internet.html">wrote about the Indie Web</a> a couple of years ago, and it&#8217;s good to catch up with the impressive progress since then.</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/liberty/" rel="category tag">Liberty</a>, <a href="http://dangillmor.com/category/permission-taken/" rel="category tag">Permission Taken</a>, <a href="http://dangillmor.com/category/tech/" rel="category tag">Tech</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2016/08/27/indie-web-camp/#respond">Leave a comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-3238 -->
+        
+          <article id="post-3220" class="post-3220 post type-post status-publish format-standard category-journalism category-liberty category-media category-privacy-2 h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2016/07/12/witnessing-activism-journalism-and-the-boundaries-of-free-speech-in-the-facebook-age/" class="u-url url" title="Permalink to Witnessing, activism, journalism &#8212; and the boundaries of free speech in the Facebook age" rel="bookmark" itemprop="url">Witnessing, activism, journalism &#8212; and the boundaries of free speech in the Facebook age</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2016/07/12/witnessing-activism-journalism-and-the-boundaries-of-free-speech-in-the-facebook-age/" title="4:43 pm" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2016-07-12T16:43:00+00:00" itemprop="dateModified">July 12, 2016</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dsgill123/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p>Diamond &#8220;Lavish&#8221; Reynolds changed our perception of media last week with her <a href="https://www.facebook.com/100007611243538/videos/1690073837922975/">shocking and heartbreaking real-time web video</a> of the last minutes of Philando Castile’s life. The couple, with her daughter riding in the back seat of their sedan, had been pulled over by local police in a Minneapolis suburb, and Reynolds had the astonishing presence of mind to send the aftermath of Castile’s shooting by a police officer — which included her arrest by cops who didn’t even try to save his life — to the world via Facebook’s “Live” video platform.</p>
+<p>Countless <a href="http://fortune.com/2016/07/07/facebook-live-death/">articles</a>, <a href="http://money.cnn.com/2016/07/07/media/facebook-live-streaming-police-shooting/">analyses</a>, <a href="http://www.nytimes.com/2016/07/09/technology/facebook-dallas-live-video-breaking-news.html?_r=0">commentaries</a>, and other <a href="http://www.theatlantic.com/politics/archive/2016/07/to-live-and-die-on-facebook/490637/">posts</a> have chronicled a media shift in those moments. The implications are real, and important. We are only beginning to confront the issues they raise. Among them:</p>
+<ul>
+<li>Is this a revolutionary, or evolutionary, change in media creation, distribution, and access?</li>
+<li>Does it represent a turning point for citizen journalism?</li>
+<li>What responsibilities do you and I have in situations where we can witness important events and behavior, and where might that lead?</li>
+<li>What can we trust, and what should we share?</li>
+<li>Facebook seems to have been caught almost unaware of the likely consequences of offering a real-time video platform. Do Facebook and other centralized distribution platforms have editorial duties to perform?</li>
+<li>More broadly, who will control what we can create and see in coming years? Facebook? Government? Or you and me?</li>
+</ul>
+<p>Reynolds’ video prompted me to revisit something I wrote more than a decade ago, in my book, <em><a href="https://www.amazon.com/We-Media-Grassroots-Journalism-People/dp/0596102275">We the Media</a>,</em> which discussed the then-nascent idea of radically democratized media and one of its important offshoots, citizen journalism. I asked my readers to recall the media environment on Sept. 11, 2001, and then peer into an easily predictable future.</p>
+<blockquote><p>Our memories of that awful day stem largely from television: videos of airplanes slamming into the World Trade Center, the fireballs that erupted, people falling and jumping from the towers, the crumbling to earth of the structures. Individuals with video cameras captured parts of this story, and their work ended up on network TV as well. The big networks stopped showing most graphic videos fairly quickly. But those pictures are still on the Net for anyone who wants to see them.</p>
+<p>We also learned, second-hand, that people in the airplanes and Trade Center towers phoned loved ones and colleagues that awful day. What would we remember if the people on the airplanes and in those buildings all had camera-phones? What if they’d been sending images and audio from the epicenter of the terrorists’ airborne arsenal, and from inside the towers that became coffins for so many? I don’t mean to be ghoulish, but I do suggest that our memories would be considerably different had images and sounds of that kind ricocheted around the globe.</p></blockquote>
+<p>Since then, a number of technologies (and uses of those tools) have become much more common. One of them is live-streaming, now so routine that we take it for granted as an offshoot of traditional broadcasting. Live-streaming from mobile phones has been around for some years, too.</p>
+<p>In that context, Reynolds’ live video was anything but revolutionary. It was a logical extension of what came before. But the velocity of change is accelerating, and what she did had big implications.</p>
+<p>Her video was a three-faceted act: witnessing, activism, and journalism*. Even though few people saw it in real time, she was saving it to the data cloud in real time, creating and — one hopes — <em>preserving</em> a record of what may or may not be judged eventually to have been a crime by a police officer. What Reynolds did was brave, and important for all kinds of reasons.</p>
+<p>She also taught the rest of us something vital: We all have an obligation to witness and record some things even if we are not directly part of what’s happening. That’s what two people did as they <a href="http://www.cnn.com/2016/07/06/us/baton-rouge-shooting-alton-sterling/">captured videos of the killing of Alton Sterling</a> in Baton Rouge, Louisiana, last week. They understood their duty when it comes to holding accountable the people we rely on to protect the public in honorable ways. (I still believe that the vast majority of police officers are honorable and trying to do their jobs right. But there’s also no question in my mind that the majority of officers at least tolerate the bad cops who are doing such harm to the reputation of law enforcement, and helping poison public trust.)</p>
+<p>At this point I’m convinced, as Ethan Zuckerman says, that <a href="https://www.technologyreview.com/s/601878/why-we-must-continue-to-turn-the-camera-on-police/">we have an obligation to use our cameras</a> in these situations, among many others. These are times when a video record of what happened may not provide absolute clarity, but at least it <em>can </em>provide data.. It may also deter the worst kinds of behavior by public officials in the line of duty — especially as governments that adopted body cameras for police then p<a href="http://www.acluofnc.org/blog/gov-mccrory-signs-bill-that-keeps-police-camera-footage-secret.html">ass laws designed to prevent the videos</a> from reaching the public.</p>
+<p>I also worry, as I did in my book (and long before) about Big and Little Brother becoming the default. So we’re going to have to draw lines, individually and (hopefully) as societal norms: Some things we see, we get the video and post it. At other times, we may get the video, but we’ll just delete it. And we have to make it second nature to realize that some — most — things shouldn’t be captured at all. Pervasive surveillance by law enforcement and/or the rest of us chills free speech and assembly, ultimately deadens us.</p>
+<p>We’ll also have to learn, individually and collectively, what we can trust. This takes practice, because the online world is awash with deceit and lies along with honor and truth. It takes practice by news organizations not to be faked out, but even more so by the rest of us, because we, not journalists, have to learn to be the final arbiters — and we have to do this collectively, because like it or not, our news organizations are demonstrating in general that they’re not up to the job. I hate saying that, but there it is.</p>
+<p>This is why I spend so much time lately teaching “media literacy,” which asks the former audience — still consumers but also creators — to be active <em>users </em>of media, not passive readers/watchers/etc. This is, in the “consuming media” process, about being skeptical and using judgment; understanding our own biases and working to challenge them; listening to others who may disagree with us; asking questions; waiting before trusting what we see; and so much more. It’s also about recognizing our role as media creators. As we wield our cameras we are obliged, if we want to be trusted, to be honorable.</p>
+<p>One element of danger for the citizen video maker — being challenged or arrested or worse by people in authority who don’t want you capturing what they do — is lessening. In fact, the <a href="https://photographyisnotacrime.com/">“war on photography” by police and others in power</a> could soon be moot, for several reasons. In the United States, at least, courts are increasingly recognizing a First Amendment right to capture videos of police in their public role. This won’t stop cops from breaking the law, as officers sometimes do by confiscating phones and deleting photos and videos they find objectionable. (Police departments and the politicians they report to don’t mind paying taxpayers’ money to plaintiffs who sue after abuses.)</p>
+<p>Meanwhile, technology is reaching a point where police soon won’t realize they are being recorded. It’s been possible for years to buy cameras that become part of our clothing. Google Glass made people realize how trivial it will be to embed cameras in eyewear. Soon enough, we’ll be able to capture videos simply by looking at something; Google, Samsung and Sony (and certainly others) are working on <a href="http://petapixel.com/2016/04/28/sony-patents-contact-lens-camera-joins-google-samsung/">camera/recording devices embedded in contact lenses</a>.</p>
+<p>Again, this technology will be used for bad purposes we can easily imagine. And that will inevitably lead to moves aimed at preventing those uses, which in turn leads to free speech and other essential liberties.</p>
+<p>Surely the authorities are delighted to hear of Apple’s new patent that lets police (and presumably others, such as big-time musical acts and movie theater owners) <a href="https://www.theguardian.com/technology/2016/jun/30/apple-iphone-camera-disable-remote-sensors-patent">block iPhone recording</a> “in areas where picture or video capture is prohibited.” From a company as control-freakish as Apple, it’s no surprise to learn of such a thing. From the context of free expression, it’s potentially catastrophic — and your fears should grow in a world where huge, centralized companies, often working closely with governments, become the venues for expression.</p>
+<p>We need to ask <em>now</em>, not tomorrow, who controls the media we create and consume. Increasingly, it’s not us.</p>
+<p>Perhaps smart people will find ways around phone makers’ constraints. (I assume they will, actually.) But what will we have gained when we take videos of newsworthy events if the videos are then disappeared by Facebook or Google or Comcast other giant platforms and telecom carriers?</p>
+<p>Facebook is the most immediate threat, because it has become the default venue for conversation, and for news. It is also visibly unprepared for this role. Facebook hasn’t given a plausible explanation for its initial removal of Reynolds’ video soon after she posted it. Perhaps, as some smart observers suggest, the video was flagged by other Facebook users, prompting an automatic takedown while the company decided what to do about it (it went back up). Or perhaps the police who confiscated Reynolds’ phone took it down. Or perhaps Facebook itself decided initially to remove it. Or none of the above. The point is that the video remains visible because Facebook allows it to be visible. (Of course, in this highly visible case the video surely has been saved elsewhere and would be immediately reposted online if Facebook decided to remove it.)</p>
+<p>The <a href="http://newsroom.fb.com/news/h/community-standards-and-facebook-live/">company’s policies on what videos — Live or not — and other material can stay online are incoherent</a>. So, for that matter, are the policies at Twitter, Google’s YouTube and other user-created platforms. This is understandable, though obviously not good. At some level Facebook has no alternative but to make make on-the-fly and contradictory, even hypocritical, decisions. But as Margaret Sullivan of the Washington Post has observed, Facebook has to recognize that it is <a href="https://www.washingtonpost.com/lifestyle/style/face-it-facebook-youre-in-the-news-business/2016/07/10/cc53cd70-451a-11e6-bc99-7d269f8719b1_story.html">“in the news business.”</a> It’s making editorial decisions. So are the other platforms. I’ve called them <a href="http://www.theatlantic.com/technology/archive/2014/08/the-new-editors-of-the-internet/378983/">“the new editors of the Internet,”</a> and and much as I wish that wasn’t true, it is.</p>
+<p>But Facebook is the behemoth, and the one making the key decisions at this point. This is wrong in so many ways. It’s enormously dangerous that an enormously powerful enterprise can decide what free speech will be. I don’t want a few people’s whims in Menlo Park overruling the First Amendment and other free speech “guarantees” (in quotes because those assurances are worthless in many other countries). So I don’t use Facebook for my speech. I’m posting this, among other places, here on my own website.</p>
+<p>But I’m just one person, and approximately 1.6 billion other people have made a different choice. I hope they’ll reconsider someday, but I’m not counting on it.</p>
+<p>At the very least, as Facebook becomes what amounts to a “common carrier,” we’ll need to treat it like one under the law. The government can’t stop people from saying anything they choose on the phone. This has to apply to companies like Facebook, or they will have far, far too much power over freedom of speech and assembly. Yet asking the government to intervene brings its own risks, which are visible in many other parts of the world where governments routinely order social media companies to disallow certain speech.</p>
+<p>The answer, or part of it, is what World Wide Web creator Tim Berners-Lee has called re-decentralization. A few weeks ago I spent several days with technology pioneers and young activists who <a href="http://www.fastcompany.com/3061357/the-web-decentralized-distributed-open">want to save the Web and, by extension, the wider Internet from being controlled</a> by a few centralized entities.</p>
+<p>While they’re working on this, we should be experimenting ourselves with tools that don’t require us to rely on Facebook et al. For example, the capabilities of Facebook Live have been available via a project called <a href="https://gamma.rhinobird.tv/">“Rhinobird”</a>, which uses open Web standards including WebRTC. And as projects like the <a href="https://ipfs.io/">“Interplanetary File System”</a> take root, we’ll be able to use URLs as names of web content, not addresses.</p>
+<p>These projects, and many others, are inspiring. I’m going to do whatever I can to help them succeed, because the stakes are so high — for free speech and so much more.</p>
+<p>***</p>
+<p>*The Reynolds video broke somewhat new ground in citizen journalism, which came to notice a decade ago. Citizen journalism got trashed, early on, by just about everyone in the traditional media world, and the flaws in the concept were certainly clear enough after a number of small and large “false news” debacles. But it was always important for its potential, and the countless cases where it was an essential part of the news flow more than made up for the downside. If nothing else, the act of <em>witnessing — </em>directly and not through intermediaries who may miss the context or the meaning — grew into its own media form. The more we saw videos of police misconduct, for example, the more white Americans had to understand whey black Americans feel they’ve been living in a different country.</p>
+<p>&nbsp;</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/journalism/" rel="category tag">Journalism</a>, <a href="http://dangillmor.com/category/liberty/" rel="category tag">Liberty</a>, <a href="http://dangillmor.com/category/media/" rel="category tag">Media</a>, <a href="http://dangillmor.com/category/privacy-2/" rel="category tag">Privacy</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2016/07/12/witnessing-activism-journalism-and-the-boundaries-of-free-speech-in-the-facebook-age/#comments">1 Comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-3220 -->
+        
+          <article id="post-3160" class="post-3160 post type-post status-publish format-standard category-liberty category-permission-taken category-tech h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2016/06/08/decentralized-web-summit-day-one/" class="u-url url" title="Permalink to Decentralized Web Summit &#8212; Day One" rel="bookmark" itemprop="url">Decentralized Web Summit &#8212; Day One</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2016/06/08/decentralized-web-summit-day-one/" title="9:21 am" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2016-06-08T09:21:08+00:00" itemprop="dateModified">June 8, 2016</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dsgill123/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p><em><img class="alignright size-medium wp-image-3194" src="http://dangillmor.com/wp-content/uploads/2016/06/decentral1-224x300.jpg" alt="decentral1" width="224" height="300" srcset="http://dangillmor.com/wp-content/uploads/2016/06/decentral1-224x300.jpg 224w, http://dangillmor.com/wp-content/uploads/2016/06/decentral1-768x1027.jpg 768w, http://dangillmor.com/wp-content/uploads/2016/06/decentral1-766x1024.jpg 766w, http://dangillmor.com/wp-content/uploads/2016/06/decentral1-668x893.jpg 668w" sizes="(max-width: 224px) 100vw, 224px" /><br />
+(I&#8217;ll be updating this regularly during the day. New stuff will be at the bottom of the post, not the top, on the principle that most people reading this will read it only once or twice. Maybe I&#8217;m wrong, but that&#8217;s the method in my madness. For great to-the-moment info, follow <a href="https://twitter.com/kevinmarks">Kevin Marks</a> on Twitter.)</em></p>
+<p>After an amazing <a href="http://www.decentralizedweb.net/builders-day/">Builders Day</a>&#8211;a gathering of technologists who talked deep code about the potential to re-decentralize the Web and the larger Internet&#8211;it&#8217;s the official start of the <a href="http://www.decentralizedweb.net/">Decentralized Web Summit</a>. Brewster Kahle, founder of the <a href="http://archive.org">Internet Archive</a>, convened the event and the archive is hosting it. (My blogging from yesterday <a href="http://dangillmor.com/2016/06/07/decentralized-web-summit/">is here</a>.)</p>
+<p>Note: You can watch a <a href="https://youtu.be/Yth7O6yeZRE">live stream of the event</a>.</p>
+<p><iframe width="600" height="338" src="https://www.youtube.com/embed/Yth7O6yeZRE?feature=oembed" frameborder="0" allowfullscreen></iframe></p>
+<p>Mitchell Baker, executive chair of the Mozilla Foundation and Corp., is launching the day. She has three guiding principles:</p>
+<ul>
+<li>Immediate. Safe instant access to content accessible via a universal address without the need for install.</li>
+<li>Open. anyone can publish content without permission or barrier and provide access as they see fit.</li>
+<li>Agency: user agent can choose how to interpret content provided by a service offering.</li>
+</ul>
+<p>It&#8217;s not about a particular technology, she says. It&#8217;s about much more than that.</p>
+<p>Vint Cerf, one of the genuine originators of the Internet, is calling himself the &#8220;chief Internet evangelist&#8221; in the room. Fair enough. (More below&#8230;)</p>
+<p> <a href="http://dangillmor.com/2016/06/08/decentralized-web-summit-day-one/#more-3160" class="more-link">Continue reading <span class="meta-nav">&rarr;</span></a></p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/liberty/" rel="category tag">Liberty</a>, <a href="http://dangillmor.com/category/permission-taken/" rel="category tag">Permission Taken</a>, <a href="http://dangillmor.com/category/tech/" rel="category tag">Tech</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2016/06/08/decentralized-web-summit-day-one/#respond">Leave a comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-3160 -->
+        
+          <article id="post-3141" class="post-3141 post type-post status-publish format-standard category-liberty category-policy category-tech h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2016/06/07/decentralized-web-summit/" class="u-url url" title="Permalink to Decentralized Web Summit &#8212; Builders Day" rel="bookmark" itemprop="url">Decentralized Web Summit &#8212; Builders Day</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2016/06/07/decentralized-web-summit/" title="9:34 am" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2016-06-07T09:34:16+00:00" itemprop="dateModified">June 7, 2016</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dsgill123/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p><em><img class="alignright size-medium wp-image-3194" src="http://dangillmor.com/wp-content/uploads/2016/06/decentral1-224x300.jpg" alt="decentral1" width="224" height="300" srcset="http://dangillmor.com/wp-content/uploads/2016/06/decentral1-224x300.jpg 224w, http://dangillmor.com/wp-content/uploads/2016/06/decentral1-768x1027.jpg 768w, http://dangillmor.com/wp-content/uploads/2016/06/decentral1-766x1024.jpg 766w, http://dangillmor.com/wp-content/uploads/2016/06/decentral1-668x893.jpg 668w" sizes="(max-width: 224px) 100vw, 224px" />(I&#8217;ll be updating this regularly.)</em><br />
+Brewster Kahle, founder of the Internet Archive, has pulled together an amazing group of people for what he&#8217;s calling&#8211;with only a tiny amount of hyperbole&#8211;the <a href="http://www.decentralizedweb.net/">&#8220;Decentralized Web Summit.&#8221;</a>  Some of the &#8220;original architects&#8221; of this system&#8211;including Vint Cerf and Tim Berners-Lee&#8211;are here, or will be, along with the younger and deeply committed architects of what we all agree we want in a general way. I&#8217;m one of the participants, but I&#8217;m in awe of the people around me.</p>
+<p>Why is this necessary? Because our technology and communications are being recentralized, and controlled, by governments and big companies. They often mean well. And we, the users, often choose the convenience (or supposed safety) that come with letting others control our communications.</p>
+<p>Today is <a href="http://www.decentralizedweb.net/builders-day/">&#8220;Builders Day,&#8221;</a> in which we try to figure out what we want and what&#8217;s already available. Tomorrow is a more conference-type program, and Thursday is a meetup.</p>
+<p>Brewster started the day by asking three key questions:</p>
+<ul>
+<li>How can we build a reliable web?</li>
+<li>How can we make it more private?</li>
+<li>And how do we keep it fun and evolving.</li>
+</ul>
+<p>Mitchell Baker, who runs Mozilla, suggests three basic design principles:</p>
+<ul>
+<li>Immediate. Safe instant access to content accessible via a universal address without the need for install.</li>
+<li>Open. anyone can publish content without permission or barrier and provide access as they see fit.</li>
+<li>Agency: user agent can choose how to interpret content provided by a service offering.</li>
+</ul>
+<p>For some great live-tweeting, check out <a href="https://twitter.com/kevinmarks">Kevin Marks&#8217; feed</a> at Twitter.</p>
+<p>***</p>
+<p>The Builders are identifying themselves and what they want out of the day. Some have macro goals. I described mine this way: We need tech and communications that lets anyone speak, read, assemble and innovate without permission, and I want to help get that done. Others have more micro goals, such as fixing specific roadblocks to the decentralized net.</p>
+<p>One of the best: &#8220;I want to see all the ones and zeros liberated forever,&#8221; says John Light of Bitseed.</p>
+<p>You can <a href="http://www.decentralizedweb.net/people/">see the participants here</a>. This is why I say I&#8217;m in awe.</p>
+<p>***</p>
+<p>We broke into groups, looking for areas of agreement and disagreement, plus ideas on how we can build or push forward decentralization. Then we merged groups (twice) and boiled it all down again, in order to have specific items to work on this afternoon.</p>
+<p>What&#8217;s crucial to realize is that this is not an easy problem. Even the definitions are nuanced and complex. For example, what do we mean exactly by decentralization in the first place. There <em>have</em> to be some kinds of control points in some contexts.</p>
+<p>We started with groups of six. My group(s) talked about such things as identity, encryption, and censorship. Then we compared notes (literally post-it notes) with another group and settled on some essentials to pursue later. Five other groups did likewise, and a spokesperson from each reported out to the rest of the participants.</p>
+<p>I made an incredibly amateurish mobile phone video of the recommendations and posted it to the Archive (not, ahem, YouTube), using the new and wonderful mobile app called <a href="https://open-archive.net/">OpenArchive</a>, which runs on Android. (Here&#8217;s a <a href="https://archive.org/details/decentralized-web-summit--cikx">link to the page</a> where the video is hosted.)</p>
+<p><iframe src="https://archive.org/embed/decentralized-web-summit--cikx" width="640" height="480" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>***</p>
+<p>Google&#8217;s <a href="https://en.wikipedia.org/wiki/Van_Jacobson">Van Jacobson</a> talked, in part, about the inherent problems with IP (Internet Protocol in this context, <em>not</em> &#8220;intellectual property). It was a miraculous achievement. But it isn&#8217;t scaling as well as we need to a global (and someday interplanetary) scale.</p>
+<p>Jacobson is working on the <a href="http://named-data.net/project/faq/">NDN&#8211;Named Data Networking&#8221;&#8211;project</a> that aims to solve some of the growth issues. One key piece of this is where trust resides in the system. Today we get much of that trust from where the data originates, but perhaps we can get it from the data itself.</p>
+<p>***</p>
+<p><a href="https://twitter.com/zooko">Zooko Wilcox</a> (<a href="https://z.cash/">Zcash</a>) isn&#8217;t enamored of the centralize-everything mantra. He&#8217;s focused, he says, on a more fundamental goal: to promote human rights with technology.</p>
+<p>He chides us for our one-time &#8220;technological determinism&#8221;&#8211;a belief that we could solve any problem with tech. If some of us thought the law, or at least judges, would come to see it our way, we were naive. We aren&#8217;t anymore.</p>
+<p>People share resources for many reasons. One is money, and he says money creates stability in a key way. He likes &#8220;commercial structures&#8221; and open-source (&#8220;almost like science&#8221;) in different ways.</p>
+<p>***</p>
+<p><img class="alignleft size-medium wp-image-3153" src="http://dangillmor.com/wp-content/uploads/2016/06/zeronet-300x116.png" alt="zeronet" width="300" height="116" srcset="http://dangillmor.com/wp-content/uploads/2016/06/zeronet-300x116.png 300w, http://dangillmor.com/wp-content/uploads/2016/06/zeronet-768x296.png 768w, http://dangillmor.com/wp-content/uploads/2016/06/zeronet-668x258.png 668w, http://dangillmor.com/wp-content/uploads/2016/06/zeronet.png 949w" sizes="(max-width: 300px) 100vw, 300px" />Tamas Kocsis is here from Hungary to talk about <a href="https://zeronet.io">ZeroNet</a>, a radically decentralized system that uses blockchain technology and BitTorrent to create &#8220;Open, free and uncensorable websites.&#8221; He shows a demo of ZeroBlog, one of the applications that he&#8217;s created from his platform, with seamless editing and publishing on a network that lives on multiple, loosely connected machines, because it&#8217;s operating entirely peer-to-peer. He&#8217;s enabled chat, bulletin aboard and more. The service can be connected to Tor for enhanced privacy.</p>
+<p>A question from the audience from someone who was &#8220;super-impressed&#8221; when he first looked at it. Is there away of importing from existing applications (such as this WordPress blog)? He&#8217;s aware of the problem, but since there&#8217;s no back-end this is difficult. (In other words, no.)</p>
+<p>Still, super-impressive, an understatement.</p>
+<p>***</p>
+<p>Much more TK&#8230;</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/liberty/" rel="category tag">Liberty</a>, <a href="http://dangillmor.com/category/policy/" rel="category tag">Policy</a>, <a href="http://dangillmor.com/category/tech/" rel="category tag">Tech</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2016/06/07/decentralized-web-summit/#comments">1 Comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-3141 -->
+        
+          <article id="post-3128" class="post-3128 post type-post status-publish format-standard category-journalism category-tech h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2016/04/09/journalists-stop-complaining-about-facebook-and-do-something-about-it/" class="u-url url" title="Permalink to Journalists: Stop complaining about Facebook, and do something about it" rel="bookmark" itemprop="url">Journalists: Stop complaining about Facebook, and do something about it</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2016/04/09/journalists-stop-complaining-about-facebook-and-do-something-about-it/" title="7:07 am" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2016-04-09T07:07:12+00:00" itemprop="dateModified">April 9, 2016</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dsgill123/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p><i>(I’m on a panel at the International Journalism Festival later today, entitled <a href="http://www.journalismfestival.com/programme/2016/the-capture-of-traditional-media-by-facebook">“The capture of traditional media by Facebook.”</a> I’m planning to say some of what you see below. What follows is an early draft of a section of a book chapter, and I&#8217;ll be revising it a lot.)</i></p>
+<p>On the cover of this week’s Economist is a photo mashup of Facebook CEO <a href="http://www.economist.com/printedition/covers/2016-04-07/ap-e-eu-la-me-na-uk-0">Mark Zuckerberg as an emperor</a>. It is a fitting image, given his company’s growing domination of online conversation.<a href="http://www.economist.com/printedition/covers/2016-04-07/ap-e-eu-la-me-na-uk-0" rel="attachment wp-att-3134"><img class="alignright size-medium wp-image-3134" src="http://dangillmor.com/wp-content/uploads/2016/04/zuckerberg-emperor1-228x300.jpg" alt="Zuckerberg as emperor" width="228" height="300" srcset="http://dangillmor.com/wp-content/uploads/2016/04/zuckerberg-emperor1-228x300.jpg 228w, http://dangillmor.com/wp-content/uploads/2016/04/zuckerberg-emperor1.jpg 456w" sizes="(max-width: 228px) 100vw, 228px" /></a></p>
+<p>It is also a sign, one of many in recent months, that people in journalism have awoken to a potentially existential threat to the craft, among many other consequences of Facebook’s reach and clout in the information world. At the International Journalism Festival in Perugia, Italy, where a Facebook representative stonewalled questions a year ago, more than one panel has been devoted to the issue of how journalism will work if big “platform” companies—especially Facebook—control distribution.</p>
+<p>How should we respond? From my perspective, two primary schools of thought have emerged. One is to embrace that dominance, albeit with some unease, and fully participate in Facebook’s ecosystem. Another is to persuade Facebook to take seriously its growing responsibility to help get quality journalism in front of as many people as possible.</p>
+<p>Both of those approaches assume that Facebook is too big, too powerful to resist—that we have no alternative but to capitulate to its dominance. But if that is true, the consequences will be disastrous. We will be living in the ecosystem of a company that has repeatedly demonstrated its untrustworthiness, an enterprise that would become the primary newsstand for journalism and would be free to pick the winners via special deals with media people and tweaks of its opaque algorithms. If this is the future, we are truly screwed.</p>
+<p>I say: no. Let’s not give up so easily. Instead, let’s resist—and find a way out of this trap.</p>
+<p>Before I explain how, let’s offer some due praise. You don’t have to trust Facebook, or approve of its “surveillance capitalism” approach to business, to recognize its staggering brilliance in other respects. The company is loaded with talent, and has become an entrepreneurial icon. It is innovative technically and quick to adapt to changing conditions. And I have no doubt that the vast majority of its employees, and some of its investors, want to do the right thing when it comes to free speech.</p>
+<p>But Facebook is also becoming a monopoly, moving closer and closer to what Zuckerberg himself has called his goal—that Facebook should be <a href="http://www.theguardian.com/commentisfree/2012/oct/08/facebook-business-plan-utility-monopoly">“like electricity”</a> in the sense of effectively being a public utility that we cannot do without.</p>
+<p>And that’s where I’d start in helping journalists, and others, escape from its web. Here’s an early, and therefore rough, draft of the approach I’d suggest:</p>
+<p><i>First</i>, journalists should remember the proverbial first rule of getting out of a hole: stop digging. Sadly, with the advent of Facebook’s Instant Articles, a publishing platform with great allure in some ways, news organizations have abandoned their shovels and brought in heavy earth-moving machinery to dig themselves in even deeper. I’m not saying drop all connections to Facebook right now, but the dig-faster “strategy” is beyond short-sighted. It’s outright suicidal.</p>
+<p><i>Second</i>, journalism organizations should explain to the communities they serve how Facebook operates. Such as:</p>
+<ul>
+<li>Invasion of privacy. The occasional articles we see about Facebook’s latest privacy intrusions barely begin to describe the massive way this company (and other online advertising operations) are creating unprecedentedly detailed dossiers on everyone, and then using this information in ways we can barely imagine. The ubiquitous “Like” button, found all over the Internet, is part of Facebook’s surveillance system.</li>
+<li>Control of speech. Facebook decides what its users will see by manipulating their news feeds. It removes posts based on its puritan approach to sex, and reserves the right to determine what speech is acceptable, period. In America, Facebook’s terms of service overrule the First Amendment.</li>
+<li>Becoming an alternate Internet. Facebook would be delighted if you never leave its embrace. In some countries, where it makes special deals with governments and (often government-controlled) telecom companies, it effectively <i>is</i> the Internet on mobile devices.</li>
+<li>Evolving ethics. Facebook constantly pushes the boundaries of acceptable behavior, especially in the way it collects and handles data on its users. It changes its terms of service and privacy policy, often in ways that should alarm people.</li>
+</ul>
+<p><i>Third</i>, journalists should do what they have done many times before when they encountered threats to freedom of expression: ask people with political power to intervene. As Facebook takes on more and more of the trappings of monopoly and utility, we need antitrust officials and others in government to pay attention. Of course, Facebook isn’t the only threat in this regard. The telecom carriers are potentially just as dangerous to speech, given their wish to control how our information moves in the vital part of the networks they control. There’s long list of other threats including pervasive surveillance by government, and for the most part journalists have ignored these attacks on freedom of expression. I said in Perugia last year that journalists need to be activists on these fundamental issues of liberty, and renew that plea here.</p>
+<p><i>Fourth,</i> once journalists have explained all this, they should help the communities they serve take action themselves. This should include technical countermeasures—how to block, to the extent possible, all that surveillance by corporations and government, by using encryption; browser plugins that block the online trackers; and more. Journalists should also tell people how they can campaign for change, such as contacting their elected representatives and regulators at the local, state and federal levels; support organizations that help preserve liberties; etc.</p>
+<p><i>Fifth, </i>journalists should join and support the nascent efforts to counteract the centralization of technology and communications. It’s not practical to ask media people to create a decentralized, federated web that includes social connections as well as standard publishing. This is beyond their expertise. But they should be leaders in the push to get there, and give financial and other help to projects that further the goal. Moreover, they should lobby a key constituency that has taken only timid steps toward saving the open Web: philanthropists and NGOs. Foundations, in particular, need to put their considerable resources behind decentralized platform development, and news organizations can help convince them to do so.</p>
+<p>Plainly, some of these strategies will be easier to pull off than others. But we have to try. The alternative looks grim.</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/journalism/" rel="category tag">Journalism</a>, <a href="http://dangillmor.com/category/tech/" rel="category tag">Tech</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2016/04/09/journalists-stop-complaining-about-facebook-and-do-something-about-it/#comments">9 Comments</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-3128 -->
+        
+          <article id="post-3105" class="post-3105 post type-post status-publish format-standard category-etcetera h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2016/03/18/my-media-use/" class="u-url url" title="Permalink to My media use" rel="bookmark" itemprop="url">My media use</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2016/03/18/my-media-use/" title="3:18 am" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2016-03-18T03:18:51+00:00" itemprop="dateModified">March 18, 2016</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dsgill123/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p>For an online course I&#8217;m teaching, here&#8217;s an example of my media use. Note to students: I don&#8217;t expect your blog posts to be this long.</p>
+<p><strong>As a “consumer”:</strong></p>
+<p>My daily media consumption is enormous, because I do this for a living. Here’s what happened one recent day:</p>
+<p>When I wake up I briefly check email and <a href="http://twitter.com/">Twitter</a>. If something seems super-urgent I may open an email or click through to a link. Usually I don’t.</p>
+<p>At breakfast, using a tablet, I go to the homepages of the <a href="http://nytimes.com/">New York Times</a>, <a href="http://wsj.com/">Wall Street Journal</a>, <a href="http://washingtonpost.com/">Washington Post</a>, and <a href="http://ft.com/">Financial Times</a>. All of those outlets have a world view, and I want to see what their editors–some of the best in journalism–believe is important. I also check my RSS newsreader, which collects stories and links from a variet of sources I’ve pre-selected.</p>
+<p>At my home-office desk:</p>
+<p>— I check out a number of websites including <a href="http://reddit.com/">Reddit</a>, <a href="http://boingboing.net/">BoingBoing</a>, <a href="http://arstechnica.com/">Ars Technica</a>, <a href="http://www.nationalreview.com/">National Review</a>, <a href="http://techdirt.com/">TechDirt</a>, <a href="http://www.hbo.com/last-week-tonight-with-john-oliver">Jon Oliver</a> (when HBO posts his regular commentary), among others.</p>
+<p>— I run Twitter and <a href="http://plus.google.com/">Google+</a> in separate browser tabs but don’t try to keep up with it all the time (though I confess I check them more often than I should.) Whether an important story or some ridiculous meme is bubbling up, I’ll be likely to notice it among the people I follow. I also check 5 Twitter lists I follow on these topics: journalism, the media business, technology, entrepreneurship and media literacy.</p>
+<p>— Besides regular email, I subscribe to several mail lists on those topics, as well as a great daily list of five items from <a href="http://this.cm/">This.cm</a>, a site that creates serendipity for me. I sort those separately in my email inbox, and read them one after the other. Many of the links have already shown up in Twitter, and many point to the traditional and other media sites I routinely scan.</p>
+<p>During the day I’m constantly bouncing around to various media including videos (typically posted on YouTube and Vimeo), audio (NPR and others), and other websites.</p>
+<p>After dinner I sometimes watch videos on our television, but almost never live TV. We subscribe to Netflix, Amazon Prime and satellite (Dish). I record some TV series (e.g. “Justified”) and watch when I have time, skipping through the commercials.</p>
+<p>On my bedside table I have a hardcover book or two (one from the library and one I’ve bought, the latter almost always written by someone I know), and a Kindle Voyager e-reader. I read for a half hour or so before going to sleep.</p>
+<p>Takeaways (similar to what I found when I did this several years ago):</p>
+<p>I listen to or watch very little broadcast media apart from NPR (or super-important breaking news, very very rarely).</p>
+<p>My main sources of trusted information resemble some of the ones from several decades ago, such as the New York Times (which, like all other media, I do not trust fully, since they do get things wrong from time to time). I get to them in some different ways, however.</p>
+<p>In particular, several Twitter lists and Google+ circles (roughly the same thing; collections of people I follow about specific topics) have become filters of great value. I can generally depend on them to send me to information I need to know about. However, I know I’m missing some important things if I rely only on other people to flag things.</p>
+<p>For me, media consumption is an evolving collection of people, sites, conversations, and entertainment. Much of it overlaps. It takes more effort on my part, but I believe I’m vastly better informed — and entertained.</p>
+<p><strong>As a creator:</strong></p>
+<p>I create a lot of media, too, though not nearly as much as I “consume” (I hate that word; as I’ve told students in digital media literacy, we should <i>use</i> media, not consume it).</p>
+<p>On a given day, here’s roughly how I created media. I’m guessing it’s different from what students do these days. Most of what I create is text. Not all, but most.</p>
+<p>In the morning, I answered a batch of email. I do this regularly during the day, because I get a lot and I try to keep up with it. I’ll never get to the fabled “inbox zero” but I’ll try. Occasionally I get and send several text messages, most often with my wife.</p>
+<p>I post frequently on Twitter, and more occasionally on Google+. (I rarely use Facebook, for reasons I described in my book <em>Mediactive.) </em></p>
+<p>Lately, I’ve been posting (too infrequently!) to This.cm, a wonderful new service that tries to collect–from a bunch of interesting users–just a few items per day that we all believe everyone should see. The site is in beta so I can’t invite all of you to join it, yet.</p>
+<p><a href="http://dangillmor.com/blog">My blog</a> doesn’t get enough love, though I do post there from time to time. On the day in question I wasted a lot of time responding to someone who was trying to convince me (actually, his own fans) that I’m wrong about net neutrality.</p>
+<p>As a longtime photographer I take lots of pictures. I don’t post most of them, but when I do it’s usually to Flickr or Google+ or my blog. I need to do this more. I don’t have an Instagram account but probably should get one.</p>
+<p>There’s a way I semi-create media that most of don’t appreciate: individualized media via online services. Example: I wanted driving directions the other day, and used Google Maps. It produced a page of directions and a map. This is media, too–but just for me.</p>
+<p>My other media creation, on a regular basis, doesn’t get seen by anyone but me for some period of time: writing I’m doing for my columns and essays at <a href="http://www.slate.com/authors.dan_gillmor.html">Slate</a> and <a href="https://medium.com/@dangillmor">Medium</a>, as well as a new book. In a way, those are the most traditional forms of media I’ve been making.</p>
+<p>There’s more, but you get the idea!</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/etcetera/" rel="category tag">Etcetera</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2016/03/18/my-media-use/#respond">Leave a comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-3105 -->
+        
+          <article id="post-3095" class="post-3095 post type-post status-publish format-standard category-etcetera h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2016/03/15/help-crowdfund-better-journalism-on-encryption/" class="u-url url" title="Permalink to Help crowdfund better journalism on encryption" rel="bookmark" itemprop="url">Help crowdfund better journalism on encryption</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2016/03/15/help-crowdfund-better-journalism-on-encryption/" title="2:34 pm" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2016-03-15T14:34:06+00:00" itemprop="dateModified">March 15, 2016</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dsgill123/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <div id="attachment_3096" style="width: 250px" class="wp-caption alignright"><a href="http://dangillmor.com/wp-content/uploads/2016/03/13334048894_001d3e53d1_m.jpg" rel="attachment wp-att-3096"><img class="wp-image-3096 size-full" src="http://dangillmor.com/wp-content/uploads/2016/03/13334048894_001d3e53d1_m.jpg" alt="crypto" width="240" height="159" /></a><p class="wp-caption-text">https://www.flickr.com/photos/yusamoilov/</p></div>
+<p>The <a href="https://news.google.com/news/story?ncl=dAlZcE3Xl0WD6QMPosuXSULjeq4tM&amp;q=fbi+apple&amp;lr=English&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwi85IOG0MPLAhUS3WMKHamFD8YQqgIIKTAA">&#8220;FBI-versus-Apple&#8221;</a> story of recent weeks has brought a vital issue to the front burner: whether we will have secure technology in the future or not&#8211;or at least the <em>chance</em> to have secure technology.</p>
+<p>In reality, this isn&#8217;t only about Apple or the FBI. It&#8217;s about the considerable weight of government in its zeal to have access to everything we say and do in the digital realm&#8211;which is to say, increasingly, almost everything we say and do.</p>
+<p>The Obama administration, and governments around the world, believe they have an innate right to whatever information they want, whenever they want it. This is a law-enforcement-first mentality, and in many ways an understandable one in a sometimes dangerous environment. But governments also want something they assuredly cannot have: a way to crack open our devices and communications, willy-nilly, when we&#8217;re using encryption tools that make it difficult if not impossible to do so without users turning over the keys to their digital locks.</p>
+<p>They call this a &#8220;privacy versus security&#8221; debate. It is, in fact, a <a href="https://www.washingtonpost.com/opinions/apple-vp-the-fbi-wants-to-roll-back-safeguards-that-keep-us-a-step-ahead-of-criminals/2016/03/06/cceb0622-e3d1-11e5-a6f3-21ccdbc5f74e_story.html">&#8220;security versus security&#8221;</a> issue: If they get backdoors into our devices, software and networks, they will&#8211;according to just about every reputable non-government security and encryption expert&#8211;guarantee that we will all be less secure in the end, because malicious hackers and criminals (some of whom work for government) will ultimately get access, too. Governments want magic math, and they can&#8217;t have it. It&#8217;s also <a href="https://www.eff.org/deeplinks/2016/03/deep-dive-why-forcing-apple-write-and-sign-code-violates-first-amendment">a free speech issue</a>, a huge one, because the government is telling Apple it has to write new code <em>and sign it</em> with a digital signature.</p>
+<p>Sorry, this is binary. We have to choose. One choice is to acknowledge that bad guys have a way to have some secure conversations using encryption, thereby forcing law enforcement and spies to come up with other ways to find out what the bad guys are doing. The other choice is to reduce everyone&#8217;s security, on the principle that we simply can&#8217;t afford to let bad people use these tools.</p>
+<p>Sadly, the journalism about this has been reprehensibly bad, at least until recently, outside of the tech press. Traditional Big Media basically parrot government people, including most recently President Obama himself, even though they&#8217;re finally starting to wake up to what&#8217;s happening. John Oliver&#8217;s <a href="https://youtu.be/zsjZ2r9Ygzw">HBO program last Sunday</a> was a sterling example of how media can treat this complex topic in a way that a) tells the truth; and b) explains things with great clarity.</p>
+<p><a href="http://dangillmor.com/wp-content/uploads/2016/03/tedhdirt-logo.png" rel="attachment wp-att-3097"><img class="size-full wp-image-3097 alignleft" src="http://dangillmor.com/wp-content/uploads/2016/03/tedhdirt-logo.png" alt="tedhdirt logo" width="282" height="73" /></a>Mike Masnick and his site, <a href="http://techdirt.com">TechDirt</a>, have been leaders in covering the way various liberties and technology intersect. Now they&#8217;re <a href="https://www.beaconreader.com/projects/facts-not-fear-the-truth-about-encryption">crowdfunding to add more coverage of encryption and its ramifications</a>. I&#8217;m supporting this initiative and hope you&#8217;ll give it some thought as well. We need more such coverage, and we can depend on Mike and team to provide it.</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/etcetera/" rel="category tag">Etcetera</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2016/03/15/help-crowdfund-better-journalism-on-encryption/#respond">Leave a comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-3095 -->
+        
+          <article id="post-3075" class="post-3075 post type-post status-publish format-standard category-etcetera h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2016/02/28/accelerating-the-mobile-web/" class="u-url url" title="Permalink to Accelerating the mobile Web" rel="bookmark" itemprop="url">Accelerating the mobile Web</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2016/02/28/accelerating-the-mobile-web/" title="8:52 am" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2016-02-28T08:52:57+00:00" itemprop="dateModified">February 28, 2016</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dsgill123/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p>Google&#8217;s &#8220;Accelerated Mobile Pages&#8221; project launched for real this week, and it&#8217;s pretty amazing. I still worry about giant, centralized companies and their power&#8211;and it shouldn&#8217;t be needed in the first place. For more, <a href="https://backchannel.com/google-is-going-to-speed-up-the-web-is-this-good-a92a6043598b#.dwixzzaah">check out my deep dive into AMP</a> at Medium Backchannel. Key quote:</p>
+<blockquote>
+<p id="6eda" class="graf--p graf-after--p">Before getting into details about what’s happening here, let’s be clear on something. <span class="markup--quote markup--p-quote is-other" data-creator-ids="anon">AMP wouldn’t be necessary — assuming it is in the first place — if the news industry hadn’t so thoroughly poisoned its own nest.</span></p>
+<p id="0c20" class="graf--p graf-after--p">Looking for money in a business that grows more financially troubled by the month, media companies have infested articles with garbage code, much of it on behalf of advertising/surveillance companies, to the extent that readers have quite reasonably rebelled. We don’t like slow-responding sites, period. On our mobile devices, which are taking over as the way we “consume” information, we despise having to download megabytes of crapware just to read something, because the carriers charge us for the privilege. That’s one reason why we use ad blockers. (The other, at least for me, is that we despise being spied on so relentlessly.) The news business could have solved this problem without racing into the arms of giant, centralized tech companies. But it didn’t, and here we are.</p>
+</blockquote>
+<p>&nbsp;</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/etcetera/" rel="category tag">Etcetera</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2016/02/28/accelerating-the-mobile-web/#respond">Leave a comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-3075 -->
+        
+          <article id="post-3061" class="post-3061 post type-post status-publish format-standard category-etcetera h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2016/02/21/mobile-world-congress-2016/" class="u-url url" title="Permalink to Mobile World Congress 2016" rel="bookmark" itemprop="url">Mobile World Congress 2016</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2016/02/21/mobile-world-congress-2016/" title="5:24 am" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2016-02-21T05:24:50+00:00" itemprop="dateModified">February 21, 2016</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dsgill123/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p>In Barcelona this week for the <a href="http://mobileworldcongress.com">Mobile World Congress</a>, where the sun is out along with teeming crowds for mobile technology&#8217;s biggest annual event&#8211;and I&#8217;m trying not to let jet lag slow me down too much.</p>
+<p>I&#8217;ve been here (to Barcelona, though not MWC, a number of times, and never tire of the city. (A transit worker slowdown this week will leave a lot of people tired of walking and fighting for taxis, no doubt.) It&#8217;s accessible, not daunting, and friendly.</p>
+<p>The MWC, I&#8217;m told, has been evolving rapidly&#8211;from a totally carrier dominated event to something much more open, the way CES turned from a gadget show to an everything-digital show. In fact, based on the list of exhibitors, there&#8217;s clearly a lot of overlap now.</p>
+<p>One of the digital arenas I&#8217;m looking forward to exploring is ubiquitous computing and its cousin, the so-called &#8220;Internet of Things.&#8221; There&#8217;s almost unlimited potential to add intelligence to everything we touch, and then connect it all&#8211;and use the knowledge we gain to make our lives better, individually and in our communities. There&#8217;s equally unlimited potential for that to turn into the ultimate surveillance system, and in the several years that I&#8217;ve paid close attention to the IoT I&#8217;ve seen almost no evidence that the industry is even slightly interested in protecting our privacy beyond making a few pleasant noises in that direction.</p>
+<p>One of the companies moving fastest in the global technology scene <a href="http://huawei.com">Huawei</a>, which covered my travel expenses here, joining a group of tech analysts. It&#8217;s an absolutely huge Chinese tech operation, based in Shenzen, home to vast amounts of that country&#8217;s digital-gear manufacturing. The Huawei events here include the launch of some new consumer devices (I just saw the new &#8220;MateBook&#8221; 2-in-one Windows tablet/notebook with a detachable keyboard has a clean design, and is getting <a href="http://gizmodo.com/huawei-matebook-hands-on-half-surface-pro-half-ipad-p-1760400664">solid early reviews</a>), I&#8217;ll be learning more about the company and its raft of global competitors, and plan to ask questions about how it will build security into its products. In fact, I&#8217;m planning to ask these questions of <em>all</em> the companies I visit when I make the rounds of the exhibition floor later this week.</p>
+<p>Huawei, which has been mostly a business-to-business company, has big ambitions for end-user technology. One recent &#8220;design win,&#8221; as tech folks call it, was its contract with Google to make Nexus 6P phablet. I reviewed it last fall for Medium Backchannel, and was so impressed that I bought one.</p>
+<p>More to come&#8230;</p>
+<div id="24lb_thread" class="lb_1318995"><script type="text/javascript">// < ![CDATA[
+// < ![CDATA[
+// < ![CDATA[
+// < ![CDATA[
+// < ![CDATA[ (function() { var lb24 = document.createElement('script'); lb24.type = 'text/javascript'; lb24.id = '24lbScript'; lb24.async = true; lb24.charset="utf-8"; lb24.src = '//v.24liveblog.com/embed/24.js?id=1318995'; (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(lb24);})();
+// ]]&gt;</script></div>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/etcetera/" rel="category tag">Etcetera</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2016/02/21/mobile-world-congress-2016/#respond">Leave a comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-3061 -->
+        
+          <article id="post-3058" class="post-3058 post type-post status-publish format-standard category-etcetera h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2016/02/19/we-need-a-consumer-reports-for-tech/" class="u-url url" title="Permalink to We need a Consumer Reports for tech" rel="bookmark" itemprop="url">We need a Consumer Reports for tech</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2016/02/19/we-need-a-consumer-reports-for-tech/" title="9:44 am" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2016-02-19T09:44:22+00:00" itemprop="dateModified">February 19, 2016</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dsgill123/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p>In my latest column at Slate, I ask why tech reviews typically don&#8217;t address&#8211;in any deep way, if they do at all&#8211;the rampantly bad security and privacy we endure in our digital lives. I also argue we need Consumer Reports, or something like it, to help us in this arena, since other publications seem so unwilling.</p>
+<p><a href="http://www.slate.com/articles/technology/future_tense/2016/02/tech_reviews_should_assess_gadget_app_security_and_privacy.html">Read it here</a>.</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/etcetera/" rel="category tag">Etcetera</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2016/02/19/we-need-a-consumer-reports-for-tech/#respond">Leave a comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-3058 -->
+        
+          <nav id="nav-below">
+    <h1 class="assistive-text section-heading">Post navigation</h1>
+
+  
+        <div class="nav-previous"><a href="http://dangillmor.com/author/dsgill123/page/2/"  rel="prev"><span class="meta-nav">&larr;</span> Older posts</a></div>
+    
+    
+  
+  </nav><!-- #nav-below -->
+  
+      
+      </main><!-- #content -->
+    </section><!-- #primary -->
+
+  <aside id="sidebar">
+    <div id="secondary" class="widget-area" role="complementary">
+            <section id="text-423219941" class="widget widget_text">			<div class="textwidget"><img src="http://dangillmor.com/wp-content/uploads/2014/11/danpic1aa.png" alt="Dan Gillmor picture" />
+
+<p>
+<a rel="author me"
+href="https://plus.google.com/+DanGillmor">  </a></p></div>
+		</section>    </div><!-- #secondary .widget-area -->
+
+        <div id="tertiary" class="widget-area" role="complementary">
+      <section id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="http://dangillmor.com/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form></section><section id="categories-406917141" class="widget widget_categories"><h3 class="widget-title">Categories</h3><label class="screen-reader-text" for="cat">Categories</label><select name='cat' id='cat' class='postform' >
+	<option value='-1'>Select Category</option>
+	<option class="level-0" value="14">Arizona</option>
+	<option class="level-0" value="39">ASU</option>
+	<option class="level-0" value="4">Customer Service</option>
+	<option class="level-0" value="30">Education</option>
+	<option class="level-0" value="3">Etcetera</option>
+	<option class="level-0" value="15">Events</option>
+	<option class="level-0" value="42">Journalism</option>
+	<option class="level-0" value="20">Liberty</option>
+	<option class="level-0" value="10">Media</option>
+	<option class="level-0" value="40">MOOC</option>
+	<option class="level-0" value="7">People</option>
+	<option class="level-0" value="29">Permission Taken</option>
+	<option class="level-0" value="43">Personal</option>
+	<option class="level-0" value="1">Policy</option>
+	<option class="level-0" value="37">Privacy</option>
+	<option class="level-0" value="27">Projects</option>
+	<option class="level-0" value="6">Silicon Valley</option>
+	<option class="level-0" value="38">Tech</option>
+</select>
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "cat" );
+	function onCatChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
+			location.href = "http://dangillmor.com/?cat=" + dropdown.options[ dropdown.selectedIndex ].value;
+		}
+	}
+	dropdown.onchange = onCatChange;
+})();
+/* ]]> */
+</script>
+
+</section>		<section id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+					<li>
+				<a href="http://dangillmor.com/2016/08/27/indie-web-camp/">Indie Web Camp</a>
+						</li>
+					<li>
+				<a href="http://dangillmor.com/2016/07/12/witnessing-activism-journalism-and-the-boundaries-of-free-speech-in-the-facebook-age/">Witnessing, activism, journalism &#8212; and the boundaries of free speech in the Facebook age</a>
+						</li>
+					<li>
+				<a href="http://dangillmor.com/2016/06/08/decentralized-web-summit-day-one/">Decentralized Web Summit &#8212; Day One</a>
+						</li>
+					<li>
+				<a href="http://dangillmor.com/2016/06/07/decentralized-web-summit/">Decentralized Web Summit &#8212; Builders Day</a>
+						</li>
+					<li>
+				<a href="http://dangillmor.com/2016/04/09/journalists-stop-complaining-about-facebook-and-do-something-about-it/">Journalists: Stop complaining about Facebook, and do something about it</a>
+						</li>
+				</ul>
+		</section>		    </div><!-- #tertiary .widget-area -->
+      </aside>
+  </div><!-- #main -->
+
+  <footer id="colophon" role="contentinfo">
+    <div id="site-generator">
+            This site is powered by <a href="http://wordpress.org/" rel="generator">WordPress</a> and styled with <a href="http://notizblog.org/projects/sempress/">SemPress</a>    </div>
+  </footer><!-- #colophon -->
+</div><!-- #page -->
+
+<script type='text/javascript' src='http://dangillmor.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/dangillmor.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"sending":"Sending ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://dangillmor.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.5'></script>
+<script type='text/javascript' src='http://dangillmor.com/wp-includes/js/wp-embed.min.js?ver=99ee574c47176f372c838f4c4dee3c0d'></script>
+
+</body>
+</html>

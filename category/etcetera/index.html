@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Etcetera | Dan Gillmor</title>
+<link rel="profile" href="http://microformats.org/profile/specs" />
+<link rel="profile" href="http://microformats.org/profile/hatom" />
+<link rel="pingback" href="http://dangillmor.com/xmlrpc.php" />
+
+<link rel="alternate" type="application/rss+xml" title="Dan Gillmor &raquo; Feed" href="http://dangillmor.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Dan Gillmor &raquo; Comments Feed" href="http://dangillmor.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Dan Gillmor &raquo; Etcetera Category Feed" href="http://dangillmor.com/category/etcetera/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/dangillmor.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=99ee574c47176f372c838f4c4dee3c0d"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='contact-form-7-css'  href='http://dangillmor.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='indieweb-css'  href='http://dangillmor.com/wp-content/plugins/indieweb/css/indieweb.css?ver=99ee574c47176f372c838f4c4dee3c0d' type='text/css' media='all' />
+<link rel='stylesheet' id='sempress-style-css'  href='http://dangillmor.com/wp-content/themes/sempress/style.css?ver=99ee574c47176f372c838f4c4dee3c0d' type='text/css' media='all' />
+<script type='text/javascript' src='http://dangillmor.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://dangillmor.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='http://dangillmor.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://dangillmor.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://dangillmor.com/wp-includes/wlwmanifest.xml" /> 
+
+<script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//dangillmor.com/?wordfence_logHuman=1&hid=EEE94C9B913F1DEBB44BDC52D38BB5DD');
+</script>  <style type="text/css" id="sempress-custom-colors">
+    body { text-shadow: 0 1px 0 #ffffff; }
+    body, a { color: #03010c; }
+    .widget, #access {
+      border-bottom: 1px solid #000000;
+      -moz-box-shadow: #ffffff 0 1px 0 0;
+      -webkit-box-shadow: #ffffff 0 1px 0 0;
+      box-shadow: #ffffff 0 1px 0 0;
+    }
+    article.comment {
+      border-top: 1px solid #ffffff;
+      -moz-box-shadow: #000000 0 -1px 0 0;
+      -webkit-box-shadow: #000000 0 -1px 0 0;
+      box-shadow: #000000 0 -1px 0 0;
+    }
+  </style>
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+</head>
+
+<body class="archive category category-etcetera category-3 custom-background multi-column hfeed h-feed feed" itemscope="" itemtype="http://schema.org/Blog">
+<div id="page">
+  <header id="branding" role="banner">
+    <h1 id="site-title" itemprop="name" class="p-title"><a href="http://dangillmor.com/" title="Dan Gillmor" rel="home" itemprop="url" class="u-url url">Dan Gillmor</a></h1>
+    <h2 id="site-description" itemprop="description" class="p-summary e-content">Just in case you were wondering&#8230;</h2>
+    
+        
+    <nav id="access" role="navigation">
+      <h1 class="assistive-text section-heading"><a href="#access" title="Main menu">Main menu</a></h1>
+      <div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
+
+      <div class="menu-blog-container"><ul id="menu-blog" class="menu"><li id="menu-item-812" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-812"><a href="http://dangillmor.com/blog/">Blog</a></li>
+<li id="menu-item-809" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-809"><a href="http://dangillmor.com/about/">About Dan</a></li>
+<li id="menu-item-806" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-806"><a href="http://dangillmor.com/projects/">Mediactive</a></li>
+<li id="menu-item-808" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-808"><a href="http://dangillmor.com/speaking/">Speaking/Calendar</a></li>
+<li id="menu-item-807" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-807"><a href="http://dangillmor.com/contact/">Contact</a></li>
+</ul></div>    </nav><!-- #access -->
+  </header><!-- #branding -->
+
+  <div id="main">
+
+    <section id="primary">
+      <main id="content" role="main">
+
+      
+        <header class="page-header">
+          <h1 class="page-title">Category Archives: <span>Etcetera</span></h1>
+
+                  </header>
+
+          <nav id="nav-above">
+    <h1 class="assistive-text section-heading">Post navigation</h1>
+
+  
+        <div class="nav-previous"><a href="http://dangillmor.com/category/etcetera/page/2/"  rel="prev"><span class="meta-nav">&larr;</span> Older posts</a></div>
+    
+    
+  
+  </nav><!-- #nav-above -->
+  
+                
+          <article id="post-3105" class="post-3105 post type-post status-publish format-standard category-etcetera h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2016/03/18/my-media-use/" class="u-url url" title="Permalink to My media use" rel="bookmark" itemprop="url">My media use</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2016/03/18/my-media-use/" title="3:18 am" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2016-03-18T03:18:51+00:00" itemprop="dateModified">March 18, 2016</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dsgill123/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p>For an online course I&#8217;m teaching, here&#8217;s an example of my media use. Note to students: I don&#8217;t expect your blog posts to be this long.</p>
+<p><strong>As a “consumer”:</strong></p>
+<p>My daily media consumption is enormous, because I do this for a living. Here’s what happened one recent day:</p>
+<p>When I wake up I briefly check email and <a href="http://twitter.com/">Twitter</a>. If something seems super-urgent I may open an email or click through to a link. Usually I don’t.</p>
+<p>At breakfast, using a tablet, I go to the homepages of the <a href="http://nytimes.com/">New York Times</a>, <a href="http://wsj.com/">Wall Street Journal</a>, <a href="http://washingtonpost.com/">Washington Post</a>, and <a href="http://ft.com/">Financial Times</a>. All of those outlets have a world view, and I want to see what their editors–some of the best in journalism–believe is important. I also check my RSS newsreader, which collects stories and links from a variet of sources I’ve pre-selected.</p>
+<p>At my home-office desk:</p>
+<p>— I check out a number of websites including <a href="http://reddit.com/">Reddit</a>, <a href="http://boingboing.net/">BoingBoing</a>, <a href="http://arstechnica.com/">Ars Technica</a>, <a href="http://www.nationalreview.com/">National Review</a>, <a href="http://techdirt.com/">TechDirt</a>, <a href="http://www.hbo.com/last-week-tonight-with-john-oliver">Jon Oliver</a> (when HBO posts his regular commentary), among others.</p>
+<p>— I run Twitter and <a href="http://plus.google.com/">Google+</a> in separate browser tabs but don’t try to keep up with it all the time (though I confess I check them more often than I should.) Whether an important story or some ridiculous meme is bubbling up, I’ll be likely to notice it among the people I follow. I also check 5 Twitter lists I follow on these topics: journalism, the media business, technology, entrepreneurship and media literacy.</p>
+<p>— Besides regular email, I subscribe to several mail lists on those topics, as well as a great daily list of five items from <a href="http://this.cm/">This.cm</a>, a site that creates serendipity for me. I sort those separately in my email inbox, and read them one after the other. Many of the links have already shown up in Twitter, and many point to the traditional and other media sites I routinely scan.</p>
+<p>During the day I’m constantly bouncing around to various media including videos (typically posted on YouTube and Vimeo), audio (NPR and others), and other websites.</p>
+<p>After dinner I sometimes watch videos on our television, but almost never live TV. We subscribe to Netflix, Amazon Prime and satellite (Dish). I record some TV series (e.g. “Justified”) and watch when I have time, skipping through the commercials.</p>
+<p>On my bedside table I have a hardcover book or two (one from the library and one I’ve bought, the latter almost always written by someone I know), and a Kindle Voyager e-reader. I read for a half hour or so before going to sleep.</p>
+<p>Takeaways (similar to what I found when I did this several years ago):</p>
+<p>I listen to or watch very little broadcast media apart from NPR (or super-important breaking news, very very rarely).</p>
+<p>My main sources of trusted information resemble some of the ones from several decades ago, such as the New York Times (which, like all other media, I do not trust fully, since they do get things wrong from time to time). I get to them in some different ways, however.</p>
+<p>In particular, several Twitter lists and Google+ circles (roughly the same thing; collections of people I follow about specific topics) have become filters of great value. I can generally depend on them to send me to information I need to know about. However, I know I’m missing some important things if I rely only on other people to flag things.</p>
+<p>For me, media consumption is an evolving collection of people, sites, conversations, and entertainment. Much of it overlaps. It takes more effort on my part, but I believe I’m vastly better informed — and entertained.</p>
+<p><strong>As a creator:</strong></p>
+<p>I create a lot of media, too, though not nearly as much as I “consume” (I hate that word; as I’ve told students in digital media literacy, we should <i>use</i> media, not consume it).</p>
+<p>On a given day, here’s roughly how I created media. I’m guessing it’s different from what students do these days. Most of what I create is text. Not all, but most.</p>
+<p>In the morning, I answered a batch of email. I do this regularly during the day, because I get a lot and I try to keep up with it. I’ll never get to the fabled “inbox zero” but I’ll try. Occasionally I get and send several text messages, most often with my wife.</p>
+<p>I post frequently on Twitter, and more occasionally on Google+. (I rarely use Facebook, for reasons I described in my book <em>Mediactive.) </em></p>
+<p>Lately, I’ve been posting (too infrequently!) to This.cm, a wonderful new service that tries to collect–from a bunch of interesting users–just a few items per day that we all believe everyone should see. The site is in beta so I can’t invite all of you to join it, yet.</p>
+<p><a href="http://dangillmor.com/blog">My blog</a> doesn’t get enough love, though I do post there from time to time. On the day in question I wasted a lot of time responding to someone who was trying to convince me (actually, his own fans) that I’m wrong about net neutrality.</p>
+<p>As a longtime photographer I take lots of pictures. I don’t post most of them, but when I do it’s usually to Flickr or Google+ or my blog. I need to do this more. I don’t have an Instagram account but probably should get one.</p>
+<p>There’s a way I semi-create media that most of don’t appreciate: individualized media via online services. Example: I wanted driving directions the other day, and used Google Maps. It produced a page of directions and a map. This is media, too–but just for me.</p>
+<p>My other media creation, on a regular basis, doesn’t get seen by anyone but me for some period of time: writing I’m doing for my columns and essays at <a href="http://www.slate.com/authors.dan_gillmor.html">Slate</a> and <a href="https://medium.com/@dangillmor">Medium</a>, as well as a new book. In a way, those are the most traditional forms of media I’ve been making.</p>
+<p>There’s more, but you get the idea!</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/etcetera/" rel="category tag">Etcetera</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2016/03/18/my-media-use/#respond">Leave a comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-3105 -->
+        
+          <article id="post-3095" class="post-3095 post type-post status-publish format-standard category-etcetera h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2016/03/15/help-crowdfund-better-journalism-on-encryption/" class="u-url url" title="Permalink to Help crowdfund better journalism on encryption" rel="bookmark" itemprop="url">Help crowdfund better journalism on encryption</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2016/03/15/help-crowdfund-better-journalism-on-encryption/" title="2:34 pm" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2016-03-15T14:34:06+00:00" itemprop="dateModified">March 15, 2016</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dsgill123/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <div id="attachment_3096" style="width: 250px" class="wp-caption alignright"><a href="http://dangillmor.com/wp-content/uploads/2016/03/13334048894_001d3e53d1_m.jpg" rel="attachment wp-att-3096"><img class="wp-image-3096 size-full" src="http://dangillmor.com/wp-content/uploads/2016/03/13334048894_001d3e53d1_m.jpg" alt="crypto" width="240" height="159" /></a><p class="wp-caption-text">https://www.flickr.com/photos/yusamoilov/</p></div>
+<p>The <a href="https://news.google.com/news/story?ncl=dAlZcE3Xl0WD6QMPosuXSULjeq4tM&amp;q=fbi+apple&amp;lr=English&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwi85IOG0MPLAhUS3WMKHamFD8YQqgIIKTAA">&#8220;FBI-versus-Apple&#8221;</a> story of recent weeks has brought a vital issue to the front burner: whether we will have secure technology in the future or not&#8211;or at least the <em>chance</em> to have secure technology.</p>
+<p>In reality, this isn&#8217;t only about Apple or the FBI. It&#8217;s about the considerable weight of government in its zeal to have access to everything we say and do in the digital realm&#8211;which is to say, increasingly, almost everything we say and do.</p>
+<p>The Obama administration, and governments around the world, believe they have an innate right to whatever information they want, whenever they want it. This is a law-enforcement-first mentality, and in many ways an understandable one in a sometimes dangerous environment. But governments also want something they assuredly cannot have: a way to crack open our devices and communications, willy-nilly, when we&#8217;re using encryption tools that make it difficult if not impossible to do so without users turning over the keys to their digital locks.</p>
+<p>They call this a &#8220;privacy versus security&#8221; debate. It is, in fact, a <a href="https://www.washingtonpost.com/opinions/apple-vp-the-fbi-wants-to-roll-back-safeguards-that-keep-us-a-step-ahead-of-criminals/2016/03/06/cceb0622-e3d1-11e5-a6f3-21ccdbc5f74e_story.html">&#8220;security versus security&#8221;</a> issue: If they get backdoors into our devices, software and networks, they will&#8211;according to just about every reputable non-government security and encryption expert&#8211;guarantee that we will all be less secure in the end, because malicious hackers and criminals (some of whom work for government) will ultimately get access, too. Governments want magic math, and they can&#8217;t have it. It&#8217;s also <a href="https://www.eff.org/deeplinks/2016/03/deep-dive-why-forcing-apple-write-and-sign-code-violates-first-amendment">a free speech issue</a>, a huge one, because the government is telling Apple it has to write new code <em>and sign it</em> with a digital signature.</p>
+<p>Sorry, this is binary. We have to choose. One choice is to acknowledge that bad guys have a way to have some secure conversations using encryption, thereby forcing law enforcement and spies to come up with other ways to find out what the bad guys are doing. The other choice is to reduce everyone&#8217;s security, on the principle that we simply can&#8217;t afford to let bad people use these tools.</p>
+<p>Sadly, the journalism about this has been reprehensibly bad, at least until recently, outside of the tech press. Traditional Big Media basically parrot government people, including most recently President Obama himself, even though they&#8217;re finally starting to wake up to what&#8217;s happening. John Oliver&#8217;s <a href="https://youtu.be/zsjZ2r9Ygzw">HBO program last Sunday</a> was a sterling example of how media can treat this complex topic in a way that a) tells the truth; and b) explains things with great clarity.</p>
+<p><a href="http://dangillmor.com/wp-content/uploads/2016/03/tedhdirt-logo.png" rel="attachment wp-att-3097"><img class="size-full wp-image-3097 alignleft" src="http://dangillmor.com/wp-content/uploads/2016/03/tedhdirt-logo.png" alt="tedhdirt logo" width="282" height="73" /></a>Mike Masnick and his site, <a href="http://techdirt.com">TechDirt</a>, have been leaders in covering the way various liberties and technology intersect. Now they&#8217;re <a href="https://www.beaconreader.com/projects/facts-not-fear-the-truth-about-encryption">crowdfunding to add more coverage of encryption and its ramifications</a>. I&#8217;m supporting this initiative and hope you&#8217;ll give it some thought as well. We need more such coverage, and we can depend on Mike and team to provide it.</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/etcetera/" rel="category tag">Etcetera</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2016/03/15/help-crowdfund-better-journalism-on-encryption/#respond">Leave a comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-3095 -->
+        
+          <article id="post-3075" class="post-3075 post type-post status-publish format-standard category-etcetera h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2016/02/28/accelerating-the-mobile-web/" class="u-url url" title="Permalink to Accelerating the mobile Web" rel="bookmark" itemprop="url">Accelerating the mobile Web</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2016/02/28/accelerating-the-mobile-web/" title="8:52 am" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2016-02-28T08:52:57+00:00" itemprop="dateModified">February 28, 2016</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dsgill123/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p>Google&#8217;s &#8220;Accelerated Mobile Pages&#8221; project launched for real this week, and it&#8217;s pretty amazing. I still worry about giant, centralized companies and their power&#8211;and it shouldn&#8217;t be needed in the first place. For more, <a href="https://backchannel.com/google-is-going-to-speed-up-the-web-is-this-good-a92a6043598b#.dwixzzaah">check out my deep dive into AMP</a> at Medium Backchannel. Key quote:</p>
+<blockquote>
+<p id="6eda" class="graf--p graf-after--p">Before getting into details about what’s happening here, let’s be clear on something. <span class="markup--quote markup--p-quote is-other" data-creator-ids="anon">AMP wouldn’t be necessary — assuming it is in the first place — if the news industry hadn’t so thoroughly poisoned its own nest.</span></p>
+<p id="0c20" class="graf--p graf-after--p">Looking for money in a business that grows more financially troubled by the month, media companies have infested articles with garbage code, much of it on behalf of advertising/surveillance companies, to the extent that readers have quite reasonably rebelled. We don’t like slow-responding sites, period. On our mobile devices, which are taking over as the way we “consume” information, we despise having to download megabytes of crapware just to read something, because the carriers charge us for the privilege. That’s one reason why we use ad blockers. (The other, at least for me, is that we despise being spied on so relentlessly.) The news business could have solved this problem without racing into the arms of giant, centralized tech companies. But it didn’t, and here we are.</p>
+</blockquote>
+<p>&nbsp;</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/etcetera/" rel="category tag">Etcetera</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2016/02/28/accelerating-the-mobile-web/#respond">Leave a comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-3075 -->
+        
+          <article id="post-3061" class="post-3061 post type-post status-publish format-standard category-etcetera h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2016/02/21/mobile-world-congress-2016/" class="u-url url" title="Permalink to Mobile World Congress 2016" rel="bookmark" itemprop="url">Mobile World Congress 2016</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2016/02/21/mobile-world-congress-2016/" title="5:24 am" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2016-02-21T05:24:50+00:00" itemprop="dateModified">February 21, 2016</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dsgill123/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p>In Barcelona this week for the <a href="http://mobileworldcongress.com">Mobile World Congress</a>, where the sun is out along with teeming crowds for mobile technology&#8217;s biggest annual event&#8211;and I&#8217;m trying not to let jet lag slow me down too much.</p>
+<p>I&#8217;ve been here (to Barcelona, though not MWC, a number of times, and never tire of the city. (A transit worker slowdown this week will leave a lot of people tired of walking and fighting for taxis, no doubt.) It&#8217;s accessible, not daunting, and friendly.</p>
+<p>The MWC, I&#8217;m told, has been evolving rapidly&#8211;from a totally carrier dominated event to something much more open, the way CES turned from a gadget show to an everything-digital show. In fact, based on the list of exhibitors, there&#8217;s clearly a lot of overlap now.</p>
+<p>One of the digital arenas I&#8217;m looking forward to exploring is ubiquitous computing and its cousin, the so-called &#8220;Internet of Things.&#8221; There&#8217;s almost unlimited potential to add intelligence to everything we touch, and then connect it all&#8211;and use the knowledge we gain to make our lives better, individually and in our communities. There&#8217;s equally unlimited potential for that to turn into the ultimate surveillance system, and in the several years that I&#8217;ve paid close attention to the IoT I&#8217;ve seen almost no evidence that the industry is even slightly interested in protecting our privacy beyond making a few pleasant noises in that direction.</p>
+<p>One of the companies moving fastest in the global technology scene <a href="http://huawei.com">Huawei</a>, which covered my travel expenses here, joining a group of tech analysts. It&#8217;s an absolutely huge Chinese tech operation, based in Shenzen, home to vast amounts of that country&#8217;s digital-gear manufacturing. The Huawei events here include the launch of some new consumer devices (I just saw the new &#8220;MateBook&#8221; 2-in-one Windows tablet/notebook with a detachable keyboard has a clean design, and is getting <a href="http://gizmodo.com/huawei-matebook-hands-on-half-surface-pro-half-ipad-p-1760400664">solid early reviews</a>), I&#8217;ll be learning more about the company and its raft of global competitors, and plan to ask questions about how it will build security into its products. In fact, I&#8217;m planning to ask these questions of <em>all</em> the companies I visit when I make the rounds of the exhibition floor later this week.</p>
+<p>Huawei, which has been mostly a business-to-business company, has big ambitions for end-user technology. One recent &#8220;design win,&#8221; as tech folks call it, was its contract with Google to make Nexus 6P phablet. I reviewed it last fall for Medium Backchannel, and was so impressed that I bought one.</p>
+<p>More to come&#8230;</p>
+<div id="24lb_thread" class="lb_1318995"><script type="text/javascript">// < ![CDATA[
+// < ![CDATA[
+// < ![CDATA[
+// < ![CDATA[
+// < ![CDATA[ (function() { var lb24 = document.createElement('script'); lb24.type = 'text/javascript'; lb24.id = '24lbScript'; lb24.async = true; lb24.charset="utf-8"; lb24.src = '//v.24liveblog.com/embed/24.js?id=1318995'; (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(lb24);})();
+// ]]&gt;</script></div>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/etcetera/" rel="category tag">Etcetera</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2016/02/21/mobile-world-congress-2016/#respond">Leave a comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-3061 -->
+        
+          <article id="post-3058" class="post-3058 post type-post status-publish format-standard category-etcetera h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2016/02/19/we-need-a-consumer-reports-for-tech/" class="u-url url" title="Permalink to We need a Consumer Reports for tech" rel="bookmark" itemprop="url">We need a Consumer Reports for tech</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2016/02/19/we-need-a-consumer-reports-for-tech/" title="9:44 am" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2016-02-19T09:44:22+00:00" itemprop="dateModified">February 19, 2016</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dsgill123/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p>In my latest column at Slate, I ask why tech reviews typically don&#8217;t address&#8211;in any deep way, if they do at all&#8211;the rampantly bad security and privacy we endure in our digital lives. I also argue we need Consumer Reports, or something like it, to help us in this arena, since other publications seem so unwilling.</p>
+<p><a href="http://www.slate.com/articles/technology/future_tense/2016/02/tech_reviews_should_assess_gadget_app_security_and_privacy.html">Read it here</a>.</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/etcetera/" rel="category tag">Etcetera</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2016/02/19/we-need-a-consumer-reports-for-tech/#respond">Leave a comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-3058 -->
+        
+          <article id="post-3007" class="post-3007 post type-post status-publish format-standard category-etcetera h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2016/01/17/wikipedia-is-15-years-old-its-amazing-it-needs-our-help/" class="u-url url" title="Permalink to Wikipedia is 15 years old. It&#8217;s amazing. It needs our help." rel="bookmark" itemprop="url">Wikipedia is 15 years old. It&#8217;s amazing. It needs our help.</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2016/01/17/wikipedia-is-15-years-old-its-amazing-it-needs-our-help/" title="1:17 am" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2016-01-17T01:17:04+00:00" itemprop="dateModified">January 17, 2016</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dsgill123/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p><em>(Cross-posted at <a href="https://medium.com/@dangillmor/wikipedia-is-15-amazing-it-needs-help-8eb5bacc9b5#.3swr4x4wv">Medium</a>)</em></p>
+<p id="57e9" class="graf--h3 graf--first">Is there anyone reading this who does <em class="markup--em markup--p-em">not</em> use <a class="markup--anchor markup--p-anchor" href="http://wikipedia.org/" rel="nofollow" data-href="http://wikipedia.org/">Wikipedia</a> routinely? Be honest.</p>
+<p id="a830" class="graf--p graf-after--p"><span class="markup--quote markup--p-quote is-other" data-creator-ids="f9bc40a53ec0">The online encyclopedia (and more) is just 15 years old this week. Consider that for a second. When I do, I tend to think this global collaboration is close to miraculous.</span></p>
+<p id="dadb" class="graf--p graf-after--p">Needless to say, Wikipedia and other projects of the site’s not-for-profit parent, the <a class="markup--anchor markup--p-anchor" href="https://wikimediafoundation.org/wiki/Home" rel="nofollow" data-href="https://wikimediafoundation.org/wiki/Home">Wikimedia Foundation</a>, are far from perfect. Moreover, foundation and community are facing some internal struggles over key issues and decisions. Dig deep and you see an adolescent organization at a number of turning points.</p>
+<p id="1b70" class="graf--p graf-after--p">But we should recognize, and celebrate, the achievements of the Wikimedia community. And we should all ask ourselves what we can do to help ensure that this unprecedented project not only survives but thrives in decades to come. In a word: Participate.</p>
+<p id="aede" class="graf--p graf-after--p">Before I go on, a disclosure: Jimmy Wales, co-founder of Wikipedia and chairman of the foundation’s board of directors, is a friend, and I’m a small shareholder in his separate, privately held consumer-wiki service, Wikia.</p>
+<p id="65e3" class="graf--p graf-after--p">I was amazed by Wikipedia from the minute I saw it. But I had no real idea how big, or important, it would be come. When I first wrote about it in my Silicon Valley newspaper column in 2004, I focused more on the wiki phenomenon — sites that anyone could edit? really? — and marveled that such a thing could possibly work. At the time, Wikipedia was nearing the then-stupendous number of 200,000 articles in English. Now it’s up to some 35 million articles in scores of languages, and still growing. English remains the top language, for all kinds of reasons.</p>
+<p id="60f8" class="graf--p graf-after--p">Even if you rarely go to the Wikipedia site, you’re probably seeing its content, especially if you do a significant amount of searching on Google or other search engines. The results pages often include excerpts from Wikipedia, and those snippets can be enough to get a good sense of the topic at hand.</p>
+<p id="6e91" class="graf--p graf-after--p">And if you’re like me, you go often to the site itself. It has become, for me, a first stop for all kinds of quick lookups. But as I tell students, with Jimmy Wales endorsement, while Wikipedia is often the best place to start, it is almost always the worst place to stop. At the bottom of any solid Wikipedia article is a long list of original sources from which site editors have drawn the information that appears in the article. <span class="markup--quote markup--p-quote is-other" data-creator-ids="42a76bf52d50">Don’t quote Wikipedia, I tell students; quote from the source material.</span></p>
+<p id="8ea1" class="graf--p graf-after--p">The site’s most obvious drawback is, of course, its best feature: the ability of almost anyone to edit almost any article. Trolls, PR people and sock puppets abound. You can never, ever absolutely rely on the accuracy or neutrality — a core principle — of an article at any given moment. Inaccuracies, some deliberate, are usually fixed quickly. Sometimes they aren’t, however, and several high-profile cases of sustained inaccuracy have pointed to what looks to many (including me) like an nearly unsolvable problem: <span class="markup--quote markup--p-quote is-other" data-creator-ids="dccd85644609">even if I, as the subject of an article, know that something is wrong, I can’t fix it without some kind of outside documentation (such as a news article) “proving” that what I know is right. The site’s rules, aimed at reinforcing a “neutral point of view,” make perfect sense in principle, but can lead to real problems for individuals.</span></p>
+<p id="d9ff" class="graf--p graf-after--p">The Wikimedia Foundation operates other ventures, including the Wikimedia Commons, a collection of (as of this week) more than 30 million media files that anyone can use. Probably the most important new initiative is <a class="markup--anchor markup--p-anchor" href="https://www.wikidata.org/wiki/Wikidata:Introduction" rel="nofollow" data-href="https://www.wikidata.org/wiki/Wikidata:Introduction">Wikidata</a>, an astoundingly useful linked database from a host of different sources of publicly available data. This is worth a separate column in its own right; watch this space.</p>
+<p id="314c" class="graf--p graf-after--p">For all their amazing qualities, Wikipedia and the foundation have more than a few problems. The finances appear to be in relatively good shape, but the foundation has been shaken by internal changes and dissension, and the legions of volunteers who make Wikipedia what is is are in what looks like a constant state of angst. Little of this has reached the wider public, but a<a class="markup--anchor markup--p-anchor" href="http://thewikipedian.net/2016/01/11/the-crisis-at-new-montgomery-street/" rel="nofollow" data-href="http://thewikipedian.net/2016/01/11/the-crisis-at-new-montgomery-street/">recent blog post on “The Wikipedian,”</a> a site that obsessively keeps track of what’s happening inside the project and the foundation, suggests the latest turmoil — with major leadership changes — is more than the usual stuff in any organization of this kind.</p>
+<p id="8a0f" class="graf--p graf-after--p">Andrew Lih, a professor at American University in Washington and author of what I consider the <a class="markup--anchor markup--p-anchor" href="http://www.wikipediarevolution.com/The_Book.html" rel="nofollow" data-href="http://www.wikipediarevolution.com/The_Book.html">best book on Wikipedia</a> (disclosure: he’s also a friend), tells me he hasn’t “seen this kind of (internal) tension in a long time.” “The overall health of Wikipedia is still strong,” he says, but the project and its parent are at what he calls a “pivotal point” in their evolution.</p>
+<p id="b8e5" class="graf--p graf-after--p">Among the pivots Wikipedia has to navigate is the shift from desktop to mobile computing. Wikipedia has a great mobile web version, for looking things up and browsing. But the mobile site’s editing mode is crude and the opposite of user-friendly, which strikes me as a major drawback since community editing is part of the point. The rise of video has also left Wikipedians somewhat uncertain; thanks largely to Hollywood’s insistence on locking down everything it can, open video formats remain somewhat stalled.</p>
+<p id="ff3a" class="graf--p graf-after--p">One of the longstanding issues, meanwhile, has been a lack of diversity in the community, especially among editors. The foundation has made this a priority, as it should.</p>
+<p id="e35f" class="graf--p graf-after--p">For all the problems, the promise — and achievements — remain awesome. I find it difficult today to imagine a web without Wikipedia. The criticism, often justified, has led to improvements in the service and to competition from traditional and new entrants in the research arenas. But many places, Andrew Lih notes, Wikipedia is the <em class="markup--em markup--p-em">only</em> encyclopedia in a local language. On a recent trip to Armenia, for example, I discovered a vibrant Wikimedia community, which is working hard, with an explicit endorsement from senior public officials, to expand the localized Wikipedia.</p>
+<p id="dde0" class="graf--p graf-after--p">But those of us who just use Wikipedia should do more than donate money. By a key measure, participation on the site has flattened. The community is in what Andrew Lih calls a “steady state,” but that’s not enough.</p>
+<p id="9165" class="graf--p graf-after--p"><span class="markup--quote markup--p-quote is-other" data-creator-ids="c4b4bfa866df">More people should become editors, and encourage others to do the same.</span> I require students in a media-literacy course I teach to edit an article and participate in the online conversation (every article has a Talk page) about it. I ask that they pick a topic they know a lot about already — when they’re at a loss for what that might be, I usually suggest they add or fix something in the article about their home town — and that they understand the rules before they start editing. The exercise is illuminating, for them and for me.</p>
+<p id="d1d6" class="graf--p graf-after--p">About a decade ago, I was giving a talk about journalism at a midwestern university, and mentioned Wikipedia. This was still in the relatively early days of the project, remember. A professor jumped to his feet and, almost shouting, denounced Wikipedia as a pox on scholarship, and went on a sustained rant about a specific article that had, he said, a glaring error.</p>
+<p id="5bec" class="graf--p graf-after--p graf--last"><span class="markup--quote markup--p-quote is-other" data-creator-ids="84bc73ec6e94">I asked him, “Did you fix it?”</span></p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/etcetera/" rel="category tag">Etcetera</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2016/01/17/wikipedia-is-15-years-old-its-amazing-it-needs-our-help/#respond">Leave a comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-3007 -->
+        
+          <article id="post-3009" class="post-3009 post type-post status-publish format-standard category-etcetera h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2016/01/05/my-life-in-linux-its-great-and-maybe-you-should-try-it/" class="u-url url" title="Permalink to My life in Linux &#8212; it&#8217;s great &#8212; and maybe you should try it" rel="bookmark" itemprop="url">My life in Linux &#8212; it&#8217;s great &#8212; and maybe you should try it</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2016/01/05/my-life-in-linux-its-great-and-maybe-you-should-try-it/" title="1:19 am" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2016-01-05T01:19:03+00:00" itemprop="dateModified">January 5, 2016</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dsgill123/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p>In my semi-regular series at Medium&#8217;s Backchannel site I write about <a href="https://medium.com/backchannel/i-moved-to-linux-and-it-s-even-better-than-i-expected-9f2dcac3f8fb#.5xbcc0su0">why I moved to Linux a few years ago</a>. It turned out to be an excellent decision, and I&#8217;m hoping more people will try it themselves.</p>
+<p>We are losing our tech/communications liberties at a rapid rate. Linux is the last bastion of free&#8211;as in freedom&#8211;desktop computing environments.</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/etcetera/" rel="category tag">Etcetera</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2016/01/05/my-life-in-linux-its-great-and-maybe-you-should-try-it/#respond">Leave a comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-3009 -->
+        
+          <article id="post-2893" class="post-2893 post type-post status-publish format-standard category-etcetera h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2015/10/13/mediactive-now-available-in-armenian/" class="u-url url" title="Permalink to Mediactive now available in Armenian" rel="bookmark" itemprop="url">Mediactive now available in Armenian</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2015/10/13/mediactive-now-available-in-armenian/" title="5:01 am" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2015-10-13T05:01:45+00:00" itemprop="dateModified">October 13, 2015</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dsgill123/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p><a href="http://dangillmor.com/wp-content/uploads/2015/10/Mediactive_am.jpg"><img class="size-medium wp-image-2894 alignleft" src="http://dangillmor.com/wp-content/uploads/2015/10/Mediactive_am-201x300.jpg" alt="Mediactive_am" width="201" height="300" srcset="http://dangillmor.com/wp-content/uploads/2015/10/Mediactive_am-201x300.jpg 201w, http://dangillmor.com/wp-content/uploads/2015/10/Mediactive_am.jpg 515w" sizes="(max-width: 201px) 100vw, 201px" /></a>Armenia-based &#8220;<a href="http://jnews.am/en">Journalists For The Future</a>&#8221; has led a project to translate my book <em><a href="http://mediactive.com">Mediactive</a></em> into Armenian, and I visited there last week to help launch the new edition. I met some extraordinary people and learned a lot about the media scene there.</p>
+<p>As with the original, the book is freely available online, in an interactive edition. You can find it at <a href="http://issuu.com/jffarmenia/docs/mediactive_by_dan_gillmor_in_armeni">this link</a>.</p>
+<p>Special thanks to the <a href="http://armenia.usembassy.gov/">U.S. Embassy in Yerevan</a> for funding the project, and for covering the costs of my trip there.</p>
+<p>&nbsp;</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/etcetera/" rel="category tag">Etcetera</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2015/10/13/mediactive-now-available-in-armenian/#comments">1 Comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-2893 -->
+        
+          <article id="post-2685" class="post-2685 post type-post status-publish format-standard category-etcetera h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2015/03/16/patterico-puts-his-trust-solely-in-markets-i-put-mine-in-wider-checks-and-balances/" class="u-url url" title="Permalink to Patterico puts his trust solely in markets; I put mine in wider checks and balances" rel="bookmark" itemprop="url">Patterico puts his trust solely in markets; I put mine in wider checks and balances</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2015/03/16/patterico-puts-his-trust-solely-in-markets-i-put-mine-in-wider-checks-and-balances/" title="4:21 pm" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2015-03-16T16:21:15+00:00" itemprop="dateModified">March 16, 2015</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dsgill123/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p>Patrick Frey, aka Patterico, and I appear to agree on several things when it comes to government&#8217;s role, if any, in assuring freedom of speech by promoting an open Internet. This is progress.</p>
+<p>(If you&#8217;re spending your valuable time following any of this, here&#8217;s <a href="http://patterico.com/2015/03/14/journalism-professor-dan-gillmor-supports-federal-regulation-of-the-new-printing-press/">his first attack post</a>; then <a href="http://dangillmor.com/2015/03/15/a-disagreement-about-net-control-rebutting-pattericos-falsehoods/">my reply</a>; and now <a href="http://patterico.com/2015/03/15/dan-gillmor-replies-to-my-post-on-net-neutrality-but-his-arguments-all-fall-flat/">his further response</a>.)</p>
+<p>We agree there is currently no genuinely free market in providing Internet access. We agree that it would be great if a free market did exist, and support various measures that would help get us there. And we agree that government, in the form of the Federal Communications Commission, has behaved badly in the past. There&#8217;s more, but those are the highlights.</p>
+<p>We continue to disagree, firmly, on whether government can play a positive role in helping to ensure free speech on the Internet. Frey is convinced that the FCC&#8217;s recent net-neutrality decision is the proverbial camel&#8217;s nose under the tent, and that&#8217;s that, it seems. In his view, I&#8217;m naive to believe it could possibly be different.</p>
+<p>Read the hard-core libertarian language in his post to understand where he&#8217;s coming from. He loathes government in just about every way. Consent of the governed, he says, is meaningless in modern America (bold lettering in the original):</p>
+<blockquote><p><strong>Fuck this notion that we are the government and the government is us. That is total bullshit. We are the ruled. Period. End of story.</strong></p></blockquote>
+<p>So what is the way forward for Frey? Naturally, the free market, full stop.[1. I like a lot of what libertarians say, but their free-market philosophy seems to go something like this: There&#8217;s really no such thing as a monopoly. Even if there is, the market will cure it. Even if the monopoly is so entrenched that the market takes decades to respond, that&#8217;s not our problem. Even if the market never responds, we&#8217;re all dead in the long run.] Not that we have one or, given the political system he believes we have, any possibility of one. And I&#8217;m naive.</p>
+<p>Frey would have you believe that our conversation boils down to this basic&#8211;though profound&#8211;disagreement:</p>
+<blockquote><p>[Gillmor] trusts government. I (Frey) don’t. He thinks government will “forbear” from exercising powers that it can get away with exercising. I don’t. He thinks government getting its mitts on a part of the Internet will improve our lives. I don’t.</p></blockquote>
+<p>Anyone who&#8217;s read even a tiny amount of what I&#8217;ve written for, oh, the past 20 years or so is surely aware that I do not trust government as a general rule. I don&#8217;t trust Big Government, Big Business, Big Anything. I do leave open the possibility that they can (and sometimes do) get it right. This isn&#8217;t because they tend to do things based on good will, though sometimes they do. It&#8217;s more often because countervailing forces, such as voters, courts, customers, etc., can apply enough pressure to get a better outcome.</p>
+<p>We may well need those countervailing forces&#8211;checks and balances&#8211;in a Title II future, because no one in this debate, least of all me, thinks the FCC&#8217;s action was the perfect solution. Its net neutrality ruling was distinctly less bad than the alternative it was floating earlier: handing control over the Internet&#8217;s key on-ramps to the rapacious telecommunications cartel that has demonstrated its unfitness to have such control.</p>
+<p>We were heading toward control of speech by a cartel that, being businesses, have zero First Amendment obligations. Frey says we&#8217;re heading toward control of speech by a cartel of bureaucrats. <span style="line-height: 1.5;">Because, you see, since the FCC did it with broadcast, they&#8217;ll do it with the Internet.</span></p>
+<p><span style="line-height: 1.5;">Government, unlike business, actually does have some First Amendment obligations. And the Internet could hardly be more different than the broadcast system that the FCC did regulate poorly in the bad old days. </span></p>
+<p>The Supreme Court has weighed in, firmly, on the issue of whether the Internet is like broadcast, which was heavily regulated on the (increasingly specious) principle that the airwaves were scarce. Not even close, the court said in a key 1990s ruling about the &#8220;Communications Decency Act, which the court mostly tossed out as violating the First Amendment. (I appreciate the reminder of the CDA ruling from Seth Finkelstein, a longtime correspondent, and critic, who has persuaded me I was mistaken on more than one issue over the years.) <a href="https://www.law.cornell.edu/supct/html/96-511.ZO.html">Key language</a>:</p>
+<blockquote><p>[U]nlike the conditions that prevailed when Congress first authorized regulation of the broadcast spectrum, the Internet can hardly be considered a &#8220;scarce&#8221; expressive commodity. It provides relatively unlimited, low cost capacity for communication of all kinds. The Government estimates that &#8220;[a]s many as 40 million people use the Internet today, and that figure is expected to grow to 200 million by 1999.&#8221; This dynamic, multifaceted category of communication includes not only traditional print and news services, but also audio, video, and still images, as well as interactive, real time dialogue. Through the use of chat rooms, any person with a phone line can become a town crier with a voice that resonates farther than it could from any soapbox. Through the use of Web pages, mail exploders, and newsgroups, the same individual can become a pamphleteer. As the District Court found, &#8220;the content on the Internet is as diverse as human thought.&#8221; 929 F. Supp., at 842 (finding 74). We agree with its conclusion that our cases provide no basis for qualifying the level of <a href="https://www.law.cornell.edu/supct-cgi/get-const?billofrights.html#amendmenti">First Amendment</a> scrutiny that should be applied to this medium.</p></blockquote>
+<p>Maybe some future Supreme Court will totally abandon us, and decide that tight regulation of Internet speech is constitutional. If so, the United States of America, and the Bill of Rights, will have long since become just meaningless ideas. For now, I&#8217;ll give <em>some</em> trust to a system where we still have <em>some</em> checks and balances&#8211;and work hard to hold Big Government and Big Business accountable. If that makes me terminally naive, so be it.</p>
+<p>&nbsp;</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/etcetera/" rel="category tag">Etcetera</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2015/03/16/patterico-puts-his-trust-solely-in-markets-i-put-mine-in-wider-checks-and-balances/#comments">1 Comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-2685 -->
+        
+          <article id="post-2680" class="post-2680 post type-post status-publish format-standard category-etcetera h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2015/03/16/patterico-business-checks-balances-trust/" class="u-url url" title="Permalink to Patterico puts his trust in business; I put mine in checks and balances" rel="bookmark" itemprop="url">Patterico puts his trust in business; I put mine in checks and balances</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2015/03/16/patterico-business-checks-balances-trust/" title="4:18 pm" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2015-03-16T16:18:09+00:00" itemprop="dateModified">March 16, 2015</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c2af921ec50d2b90425d3c967555df10?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dsgill123/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p>Patrick Frey, aka Patterico, and I appear to agree on several things when it comes to government&#8217;s role, if any, in assuring freedom of speech by promoting an open Internet. This is progress.</p>
+<p>(If you&#8217;re spending your valuable time following any of this, here&#8217;s <a href="http://patterico.com/2015/03/14/journalism-professor-dan-gillmor-supports-federal-regulation-of-the-new-printing-press/">his first attack post</a>; then <a href="http://dangillmor.com/2015/03/15/a-disagreement-about-net-control-rebutting-pattericos-falsehoods/">my reply</a>; and now <a href="http://patterico.com/2015/03/15/dan-gillmor-replies-to-my-post-on-net-neutrality-but-his-arguments-all-fall-flat/">his further response</a>.)</p>
+<p>We agree there is currently no genuinely free market in providing Internet access. We agree that it would be great if a free market did exist, and support various measures that would help get us there. And we agree that government, in the form of the Federal Communications Commission, has behaved badly in the past. There&#8217;s more, but those are the highlights.</p>
+<p>We continue to disagree, firmly, on whether government can play a positive role in helping to ensure free speech on the Internet. Frey is convinced that the FCC&#8217;s recent net-neutrality decision is the proverbial camel&#8217;s nose under the tent, and that&#8217;s that, it seems. In his view, I&#8217;m naive to believe it could possibly be different.</p>
+<p>Read the hard-core libertarian language in his post to understand where he&#8217;s coming from. He loathes government in just about every way. Consent of the governed, he says, is meaningless in modern America (bold lettering in the original):</p>
+<blockquote><p><strong>Fuck this notion that we are the government and the government is us. That is total bullshit. We are the ruled. Period. End of story.</strong></p></blockquote>
+<p>So what is the way forward for Frey? Naturally, the free market, full stop[1. I like a lot of what libertarians say, but their  free-market philosophy seems to go something like this: There&#8217;s really no such thing as a monopoly. Even if there is, the market will cure it. Even if the monopoly is so entrenched that the market takes decades to respond, that&#8217;s not our problem. Even if the market never responds, we&#8217;re all dead in the long run.] Not that we have one or, given the political system he believes we have, any possibility of one. And I&#8217;m naive.</p>
+<p>Frey would have you believe that our conversation boils down to this basic&#8211;though profound&#8211;disagreement:</p>
+<blockquote><p>[Gillmor] trusts government. I (Frey) don’t. He thinks government will “forbear” from exercising powers that it can get away with exercising. I don’t. He thinks government getting its mitts on a part of the Internet will improve our lives. I don’t.</p></blockquote>
+<p>Anyone who&#8217;s read even a tiny amount of what I&#8217;ve written for, oh, the past 20 years or so is surely aware that I do not trust government as a general rule. I don&#8217;t trust Big Government, Big Business, Big Anything. I do leave open the possibility that they can (and sometimes do) get it right. This isn&#8217;t because they tend to do things based on good will, though sometimes they do. It&#8217;s more often because countervailing forces, such as voters, courts, customers, etc., can apply enough pressure to get a better outcome.</p>
+<p>We may well need those countervailing forces&#8211;checks and balances&#8211;in a Title II future, because no one in this debate, least of all me, thinks the FCC&#8217;s action was the perfect solution. Its net neutrality ruling was distinctly less bad than the alternative it was floating earlier: handing control over the Internet&#8217;s key on-ramps to the rapacious telecommunications cartel that has demonstrated its unfitness to have such control.</p>
+<p>We were heading toward control of speech by a cartel of rapacious companies that had zero First Amendment obligations. Frey says we&#8217;re heading toward control of speech by a cartel of bureaucrats. <span style="line-height: 1.5;">Because, you see, since the FCC did it with broadcast, they&#8217;ll do it with the Internet. </span></p>
+<p><span style="line-height: 1.5;">Government, unlike business, actually does have some First Amendment obligations. And the Internet could hardly be more different than the broadcast system that the FCC did regulate poorly in the bad old days. </span></p>
+<p>The Supreme Court has weighed in, firmly, on the issue of whether the Internet is like broadcast, which was heavily regulated on the (increasingly specious) principle that the airwaves were scarce. Not even close, the court said in a key 1990s ruling about the &#8220;Communications Decency Act, which the court mostly tossed out as violating the First Amendment. (I appreciate the reminder of the CDA ruling from Seth Finkelstein, a longtime correspondent, and critic, who has persuaded me I was mistaken on more than one issue over the years.) <a href="https://www.law.cornell.edu/supct/html/96-511.ZO.html">Key language</a>:</p>
+<blockquote><p>[U]nlike the conditions that prevailed when Congress first authorized regulation of the broadcast spectrum, the Internet can hardly be considered a &#8220;scarce&#8221; expressive commodity. It provides relatively unlimited, low cost capacity for communication of all kinds. The Government estimates that &#8220;[a]s many as 40 million people use the Internet today, and that figure is expected to grow to 200 million by 1999.&#8221; This dynamic, multifaceted category of communication includes not only traditional print and news services, but also audio, video, and still images, as well as interactive, real time dialogue. Through the use of chat rooms, any person with a phone line can become a town crier with a voice that resonates farther than it could from any soapbox. Through the use of Web pages, mail exploders, and newsgroups, the same individual can become a pamphleteer. As the District Court found, &#8220;the content on the Internet is as diverse as human thought.&#8221; 929 F. Supp., at 842 (finding 74). We agree with its conclusion that our cases provide no basis for qualifying the level of <a href="https://www.law.cornell.edu/supct-cgi/get-const?billofrights.html#amendmenti">First Amendment</a> scrutiny that should be applied to this medium.</p></blockquote>
+<p>Maybe some future Supreme Court will totally abandon us, and decide that tight regulation of Internet speech is constitutional. If so, the United States of America, and the Bill of Rights, will have long since become just meaningless ideas. For now, I&#8217;ll give <em>some</em> trust to a system where we still have <em>some</em> checks and balances&#8211;and work hard to hold Big Government and Big Business accountable. If that makes me terminally naive, so be it.</p>
+<p>&nbsp;</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/etcetera/" rel="category tag">Etcetera</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2015/03/16/patterico-business-checks-balances-trust/#respond">Leave a comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-2680 -->
+        
+          <nav id="nav-below">
+    <h1 class="assistive-text section-heading">Post navigation</h1>
+
+  
+        <div class="nav-previous"><a href="http://dangillmor.com/category/etcetera/page/2/"  rel="prev"><span class="meta-nav">&larr;</span> Older posts</a></div>
+    
+    
+  
+  </nav><!-- #nav-below -->
+  
+      
+      </main><!-- #content -->
+    </section><!-- #primary -->
+
+  <aside id="sidebar">
+    <div id="secondary" class="widget-area" role="complementary">
+            <section id="text-423219941" class="widget widget_text">			<div class="textwidget"><img src="http://dangillmor.com/wp-content/uploads/2014/11/danpic1aa.png" alt="Dan Gillmor picture" />
+
+<p>
+<a rel="author me"
+href="https://plus.google.com/+DanGillmor">  </a></p></div>
+		</section>    </div><!-- #secondary .widget-area -->
+
+        <div id="tertiary" class="widget-area" role="complementary">
+      <section id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="http://dangillmor.com/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form></section><section id="categories-406917141" class="widget widget_categories"><h3 class="widget-title">Categories</h3><label class="screen-reader-text" for="cat">Categories</label><select name='cat' id='cat' class='postform' >
+	<option value='-1'>Select Category</option>
+	<option class="level-0" value="14">Arizona</option>
+	<option class="level-0" value="39">ASU</option>
+	<option class="level-0" value="4">Customer Service</option>
+	<option class="level-0" value="30">Education</option>
+	<option class="level-0" value="3" selected="selected">Etcetera</option>
+	<option class="level-0" value="15">Events</option>
+	<option class="level-0" value="42">Journalism</option>
+	<option class="level-0" value="20">Liberty</option>
+	<option class="level-0" value="10">Media</option>
+	<option class="level-0" value="40">MOOC</option>
+	<option class="level-0" value="7">People</option>
+	<option class="level-0" value="29">Permission Taken</option>
+	<option class="level-0" value="43">Personal</option>
+	<option class="level-0" value="1">Policy</option>
+	<option class="level-0" value="37">Privacy</option>
+	<option class="level-0" value="27">Projects</option>
+	<option class="level-0" value="6">Silicon Valley</option>
+	<option class="level-0" value="38">Tech</option>
+</select>
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "cat" );
+	function onCatChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
+			location.href = "http://dangillmor.com/?cat=" + dropdown.options[ dropdown.selectedIndex ].value;
+		}
+	}
+	dropdown.onchange = onCatChange;
+})();
+/* ]]> */
+</script>
+
+</section>		<section id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+					<li>
+				<a href="http://dangillmor.com/2016/08/27/indie-web-camp/">Indie Web Camp</a>
+						</li>
+					<li>
+				<a href="http://dangillmor.com/2016/07/12/witnessing-activism-journalism-and-the-boundaries-of-free-speech-in-the-facebook-age/">Witnessing, activism, journalism &#8212; and the boundaries of free speech in the Facebook age</a>
+						</li>
+					<li>
+				<a href="http://dangillmor.com/2016/06/08/decentralized-web-summit-day-one/">Decentralized Web Summit &#8212; Day One</a>
+						</li>
+					<li>
+				<a href="http://dangillmor.com/2016/06/07/decentralized-web-summit/">Decentralized Web Summit &#8212; Builders Day</a>
+						</li>
+					<li>
+				<a href="http://dangillmor.com/2016/04/09/journalists-stop-complaining-about-facebook-and-do-something-about-it/">Journalists: Stop complaining about Facebook, and do something about it</a>
+						</li>
+				</ul>
+		</section>		    </div><!-- #tertiary .widget-area -->
+      </aside>
+  </div><!-- #main -->
+
+  <footer id="colophon" role="contentinfo">
+    <div id="site-generator">
+            This site is powered by <a href="http://wordpress.org/" rel="generator">WordPress</a> and styled with <a href="http://notizblog.org/projects/sempress/">SemPress</a>    </div>
+  </footer><!-- #colophon -->
+</div><!-- #page -->
+
+<script type='text/javascript' src='http://dangillmor.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/dangillmor.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"sending":"Sending ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://dangillmor.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.5'></script>
+<script type='text/javascript' src='http://dangillmor.com/wp-includes/js/wp-embed.min.js?ver=99ee574c47176f372c838f4c4dee3c0d'></script>
+
+</body>
+</html>

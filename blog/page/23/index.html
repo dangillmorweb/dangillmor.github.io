@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Blog | Dan Gillmor | Just in case you were wondering&#8230; | Page 23</title>
+<link rel="profile" href="http://microformats.org/profile/specs" />
+<link rel="profile" href="http://microformats.org/profile/hatom" />
+<link rel="pingback" href="http://dangillmor.com/xmlrpc.php" />
+
+<link rel="alternate" type="application/rss+xml" title="Dan Gillmor &raquo; Feed" href="http://dangillmor.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Dan Gillmor &raquo; Comments Feed" href="http://dangillmor.com/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/dangillmor.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=99ee574c47176f372c838f4c4dee3c0d"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='contact-form-7-css'  href='http://dangillmor.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='indieweb-css'  href='http://dangillmor.com/wp-content/plugins/indieweb/css/indieweb.css?ver=99ee574c47176f372c838f4c4dee3c0d' type='text/css' media='all' />
+<link rel='stylesheet' id='sempress-style-css'  href='http://dangillmor.com/wp-content/themes/sempress/style.css?ver=99ee574c47176f372c838f4c4dee3c0d' type='text/css' media='all' />
+<script type='text/javascript' src='http://dangillmor.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://dangillmor.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='http://dangillmor.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://dangillmor.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://dangillmor.com/wp-includes/wlwmanifest.xml" /> 
+
+<script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//dangillmor.com/?wordfence_logHuman=1&hid=72337CA03F9B72376CA707A371EF79AC');
+</script>  <style type="text/css" id="sempress-custom-colors">
+    body { text-shadow: 0 1px 0 #ffffff; }
+    body, a { color: #03010c; }
+    .widget, #access {
+      border-bottom: 1px solid #000000;
+      -moz-box-shadow: #ffffff 0 1px 0 0;
+      -webkit-box-shadow: #ffffff 0 1px 0 0;
+      box-shadow: #ffffff 0 1px 0 0;
+    }
+    article.comment {
+      border-top: 1px solid #ffffff;
+      -moz-box-shadow: #000000 0 -1px 0 0;
+      -webkit-box-shadow: #000000 0 -1px 0 0;
+      box-shadow: #000000 0 -1px 0 0;
+    }
+  </style>
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+</head>
+
+<body class="blog paged custom-background paged-23 multi-column hfeed h-feed feed" itemscope="" itemtype="http://schema.org/Blog">
+<div id="page">
+  <header id="branding" role="banner">
+    <h1 id="site-title" itemprop="name" class="p-title"><a href="http://dangillmor.com/" title="Dan Gillmor" rel="home" itemprop="url" class="u-url url">Dan Gillmor</a></h1>
+    <h2 id="site-description" itemprop="description" class="p-summary e-content">Just in case you were wondering&#8230;</h2>
+    
+        
+    <nav id="access" role="navigation">
+      <h1 class="assistive-text section-heading"><a href="#access" title="Main menu">Main menu</a></h1>
+      <div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
+
+      <div class="menu-blog-container"><ul id="menu-blog" class="menu"><li id="menu-item-812" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-810 current_page_item current_page_parent menu-item-812"><a href="http://dangillmor.com/blog/">Blog</a></li>
+<li id="menu-item-809" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-809"><a href="http://dangillmor.com/about/">About Dan</a></li>
+<li id="menu-item-806" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-806"><a href="http://dangillmor.com/projects/">Mediactive</a></li>
+<li id="menu-item-808" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-808"><a href="http://dangillmor.com/speaking/">Speaking/Calendar</a></li>
+<li id="menu-item-807" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-807"><a href="http://dangillmor.com/contact/">Contact</a></li>
+</ul></div>    </nav><!-- #access -->
+  </header><!-- #branding -->
+
+  <div id="main">
+
+    <section id="primary">
+      <main id="content" role="main">
+
+      
+          <nav id="nav-above">
+    <h1 class="assistive-text section-heading">Post navigation</h1>
+
+  
+        <div class="nav-previous"><a href="http://dangillmor.com/blog/page/24/"  rel="prev"><span class="meta-nav">&larr;</span> Older posts</a></div>
+    
+        <div class="nav-next"><a href="http://dangillmor.com/blog/page/22/"  rel="next">Newer posts <span class="meta-nav">&rarr;</span></a></div>
+    
+  
+  </nav><!-- #nav-above -->
+  
+                
+          <article id="post-82" class="post-82 post type-post status-publish format-standard category-etcetera h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2007/12/09/3rd-global-knowledge-conference/" class="u-url url" title="Permalink to 3rd Global Knowledge Conference" rel="bookmark" itemprop="url">3rd Global Knowledge Conference</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2007/12/09/3rd-global-knowledge-conference/" title="1:59 pm" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2007-12-09T13:59:09+00:00" itemprop="dateModified">December 9, 2007</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dangillmor/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p>Heading later today to Malysia for the <a href="http://www.gkpeventsonthefuture.org/GK3/dsp_page.cfm?pageid=704">3rd Global Knowledge Conference</a>, where I&#8217;m a speaker. </p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/etcetera/" rel="category tag">Etcetera</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2007/12/09/3rd-global-knowledge-conference/#comments">1 Comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-82 -->
+        
+          <article id="post-81" class="post-81 post type-post status-publish format-standard category-policy h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2007/12/09/democrats-complicity-why-torture-is-the-new-american-way/" class="u-url url" title="Permalink to Democrats&#8217; Complicity: Why Torture is the New American Way" rel="bookmark" itemprop="url">Democrats&#8217; Complicity: Why Torture is the New American Way</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2007/12/09/democrats-complicity-why-torture-is-the-new-american-way/" title="11:41 am" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2007-12-09T11:41:54+00:00" itemprop="dateModified">December 9, 2007</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dangillmor/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <blockquote><p><a href="http://www.salon.com/opinion/greenwald/?last_story=/opinion/greenwald/2007/12/09/democrats/">Glenn Greenwald</a>: <em>Whether it&#8217;s the war in Iraq or illegal surveillance or the abolition of habeas corpus and now the systematic use of torture, it&#8217;s the Bush administration that conceived of the policies, implemented them and presided over their corrupt application. But it&#8217;s Congressional Democrats at the leadership level who were the key allies and enablers, never getting their hands dirty with implementation &#8212; and thus feigning theatrical, impotent outrage once each abuse was publicly exposed &#8212; but nonetheless working feverishly the entire time to enable all of it every step of the way.<br />
+</em></p></blockquote>
+<p>When the historians mark turning points in America&#8217;s decline, these deeds will be key evidence.</p>
+<p>Also, from <a href="http://andrewsullivan.theatlantic.com/the_daily_dish/2007/12/the-democrats-a.html#more">Andrew Sullivan</a>:</p>
+<blockquote><p><em>This is not to say that there is no difference between the parties, with the GOP shamefully defending war crimes the United States once prosecuted as such. The Democrats, for the most part, have been their usual selves on this: still in a defensive crouch against any notion that they might be soft on terror, and implicitly adopting the fallacious logic that somehow opposing torture means being soft on terror. Au contraire. Torture has weakened the West&#8217;s war against barbarism by blurring the critical lines needed to win the long war, and by injecting into intelligence the falsehoods, exaggerations and lies that always come from the tortured.<br />
+</em></p></blockquote>
+<p>And, finally, it&#8217;s worth noting that not a single U.S. newspaper that I can find is referring to what was on the tapes in accurate language. All are using the administration&#8217;s &#8220;harsh interrogation techniques&#8221; lingo or something close to that. Folks, it&#8217;s torture. Period. We prosecuted Japanese soldiers for war crimes &#8212; and got convictions &#8212; for exactly this stuff. The Independent in London is one of the non-U.S. papers telling it honestly in an article entitles, &#8220;<a href="http://news.independent.co.uk/world/americas/article3233334.ece">Call for criminal inquiry as CIA destroys torture tapes</a>&#8221; &#8212; why won&#8217;t our own press? Why won&#8217;t even one paper?</p>
+<p>The same reason that Democrats are so spineless? Is there any other explanation?</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/policy/" rel="category tag">Policy</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2007/12/09/democrats-complicity-why-torture-is-the-new-american-way/#comments">1 Comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-81 -->
+        
+          <article id="post-80" class="post-80 post type-post status-publish format-standard category-customer-service category-silicon-valley h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2007/12/08/atts-semi-phony-proclamation-of-mobile-openness/" class="u-url url" title="Permalink to AT&#038;T&#8217;s Semi-Phony Proclamation of Mobile Openness" rel="bookmark" itemprop="url">AT&#038;T&#8217;s Semi-Phony Proclamation of Mobile Openness</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2007/12/08/atts-semi-phony-proclamation-of-mobile-openness/" title="10:21 am" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2007-12-08T10:21:59+00:00" itemprop="dateModified">December 8, 2007</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dangillmor/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <blockquote><p>Techdirt: <a href="http://www.techdirt.com/articles/20071206/030232.shtml">AT&#38;T Does Nothing, Convinces Reporter It Has Now &#8216;Opened&#8217; Its Network</a>. <em>Basically, absolutely nothing happened here except that AT&#38;T&#8217;s marketing crew declared that AT&#38;T&#8217;s network is now open, and convinced USA Today to report it as if it were a big deal. If there was any change at all within AT&#38;T, it&#8217;s that retail store employees are now supposed to admit that you can use other devices on the network, rather than pretending you can&#8217;t. Not quite as exciting as &#8220;flinging the network open,&#8221; though.</em><em><br />
+</em></p></blockquote>
+<p>True, the technology change here is precisely zero &#8212; it was always possible to use any GSM phone on their network. But the fact that AT&#38;T felt a marketing advantage to proclaiming itself &#8220;open&#8221; is still a bit noteworthy. </p>
+<p>Now, we&#8217;re still talking about a terrible company in many ways. Still, let&#8217;s be glad for this tiny improvement.</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/customer-service/" rel="category tag">Customer Service</a>, <a href="http://dangillmor.com/category/silicon-valley/" rel="category tag">Silicon Valley</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2007/12/08/atts-semi-phony-proclamation-of-mobile-openness/#respond">Leave a comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-80 -->
+        
+          <article id="post-79" class="post-79 post type-post status-publish format-standard category-etcetera category-silicon-valley h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2007/12/05/rewarding-the-reckless-pushing-america-toward-insolvency/" class="u-url url" title="Permalink to Rewarding the Reckless, Pushing America Toward Insolvency" rel="bookmark" itemprop="url">Rewarding the Reckless, Pushing America Toward Insolvency</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2007/12/05/rewarding-the-reckless-pushing-america-toward-insolvency/" title="1:23 pm" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2007-12-05T13:23:04+00:00" itemprop="dateModified">December 5, 2007</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dangillmor/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <blockquote><p>AP: <a href="http://www.salon.com/wires/ap/business/2007/12/05/D8TBG1M01_mortgage_crisis/index.html">Five-Year Mortgage Rate Freeze Looms</a>. <em>Congressional aides say the Bush administration has hammered out an agreement with industry to freeze interest rates for certain subprime mortgages for five years in an effort to combat a soaring tide of foreclosures.<br />
+</em></p></blockquote>
+<p>This sounds like the most dangerous bit of fiscal sleight of hand in years &#8212; putting off the actual problem and utterly rewarding the people who were the most reckless in the mortgage bubble.</p>
+<p>Americans who didn&#8217;t join the sleaze will pay those who did. It&#8217;s reprehensible, and it&#8217;s going to put this nation further into the national bankruptcy that already exists for all practical purposes.</p>
+<p>Meanwhile, the local paper <a href="http://www.mercurynews.com/opinion/ci_7638880?nclick_check=1">endorses this idiocy </a>&#8212; and more. Sheesh&#8230;</p>
+<p>I&#8217;m looking for safer places to put my money at this point than my own country. We&#8217;ve lost all common sense here.</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/etcetera/" rel="category tag">Etcetera</a>, <a href="http://dangillmor.com/category/silicon-valley/" rel="category tag">Silicon Valley</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2007/12/05/rewarding-the-reckless-pushing-america-toward-insolvency/#comments">4 Comments</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-79 -->
+        
+          <article id="post-78" class="post-78 post type-post status-publish format-standard category-etcetera h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2007/12/05/dopplr-mobile-launches/" class="u-url url" title="Permalink to Dopplr Mobile Launches" rel="bookmark" itemprop="url">Dopplr Mobile Launches</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2007/12/05/dopplr-mobile-launches/" title="9:45 am" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2007-12-05T09:45:45+00:00" itemprop="dateModified">December 5, 2007</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dangillmor/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p>Over at Dopplr, we&#8217;ve just launched a <a href="http://m.dopplr.com">mobile version</a> &#8212; and if I may say so on behalf of the development team it&#8217;s just excellent.</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/etcetera/" rel="category tag">Etcetera</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2007/12/05/dopplr-mobile-launches/#respond">Leave a comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-78 -->
+        
+          <article id="post-77" class="post-77 post type-post status-publish format-standard category-customer-service category-silicon-valley h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2007/12/02/apple-removes-key-feature-of-calendar-in-new-operating-system/" class="u-url url" title="Permalink to Apple Removes Key Features of Calendar in New Operating System" rel="bookmark" itemprop="url">Apple Removes Key Features of Calendar in New Operating System</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2007/12/02/apple-removes-key-feature-of-calendar-in-new-operating-system/" title="10:30 am" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2007-12-02T10:30:26+00:00" itemprop="dateModified">December 2, 2007</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dangillmor/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p>Amazingly, Apple has downgraded one it the key applications in its new operating system, OS X 10.5 &#8220;Leopard&#8221; &#8212; it removed the &#8220;information drawer&#8221; feature in its iCal calendar software, and it now requires multiple mouse clicks to create new events.</p>
+<p>Beyond stupid, this is arrogant. There is <em>absolutely no good reason</em> to remove useful features from software.</p>
+<p>Meanwhile, I&#8217;m not the only customer who&#8217;s annoyed by the company&#8217;s casual decision to make life harder for users. In the Apple support forums, for example is this dicussion: &#8220;<a href="http://discussions.apple.com/thread.jspa?threadID=1201297&amp;start=0&amp;tstart=60">Want my iCal info drawer back!! &#8230;</a>&#8221;</p>
+<p>And <a href="http://discussions.apple.com/thread.jspa?threadID=1268978&amp;tstart=30">this thread</a> starts with a post I&#8217;ll quote in full, because it sums up the problem:</p>
+<blockquote><p><em>Is it just me&#8230;but why does it seem like iCal is way harder to use in Leopard?!?!?! Just look at the number of steps/clicks it takes just to enter an entry.</p>
+<p>In month view, you double click on the day, but you can only enter in a title. you have to double click on the new event before you can enter in any details or even a time. And the box that pop-up is a tiny little box. In the old version of ical you could enter in everything in the right hand panel right away.</p>
+<p>Then there is viewing events you have to double the event to get a little pop-up in order to see the details of the event. All you had to do before was click on an event and it would display in the side panel. Much much easier and less work.</p>
+<p>Does the new ical bother anyone else? or is it just me? it just seems like they rushed it. there&#8217;s lots of other little annoyances and inconsistencies in it too.</em></p></blockquote>
+<p>Amen.</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/customer-service/" rel="category tag">Customer Service</a>, <a href="http://dangillmor.com/category/silicon-valley/" rel="category tag">Silicon Valley</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2007/12/02/apple-removes-key-feature-of-calendar-in-new-operating-system/#respond">Leave a comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-77 -->
+        
+          <article id="post-76" class="post-76 post type-post status-publish format-standard category-etcetera h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2007/11/29/newstrust-wins-macarthur-grant/" class="u-url url" title="Permalink to NewsTrust Wins MacArthur Grant" rel="bookmark" itemprop="url">NewsTrust Wins MacArthur Grant</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2007/11/29/newstrust-wins-macarthur-grant/" title="1:48 pm" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2007-11-29T13:48:44+00:00" itemprop="dateModified">November 29, 2007</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dangillmor/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p>I&#8217;m an advisor to <a href="http://www.newstrust.net">NewsTrust</a>, a site where people rate news articles and blog postings for accuracy and quality. So I&#8217;m happy to report that the site just was awarded <a href="http://newstrust.net/about/news/press_release_1128.htm">a substantial grant</a> from the <a href="http://www.macfound.org">MacArthur Foundation</a>.</p>
+<p>Fabrice Florin and his team have done amazing work to bring the service this far. Now they&#8217;ll have the resources to take it even further. Congrats to all&#8230;</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/etcetera/" rel="category tag">Etcetera</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2007/11/29/newstrust-wins-macarthur-grant/#respond">Leave a comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-76 -->
+        
+          <article id="post-75" class="post-75 post type-post status-publish format-standard category-etcetera h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2007/11/22/happy-thanksgiving/" class="u-url url" title="Permalink to Happy Thanksgiving" rel="bookmark" itemprop="url">Happy Thanksgiving</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2007/11/22/happy-thanksgiving/" title="4:20 am" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2007-11-22T04:20:12+00:00" itemprop="dateModified">November 22, 2007</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dangillmor/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p>As an old friend once said of humanity on this best of all American holidays:</p>
+<blockquote><p><em>We need more pilgrims and fewer turkeys.</em></p></blockquote>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/etcetera/" rel="category tag">Etcetera</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2007/11/22/happy-thanksgiving/#comments">1 Comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-75 -->
+        
+          <article id="post-74" class="post-74 post type-post status-publish format-standard category-silicon-valley h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2007/11/16/one-reason-why-i-may-get-an-ipod-touch/" class="u-url url" title="Permalink to One Reason Why I May Get an iPod Touch" rel="bookmark" itemprop="url">One Reason Why I May Get an iPod Touch</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2007/11/16/one-reason-why-i-may-get-an-ipod-touch/" title="11:28 am" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2007-11-16T11:28:26+00:00" itemprop="dateModified">November 16, 2007</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dangillmor/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p>This report says &#8220;<a href="http://www.appleinsider.com/articles/07/11/09/ipod_touch_software_1_1_2_adds_calendar_functions.html">iPod touch software 1.1.2 adds calendar functions</a>&#8220;:</p>
+<blockquote><p><em>Arriving alongside iPhone software version 1.1.2 on Thursday evening was iPod touch software version 1.1.2, which adds new calendar functionality to the touch-screen media players. Thus far, one of the only visible features delivered by the update appears to be the ability to add and edit calendar events through the Touch&#8217;s calendar application. Although these capabilities had long been available to iPhone users, Apple omitted them from the initial version of the Touch software presumably to help differentiate the player from the iPhone.</em><em><br />
+</em></p></blockquote>
+<p>It still needs more capabilities, but this is a big improvement.</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/silicon-valley/" rel="category tag">Silicon Valley</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2007/11/16/one-reason-why-i-may-get-an-ipod-touch/#respond">Leave a comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-74 -->
+        
+          <article id="post-73" class="post-73 post type-post status-publish format-standard category-policy h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2007/11/16/torturous-journalism/" class="u-url url" title="Permalink to Torturous Journalism" rel="bookmark" itemprop="url">Torturous Journalism</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2007/11/16/torturous-journalism/" title="11:21 am" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2007-11-16T11:21:31+00:00" itemprop="dateModified">November 16, 2007</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dangillmor/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p>In this New York Times story, &#8220;<a href="http://www.nytimes.com/2007/11/16/us/politics/16mccain.html?adxnnl=1&amp;ref=todayspaper&amp;adxnnlx=1195236050-sAJ//FlicRHjHiSV6wJllg">McCain Finds Sympathy on Torture Issue</a>&#8221; we find the following paragraph:</p>
+<blockquote><p><em>Democrats are largely opposed to torture, and while the Bush administration has said it does not engage in torture, it had previously reserved the right to use aggressive interrogation techniques in questioning terrorism suspects. And the leading Republican candidates, with the exception of Mr. McCain, are refusing to rule out certain techniques that others would deem as torture.</em><em><br />
+</em></p></blockquote>
+<p>It&#8217;s a classic example of the problem with today&#8217;s journalism. News organizations accurately quote people, but flatly decline to point out the truth &#8212; that one side is lying.</p>
+<p>The truth in this case is that the United States, by any measure, does torture people. &#8220;Aggressive interrogation techniques&#8221; like &#8220;waterboarding&#8221; &#8212; designed in perfect Orwellian lanauge to sound like a theme park ride &#8212; are the kind of torture that was bad enough to <a href="http://www.pegc.us/archive/Articles/wallach_drop_by_drop_draft_20061016.pdf">convict Japanese soldiers of war crimes</a>. </p>
+<p>No one has begun to contradict the truth of what &#8212;  among others &#8212; Malcolm Nance, a counterterrorism expert and former Navy instructor in how to resist interrogation, wrote <a href="http://smallwarsjournal.com/blog/2007/10/waterboarding-is-torture-perio/">here</a> and told Congress. Here&#8217;s a lengthy quote:</p>
+<blockquote><p><em>1. Waterboarding is a torture technique. Period. There is no way to gloss over it or sugarcoat it. It has no justification outside of its limited role as a training demonstrator. Our service members have to learn that the will to survive requires them accept and understand that they may be subjected to torture, but that America is better than its enemies and it is one’s duty to trust in your nation and God, endure the hardships and return home with honor.</p>
+<p>2. Waterboarding is not a simulation. Unless you have been strapped down to the board, have endured the agonizing feeling of the water overpowering your gag reflex, and then feel your throat open and allow pint after pint of water to involuntarily fill your lungs, you will not know the meaning of the word.</p>
+<p>Waterboarding is a controlled drowning that, in the American model, occurs under the watch of a doctor, a psychologist, an interrogator and a trained strap-in/strap-out team. It does not simulate drowning, as the lungs are actually filling with water. There is no way to simulate that. The victim is drowning. How much the victim is to drown depends on the desired result (in the form of answers to questions shouted into the victim’s face) and the obstinacy of the subject. A team doctor watches the quantity of water that is ingested and for the physiological signs which show when the drowning effect goes from painful psychological experience, to horrific suffocating punishment to the final death spiral.</p>
+<p>Waterboarding is slow motion suffocation with enough time to contemplate the inevitability of black out and expiration –usually the person goes into hysterics on the board. For the uninitiated, it is horrifying to watch and if it goes wrong, it can lead straight to terminal hypoxia. When done right it is controlled death. Its lack of physical scarring allows the victim to recover and be threaten with its use again and again.</p>
+<p>Call it “Chinese Water Torture,” “the Barrel,” or “the Waterfall,” it is all the same. Whether the victim is allowed to comply or not is usually left up to the interrogator. Many waterboard team members, even in training, enjoy the sadistic power of making the victim suffer and often ask questions as an after thought. These people are dangerous and predictable and when left unshackled, unsupervised or undetected they bring us the murderous abuses seen at Abu Ghraieb, Baghram and Guantanamo. No doubt, to avoid human factors like fear and guilt someone has created a one-button version that probably looks like an MRI machine with high intensity waterjets.</p>
+<p>3. If you support the use of waterboarding on enemy captives, you support the use of that torture on any future American captives. The Small Wars Council had a spirited discussion about this earlier in the year, especially when former Marine Generals Krulak and Hoar rejected all arguments for torture.</em><em><br />
+</em></p></blockquote>
+<p>Yet the New York Times can&#8217;t bring itself to simply explain the reality. It does stenography, repeating the lies from one side.</p>
+<p>So disappointing. Yet also so standard for the Paper of Record.</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/policy/" rel="category tag">Policy</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2007/11/16/torturous-journalism/#comments">1 Comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-73 -->
+        
+          <nav id="nav-below">
+    <h1 class="assistive-text section-heading">Post navigation</h1>
+
+  
+        <div class="nav-previous"><a href="http://dangillmor.com/blog/page/24/"  rel="prev"><span class="meta-nav">&larr;</span> Older posts</a></div>
+    
+        <div class="nav-next"><a href="http://dangillmor.com/blog/page/22/"  rel="next">Newer posts <span class="meta-nav">&rarr;</span></a></div>
+    
+  
+  </nav><!-- #nav-below -->
+  
+      
+      </main><!-- #content -->
+    </section><!-- #primary -->
+
+  <aside id="sidebar">
+    <div id="secondary" class="widget-area" role="complementary">
+            <section id="text-423219941" class="widget widget_text">			<div class="textwidget"><img src="http://dangillmor.com/wp-content/uploads/2014/11/danpic1aa.png" alt="Dan Gillmor picture" />
+
+<p>
+<a rel="author me"
+href="https://plus.google.com/+DanGillmor">  </a></p></div>
+		</section>    </div><!-- #secondary .widget-area -->
+
+        <div id="tertiary" class="widget-area" role="complementary">
+      <section id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="http://dangillmor.com/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form></section><section id="categories-406917141" class="widget widget_categories"><h3 class="widget-title">Categories</h3><label class="screen-reader-text" for="cat">Categories</label><select name='cat' id='cat' class='postform' >
+	<option value='-1'>Select Category</option>
+	<option class="level-0" value="14">Arizona</option>
+	<option class="level-0" value="39">ASU</option>
+	<option class="level-0" value="4">Customer Service</option>
+	<option class="level-0" value="30">Education</option>
+	<option class="level-0" value="3">Etcetera</option>
+	<option class="level-0" value="15">Events</option>
+	<option class="level-0" value="42">Journalism</option>
+	<option class="level-0" value="20">Liberty</option>
+	<option class="level-0" value="10">Media</option>
+	<option class="level-0" value="40">MOOC</option>
+	<option class="level-0" value="7">People</option>
+	<option class="level-0" value="29">Permission Taken</option>
+	<option class="level-0" value="43">Personal</option>
+	<option class="level-0" value="1">Policy</option>
+	<option class="level-0" value="37">Privacy</option>
+	<option class="level-0" value="27">Projects</option>
+	<option class="level-0" value="6">Silicon Valley</option>
+	<option class="level-0" value="38">Tech</option>
+</select>
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "cat" );
+	function onCatChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
+			location.href = "http://dangillmor.com/?cat=" + dropdown.options[ dropdown.selectedIndex ].value;
+		}
+	}
+	dropdown.onchange = onCatChange;
+})();
+/* ]]> */
+</script>
+
+</section>		<section id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+					<li>
+				<a href="http://dangillmor.com/2016/08/27/indie-web-camp/">Indie Web Camp</a>
+						</li>
+					<li>
+				<a href="http://dangillmor.com/2016/07/12/witnessing-activism-journalism-and-the-boundaries-of-free-speech-in-the-facebook-age/">Witnessing, activism, journalism &#8212; and the boundaries of free speech in the Facebook age</a>
+						</li>
+					<li>
+				<a href="http://dangillmor.com/2016/06/08/decentralized-web-summit-day-one/">Decentralized Web Summit &#8212; Day One</a>
+						</li>
+					<li>
+				<a href="http://dangillmor.com/2016/06/07/decentralized-web-summit/">Decentralized Web Summit &#8212; Builders Day</a>
+						</li>
+					<li>
+				<a href="http://dangillmor.com/2016/04/09/journalists-stop-complaining-about-facebook-and-do-something-about-it/">Journalists: Stop complaining about Facebook, and do something about it</a>
+						</li>
+				</ul>
+		</section>		    </div><!-- #tertiary .widget-area -->
+      </aside>
+  </div><!-- #main -->
+
+  <footer id="colophon" role="contentinfo">
+    <div id="site-generator">
+            This site is powered by <a href="http://wordpress.org/" rel="generator">WordPress</a> and styled with <a href="http://notizblog.org/projects/sempress/">SemPress</a>    </div>
+  </footer><!-- #colophon -->
+</div><!-- #page -->
+
+<script type='text/javascript' src='http://dangillmor.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/dangillmor.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"sending":"Sending ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://dangillmor.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.5'></script>
+<script type='text/javascript' src='http://dangillmor.com/wp-includes/js/wp-embed.min.js?ver=99ee574c47176f372c838f4c4dee3c0d'></script>
+
+</body>
+</html>

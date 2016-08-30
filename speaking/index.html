@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Speaking/Calendar | Dan Gillmor</title>
+<link rel="profile" href="http://microformats.org/profile/specs" />
+<link rel="profile" href="http://microformats.org/profile/hatom" />
+<link rel="pingback" href="http://dangillmor.com/xmlrpc.php" />
+
+<link rel="alternate" type="application/rss+xml" title="Dan Gillmor &raquo; Feed" href="http://dangillmor.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Dan Gillmor &raquo; Comments Feed" href="http://dangillmor.com/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/dangillmor.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=99ee574c47176f372c838f4c4dee3c0d"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='contact-form-7-css'  href='http://dangillmor.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='indieweb-css'  href='http://dangillmor.com/wp-content/plugins/indieweb/css/indieweb.css?ver=99ee574c47176f372c838f4c4dee3c0d' type='text/css' media='all' />
+<link rel='stylesheet' id='sempress-style-css'  href='http://dangillmor.com/wp-content/themes/sempress/style.css?ver=99ee574c47176f372c838f4c4dee3c0d' type='text/css' media='all' />
+<script type='text/javascript' src='http://dangillmor.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://dangillmor.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='http://dangillmor.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://dangillmor.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://dangillmor.com/wp-includes/wlwmanifest.xml" /> 
+
+<link rel="canonical" href="http://dangillmor.com/speaking/" />
+<link rel='shortlink' href='http://dangillmor.com/?p=296' />
+<link rel="alternate" type="application/json+oembed" href="http://dangillmor.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fdangillmor.com%2Fspeaking%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://dangillmor.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fdangillmor.com%2Fspeaking%2F&#038;format=xml" />
+<script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//dangillmor.com/?wordfence_logHuman=1&hid=6019BBBA1E7DBB27756F4F0E56FE7C18');
+</script>  <style type="text/css" id="sempress-custom-colors">
+    body { text-shadow: 0 1px 0 #ffffff; }
+    body, a { color: #03010c; }
+    .widget, #access {
+      border-bottom: 1px solid #000000;
+      -moz-box-shadow: #ffffff 0 1px 0 0;
+      -webkit-box-shadow: #ffffff 0 1px 0 0;
+      box-shadow: #ffffff 0 1px 0 0;
+    }
+    article.comment {
+      border-top: 1px solid #ffffff;
+      -moz-box-shadow: #000000 0 -1px 0 0;
+      -webkit-box-shadow: #000000 0 -1px 0 0;
+      box-shadow: #000000 0 -1px 0 0;
+    }
+  </style>
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+</head>
+
+<body class="page page-id-296 page-template-default custom-background multi-column h-entry hentry h-as-page" itemscope="" itemtype="http://schema.org/WebPage">
+<div id="page">
+  <header id="branding" role="banner">
+    <h1 id="site-title"><a href="http://dangillmor.com/" title="Dan Gillmor" rel="home">Dan Gillmor</a></h1>
+    <h2 id="site-description">Just in case you were wondering&#8230;</h2>
+    
+        
+    <nav id="access" role="navigation">
+      <h1 class="assistive-text section-heading"><a href="#access" title="Main menu">Main menu</a></h1>
+      <div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
+
+      <div class="menu-blog-container"><ul id="menu-blog" class="menu"><li id="menu-item-812" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-812"><a href="http://dangillmor.com/blog/">Blog</a></li>
+<li id="menu-item-809" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-809"><a href="http://dangillmor.com/about/">About Dan</a></li>
+<li id="menu-item-806" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-806"><a href="http://dangillmor.com/projects/">Mediactive</a></li>
+<li id="menu-item-808" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-296 current_page_item menu-item-808"><a href="http://dangillmor.com/speaking/">Speaking/Calendar</a></li>
+<li id="menu-item-807" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-807"><a href="http://dangillmor.com/contact/">Contact</a></li>
+</ul></div>    </nav><!-- #access -->
+  </header><!-- #branding -->
+
+  <div id="main">
+
+    <section id="primary">
+      <main id="content" role="main">
+
+        
+          
+<article id="post-296" class="post-296 page type-page status-publish">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline">Speaking/Calendar</h1>
+  </header><!-- .entry-header -->
+  
+    
+  <div class="entry-content e-content" itemprop="description text">
+    <p><span style="font-family: Arial;">I frequently speak at public and private events. (See below for a partial list of such appearances during the past few years.) </span></p>
+<p><strong>If you would like to have me speak or consult:</strong> I am represented by <a href="http://leadingauthorities.com">Leading Authorities Inc.</a> Please call +1 202.783.0300 for more information. Or fill out the <a href="http://dangillmor.com/contact/">contact form</a> and someone will get back to you.</p>
+<p><span style="font-family: Arial; font-weight: bold;">Travel &amp; Speaking Appearances</span> <span style="font-family: Arial;">This is where I update my upcoming travel schedule. If you&#8217;ve booked me for an event and don&#8217;t see it listed here, please </span><a href="contact"><span style="font-family: Arial;">let me know</span></a><span style="font-family: Arial;"> right away.</span></p>
+<p><strong>2016</strong></p>
+<ul>
+<li>Jan. 3-7, Phoenix, <a href="http://cronkite.asu.edu/scrippsinstitute">Scripps-Howard Entrepreneurial Journalism Institute</a></li>
+<li>Jan. 16-19, Munich, <a href="http://dld-conference.com/‎">DLD</a></li>
+<li>Jan. 20, Phoenix, ASU, Cronkite Innovation Day</li>
+<li>Jan. 21, Pasadena, <a href="http://www.socallinuxexpo.org/scale/14x/">SCALE</a></li>
+<li>Feb. 22-25, Barcelona, Mobile World Congress</li>
+<li>March 18-19, Paris, Global Editors Network board meeting</li>
+<li>March 21-24, Phoenix, ASU</li>
+<li>April 6-10, Perugia, Italy, <a href="http://www.journalismfestival.com/">International Journalism Festival</a></li>
+<li>April 17-18, Austin, <a href="https://online.journalism.utexas.edu/">International Symposium on Online Journalism</a></li>
+<li>April 25-29, Phoenix, ASU</li>
+<li>May 9, New York City, <a href="http://www.globaleditorsnetwork.org/programmes/data-journalism-awards/ddjunconf/">GEN Data Journalism &#8220;Unconference&#8221;</a></li>
+<li>June 1-3, Bilbao, Spain, <a href="http://newsgeist.org/past-programs/newsgeist-europe-2016/">Newsgeist Europe</a></li>
+<li>June 15-17, Vienna, <a href="http://www.gensummit2016.org/">Global Editors Network News Summit</a></li>
+<li>July 14-16, Auckland, New Zealand, <a href="http://www.wjec.aut.ac.nz/">World Journalism Education Congress</a></li>
+<li>July 22-23, New York, <a href="https://hope.net/">Hackers on Planet Earth</a></li>
+<li>Sept. 23-25, Athens, Open University of Cyprus conference</li>
+</ul>
+<p><strong>2015</strong></p>
+<ul>
+<li>Jan. 5-8, Phoenix, <a href="http://cronkite.asu.edu/scrippsinstitute">Scripps-Howard Entrepreneurial Journalism Institute</a></li>
+<li>Jan. 10-20, Munich, <a href="http://dld-conference.com/‎">DLD</a></li>
+<li>Feb. 9-13, Phoenix, ASU</li>
+<li>March 2-3, New York City, <a href="http://freedom-to-connect.net">Freedom to Connect</a></li>
+<li>March 16-20, Phoenix, ASU</li>
+<li>March 28-29, Columbia, Missouri, <a href="http://www.presspartners.org/">Alfred Friendly Press Partners</a></li>
+<li>April 6-9, Phoenix, ASU</li>
+<li>April 15-18, Perugia, Italy, <a href="http://www.journalismfestival.com">International Journalism Festival</a></li>
+<li>April 19, Istanbul, Al Sharq Forum</li>
+<li>May 14-16, Cambridge, Mass.</li>
+<li>May 20-21, New York, Web Annotation Summit</li>
+<li>June 17-19, Barcelona, <a href="https://www.globaleditorsnetwork.org/programmes/gen-summit-2015/">Global Editors Network</a></li>
+<li>August 27, Accra, Ghana, PenPlusBytes</li>
+<li>Sept. 9-11, Cardiff, Wales, <a href="http://www.communityjournalism.co.uk/news/what-next-for-community-journalism/">What&#8217;s Next for Community Journalism</a> and <a href="http://www.cardiff.ac.uk/jomec/conference/futureofjournalism/">Future of Journalism</a> conferences</li>
+<li>Sept 26, Phoenix, Arizona Newspaper Association annual conference</li>
+<li>Oct. 1-2, Louisiana State University <a href="http://www.manship.lsu.edu/dan-gilmore-to-receive-2015-manship-prize/">Manship School of Mass Communication</a></li>
+<li>Oct. 6-12, Yerevan, Armenia</li>
+<li>Oct. 22-23, Cambridge, Massachusetts</li>
+<li>Nov. 20-22, Phoenix, Newsgeist</li>
+</ul>
+<p><strong>2014</strong></p>
+<ul>
+<li>Jan. 5-8, Phoenix, <a href="http://cronkite.asu.edu/scrippsinstitute">Scripps-Howard Entrepreneurial Journalism Institute</a></li>
+<li>Jan. 19-21, Munich, <a href="http://dld-conference.com/‎">DLD</a></li>
+<li>Feb. 14, Hong Kong University <a href="http://jmsc.hku.hk/2014/02/dan-gillmor-speak-media-entrepreneurship-friday/">talk on future of journalism</a></li>
+<li>April 7-11, Boulder, Colorado, <a href="http://www.colorado.edu/cwa/‎">Conference on World Affairs</a></li>
+<li>April 30-May 4, Perugia, Italy, <a href="http://www.journalismfestival.com/">International Journalism Festival</a></li>
+<li>June 11-13, Barcelona, <a href="http://www.globaleditorsnetwork.org/gen-summit/">Global Editors Network Summit</a></li>
+<li>June 16, Logan, Utah, <a href="http://mountainwest.usu.edu/bennion.aspx">Bennion Teachers Workshop</a></li>
+<li>June 20, St. Petersburg, Florida, Poynter Institute &#8220;<a href="http://about.poynter.org/training/in-person/djed-14">Teachapalooza&#8221;</a></li>
+<li>June 23, Phoenix, ASNE Reynolds High School Journalism Institute</li>
+<li>July 2, Bonn, Germany, Deutsche Welle <a href="http://www.dw.de/global-media-forum/gmf14/s-30956">Global Media Forum</a></li>
+<li>August 8-10, London, <a href="http://wikimania2014.wikimedia.org/wiki/Main_Page">Wikimania</a></li>
+<li>Sept. 7-8, Grahamstown, South Africa, <a href="http://www.highwayafrica.com/">Highway Africa</a></li>
+<li>Sept. 12, Potsdam, Germany, <a href="http://www.m100potsdam.org/en/">M100 Sanssouci Colloquium</a></li>
+<li>Oct. 27-Nov. 28, Hong Kong (and elsewhere in Asia)</li>
+</ul>
+<p><strong>2013 (selected)<br />
+</strong></p>
+<ul>
+<li>Jan. 2-5, Phoenix, Scripps-Howard Foundation Institute (entrepreneurship training for journalism professors)</li>
+<li>Feb. 7, Peoria, Arizona, PACE Conference</li>
+<li>March 4, Washington, <a href="http://freedom-to-connect.net">Freedom to Connect</a> conference</li>
+<li>March 26, Cambridge, Mass., <a href="cyber.law.harvard.edu/events/luncheon/2013/03/gillmor">Harvard Berkman Center for Internet &amp; Society</a></li>
+<li>April 5-7, Denver, <a href="http://conference.freepress.net/schedule">National Conference on Media Reform</a></li>
+<li>April 8, Burlington, Vermont, <a href="http://www.cctv.org/watch-tv/programs/dan-gillmor-media-futurist-and-journalist">Champlain College</a></li>
+<li>June 6-7, New York, <a href="http://personaldemocracy.com/conferences/nyc/2013">Personal Democracy Forum</a></li>
+<li>June 18-21, Paris, <a href="http://www.globaleditorsnetwork.org/gen2013/">Global Editors Network News Summit</a></li>
+<li>June 26, Phoenix, ASNE Reynolds High School Journalism Institute</li>
+<li>July 22-26, Portland, Oregon, <a href="http://www.oscon.com/oscon2013">Open Source Convention</a></li>
+<li>August 8-11, Washington, <a href="http://dc13.aejmc.org/">AEJMC</a></li>
+<li>Sept. 16, Dublin, <a href="http://www.mediaconferencedcu.com/">&#8220;Can We Trust Our News&#8221;</a> symposium</li>
+<li>Sept. 19, London, <a href="http://event.gigaom.com/structureeurope/">Gigaom Structure Europe</a></li>
+<li>Oct. 9-11, Frankfurt Book Fair, <a href="http://csi.asu.edu/futurebook/">&#8220;book sprint&#8221;</a></li>
+<li>October 22, Phoenix, <a href="http://newcollege.asu.edu/events-at-asu-new-college/sbs-presents-town-hall-debate-0">Town Hall Debate on Internet anonymity</a></li>
+<li>Nov. 8-10, Phoenix, <a href="newsfoo12.wiki.oreilly.com/‎">NewsFoo</a></li>
+<li>Nov. 20, Chicago, <a href="http://dangillmorluc.eventbrite.com/">Loyola University</a> talk</li>
+</ul>
+<p><strong>2012 (selected)<br />
+</strong></p>
+<ul>
+<li>Jan. 3-7, Phoenix, Scripps-Howard Foundation Institute (entrepreneurship training for journalism professors)</li>
+<li>Jan. 23-23, Munich, <a href="www.dld-conference.com">DLD</a></li>
+<li>Feb. 12-17 and March 19-28, Baton Rouge, Louisiana State University <a href="http://uiswcmsweb.prod.lsu.edu/manship/MassComm/">Manship School of Communication</a>, visiting professor</li>
+<li>Feb. 20-21, Knight Foundation <a href="http://www.knightfoundation.org/media-learning-seminar/2012/">Media Learning Seminar</a> keynote</li>
+<li>March 16, Lexington, VA, Washington and Lee University, <a href="http://news.blogs.wlu.edu/2012/03/11/leader-in-new-media-citizen-based-journalism-to-lecture-at-wl/">Media Ethics Institute keynote</a></li>
+<li>April 21, Austin, University of Texas, <a href="http://online.journalism.utexas.edu/">International Symposium on Online Journalism</a></li>
+<li>May 1-10, Hong Kong University <a href="http://jmsc.hku.hk">Journalism &amp; Media Studies Centre</a>, short course in entrepreneurial journalism</li>
+<li>May 17, Guangzhou, China, talk at American Center, U.S. Consulate</li>
+<li>May 19, Shanghai, <a href="http://jmsc.hku.hk/2012/05/may-19-public-lecture-in-shanghai-entrepreneurship-and-the-media/">Hong Kong University Study Centre</a>, talk on entrepreneurial journalism</li>
+<li>June 22, Seoul, South Korea, East-West Center <a href="http://www.ewc50.org/mediaconference2012/agenda/">International Media Conference</a> panel and workshop</li>
+<li>June 26, Phoenix, <a href="http://www.hsj.org/Teachers/index.cfm?requestAction=goMenuContent&amp;CmsPagesID=3&amp;menu_id=6">ASNE Reynolds High School Journalism Institute</a> talk</li>
+<li>Aug. 19, Nanjing, China, keynote at journalism education conference &amp; workshop</li>
+<li></li>
+<li>Sept. 13-14, Washington, DC, media literacy conference</li>
+<li>Sept. 18, Bethlehem, Penn., <a href="http://www.lehigh.edu/~injrl/index.html">Lehigh University</a> talk on digital storytelling</li>
+<li>Sept. 22, San Francisco, <a href="http://ona12.journalists.org/">Online News Association</a> conference</li>
+<li>Sept. 27-28, Buenos Aires, Argentina, <a href="http://www.globaleditorsnetwork.org/">Global Editors Network</a> board meeting</li>
+<li>Oct. 23, New York, Poynter Institute media ethics conference</li>
+<li>Nov. 13-17, Zagreb, Croatia: Workshops, talks (sponsored by U.S. State Department)</li>
+</ul>
+<p><strong>2011 (selected)<br />
+</strong></p>
+<ul>
+<li><span style="font-family: Arial;">Jan. 5-7, Las Vegas, <a href="http://cesweb.org">Consumer Electronics Show</a> panel</span></li>
+<li><span style="font-family: Arial;">Jan. 12, Washington, DC, <a href="httphttp://www.newamerica.net/events/2011/mediactive">New America Foundation</a> book talk</span></li>
+<li><span style="font-family: Arial;">Jan. 23-23, Munich, <a href="www.dld-conference.com">DLD</a></span></li>
+<li><span style="font-family: Arial;">Feb. 16-18, </span>Guadalajara, Mexico, <a href="http://www.itesm.edu/">Tecnologico de Monterrey</a> workshops</li>
+<li>Feb. 27, Philadelphia, <a href="http://http://www.nfais.org/page/292-program-2011-nfais-annual-conference">National Federation of Advanced Information Services</a> keynote</li>
+<li>March 12-15, Austin, Texas, <a href="http://sxsw.com">South by Southwest</a></li>
+<li>March 28-April 1, Singapore, <a href="http://ntu.edu.sg">Nanyang Technological University</a></li>
+<li>April 4-8, Boulder, Colorado, <a href="http://http://www.colorado.edu/cwa/information.html">Conference on World Affairs</a></li>
+<li>April 9-10, Boston, <a href="http://conference.freepress.net">National Conference for Media Reform</a></li>
+<li>April 12, Cambridge, Mass., <a href="http://cyber.law.harvard.edu">Berkman Center for Internet &amp; Society</a></li>
+<li>June 6-7, New York City, <a href="http://personaldemocracy.com/pdf-2011">Personal Democracy Forum</a></li>
+<li>June 15-16, New York City, <a href="http://nyc2011.140conf.com/">140 Characters Conference</a></li>
+<li>July 24-25, Philadelphia, <a href="http://namle.net/conference/">National Association for Media Literacy Education</a></li>
+<li>Aug. 11-13, <a href="http://www.aejmcstlouis.org/">St. Louis, Association for Education in Journalism and Mass Communication</a></li>
+<li>Oct. 20, New York City, <a href="http://contactcon.com/">Contact 2011</a></li>
+<li>Nov. 2-5, Guadalajara, Mexico, <a href="http://www.google.com/url?sa=t&amp;source=web&amp;cd=2&amp;ved=0CBkQFjAB&amp;url=http%3A%2F%2Fwww.itesm.edu%2F&amp;ei=0N7vTZGCB5P4swPcnen_Bg&amp;usg=AFQjCNEFXyt5hdcYSmA0okyWvkvjQzs4Pg&amp;sig2=DYxN9yvm8tylg9CAuKnxqA">Tecnologico de Monterrey</a></li>
+<li>Nov. 21-23, Shanghai and Shantou, China</li>
+<li>Nov. 24-25, <a href="http://hku.hk">University of Hong Kong</a></li>
+<li>Nov. 27-30, Hong Kong, Global Editors Network <a href="http://www.news-worldsummit.org/">News World Summit</a></li>
+</ul>
+<p><strong>Selection of Past Appearances.</strong> <strong>2010</strong></p>
+<div>
+<div>
+<ul>
+<li style="text-align: left;"><span style="font-family: Helvetica, 'Times New Roman', 'Bitstream Charter', Times, serif;">Jan. 10-14, Cairo and Alexandria, Egypt, various talks sponsored by <a href="http://state.gov">U.S. State Department</a></span></li>
+<li style="text-align: left;"><span style="font-family: Helvetica, 'Times New Roman', 'Bitstream Charter', Times, serif;">Jan. 24-26, Munich, <a href="http://www.dld-conference.com/">DLD</a></span></li>
+<li style="text-align: left;"><span style="font-family: Helvetica, 'Times New Roman', 'Bitstream Charter', Times, serif;">Feb. 6, Scottsdale, Arizona, <a href="http://ipa.org">IPA Leadership Conference</a></span></li>
+<li style="text-align: left;"><span style="font-family: Helvetica, 'Times New Roman', 'Bitstream Charter', Times, serif;">Feb. 12, New York, Carnegie-Paley Center &#8220;Future of Journalism Education&#8221; meeting</span></li>
+<li style="text-align: left;"><span style="font-family: Helvetica, 'Times New Roman', 'Bitstream Charter', Times, serif;">Feb. 26-27, Phoenix, </span><a href="http://studentpress.journ.umn.edu/acp/conventions.html">National College Media Convention</a></li>
+<li style="text-align: left;"><span style="font-family: Helvetica, 'Times New Roman', 'Bitstream Charter', Times, serif;">March 12-15, Austin, <a href="http://sxsw.com">South by Southwest</a></span></li>
+<li style="text-align: left;"><span style="font-family: Helvetica, 'Times New Roman', 'Bitstream Charter', Times, serif;">March 18, London, <a href="http://www.guardian.co.uk/changingmediasummit/programme">Guardian Changing Media Summit</a></span></li>
+<li style="text-align: left;"><span style="font-family: Helvetica, 'Times New Roman', 'Bitstream Charter', Times, serif;">April 5-9, Boulder, Colorado, <a href="http://www.colorado.edu/cwa/information.html">World Affairs Conference</a></span></li>
+<li style="text-align: left;"><span style="font-family: Helvetica, 'Times New Roman', 'Bitstream Charter', Times, serif;">April 23-24, Austin, </span><a href="http://online.journalism.utexas.edu/">International Symposium on Online Journalism</a></li>
+<li style="text-align: left;">April 30, Stanford University, <a href="http://www.law.stanford.edu/calendar/details/3670/The%20Future%20of%20Journalism:%20Unpacking%20the%20Rhetoric/">Future of Journalism</a> conference</li>
+<li>June 10, Oslo, Schibsted Journalism Awards</li>
+<li>June 23, Baltimore, <a href="http://www.collegemediaconference.org/">College Media Conference</a></li>
+<li>June 24, New York, <a href="http://www.newmediaacademicsummit.com/Summit2010/home.html">Edelman New Media Academic Summit</a></li>
+<li>July 3-7, Grahamstown, South Africa, <a href="http://www.highwayafrica.com/">Highway Africa</a> and <a href="http://wjec.ou.edu/congress.php">World Journalism Education Congress</a></li>
+<li>July 21-22, Washington, Library of Congress workshop</li>
+<li>July 25, Accra, Ghana, Pen+Bytes board meeting</li>
+<li>August 4-7, Denver, <a href="http://www.aejmcdenver.org/">AEJMC</a></li>
+</ul>
+<p>&nbsp;</p>
+</div>
+</div>
+<div><strong>2009</strong></div>
+<div>
+<ul>
+<li style="text-align: left;"><span style="font-family: Helvetica;">April 21, Cambridge, Mass. <a href="http://cyber.law.harvard.edu/events/luncheon/2009/04/gillmor">Luncheon talk</a> at <a href="http://cyber.law.harvard.edu">Berkman Center for Internet &amp; Society</a></span></li>
+<li style="text-align: left;"><span style="font-family: Helvetica;">April 26-27, Hamburg, Germany, <a href="http://www.tidenet.de/tide/fuenf_jahre_immer_anders.html">TIDE</a></span></li>
+<li style="text-align: left;"><span style="font-family: Helvetica;">May 11-13, San Mateo, Calif., <a href="http://www.thefreesummit.com/">Free Summit</a> and <a href="http://events.techpolicycentral.com/tps/agenda.php">Technology Policy Summit</a></span></li>
+<li style="text-align: left;"><span style="font-family: Helvetica;">May 17, Los Angeles, Knight Digital Media Center entrepreneurship <a href="http://multimedia.journalism.berkeley.edu/blog/2009/feb/2/usc-news-entrepreneurs-boot-camp-accepting-applica/">&#8220;boot camp&#8221; </a></span></li>
+<li style="text-align: left;"><span style="font-family: Helvetica;">May 21, San Jose, Calif., <a href="http://en.oreilly.com/where2009/public/schedule/presentations/General">Where 2.0</a> conference</span></li>
+<li style="text-align: left;"><span style="font-family: Helvetica;">June 1, Reno, Nevada, <a href="http://naafoundation.org">Newspaper Association of America Foundation</a> training conference</span></li>
+<li style="text-align: left;"><span style="font-family: Helvetica;">June 30, New York, <a href="http://personaldemocracy.com">Personal Democracy Forum</a></span></li>
+<li style="text-align: left;"><span style="font-family: Helvetica;">July 15, Tokyo, <a href="http://www.keio.ac.jp/">Keio University</a></span></li>
+<li style="text-align: left;"><span style="font-family: Helvetica;">July 27, Los Angeles, <a href="http://www.knightdigitalmediacenter.org/">Knight Center for Digital Media</a></span></li>
+<li style="text-align: left;"><span style="font-family: Helvetica;">August 6, Boston, <a href="http://www.google.com/url?q=http://www.aejmc.org/_events/convention/09convention/index.php&amp;ei=5tdYStjhOZGSsgPgj5meCQ&amp;sa=X&amp;oi=smap&amp;resnum=1&amp;ct=result&amp;cd=1&amp;usg=AFQjCNFiSMjgCWR-ttJaJYQp3mWO9XnyDw">Association for Education in Journalism and Mass Communication</a></span></li>
+<li style="text-align: left;"><span style="font-family: Helvetica;"><span style="font-family: Helvetica, 'Times New Roman', 'Bitstream Charter', Times, serif;">Oct. 17, Austin, <a href="http://nasw.org">National Association of Science Writers</a> annual conference</span></span></li>
+<li style="text-align: left;"><span style="font-family: Helvetica;"><span style="font-family: Helvetica, 'Times New Roman', 'Bitstream Charter', Times, serif;">Nov. 2, Boulder, Colorado, <a href="http://www.colorado.edu/news/r/51f03aac71abdcad119b8d81ca8cfe66.html">Holden Lecture</a>, University of Colorado</span></span></li>
+<li style="text-align: left;"><span style="font-family: Helvetica;"><span style="font-family: Helvetica, 'Times New Roman', 'Bitstream Charter', Times, serif;"><span style="font-family: Helvetica;">Nov. 12, Phoenix, <a href="http://azentrepreneurship.com/">Arizona Entrepreneurship Conference</a></span></span></span></li>
+</ul>
+</div>
+<div><span style="font-family: Arial;"><strong>2008</strong></span></div>
+<div>
+<ul>
+<li><span style="font-family: Arial;">Feb. 11, New York, </span><span style="font-family: Arial;"><a href="http://en.oreilly.com/toc2008/public/content/home">Tools of Change</a></span></li>
+<li><span style="font-family: Arial;">March 10-14, Beijing</span></li>
+<li><span style="font-family: Arial;">April 5, Albany, New York, New York Press Association</span></li>
+<li><span style="font-family: Arial;">May 14-15, Cambridge, Mass., </span><span style="font-family: Arial;"><a href="http://cyber.law.harvard.edu/events/berkmanat10">Berkman@10</a></span></li>
+<li><span style="font-family: Arial;">June 22, New York, </span><span style="font-family: Arial;"><a href="http://www.personaldemocracy.com/">Personal Democracy Forum</a></span></li>
+<li><span style="font-family: Arial;">June 26, Copenhagen, </span><span style="font-family: Arial;"><a href="http://reboot.dk">Reboot</a></span></li>
+<li><span style="font-family: Arial;">July 22, Chicago, Knight Foundation meeting</span></li>
+<li><span style="font-family: Arial;">July 24, Cambridge, Mass, </span><span style="font-family: Arial;"><a style="border-bottom: 1px solid #9e9e9e; text-decoration: none;" href="http://cyber.law.harvard.edu">Berkman Center</a></span></li>
+<li><span style="font-family: Arial; font-size: 13px;">August 4-6, London, </span><span style="font-family: Arial; font-size: 13px;"><a style="border-bottom: 1px solid #9e9e9e; text-decoration: none;" href="http://www.dopplr.com">Dopplr</a></span></li>
+<li><span style="font-family: Arial; font-size: 13px;">September 8-10, Grahamstown, South Africa, </span><span style="font-family: Arial; font-size: 13px;"><a style="border-bottom: 1px solid #9e9e9e; text-decoration: none;" href="http://highwayafrica.wordpress.com/">Highway Africa</a></span><span style="font-family: Arial; font-size: 13px;"> conference</span></li>
+<li><span style="font-family: Arial; font-size: 13px;">Oct. 18-20, Greece, university talks</span></li>
+<li><span style="font-family: Arial; font-size: 13px;">Oct. 23, Barcelona, </span><span style="font-family: Arial; font-size: 13px;"><a href="http://www.cccb.org/en/marc-kosmopolis_2008-18542">Kosmopolis</a></span><span style="font-family: Arial; font-size: 13px;"> arts &amp; literature festival</span></li>
+<li><span style="font-family: Arial; font-size: 13px;">Nov. 6, Ghent, Belgium, </span><span style="font-family: Arial; font-size: 13px;"><a href="http://www.blogboat.be/BLOGBOAT_1.0_-_Citizen_Journalism/Home.html">BlogBoat: Citizen Journalism Scenarios</a></span></li>
+</ul>
+<p>&nbsp;</p>
+</div>
+<div><strong><span style="font-family: Arial;">2007 </span></strong></div>
+<div>
+<ul>
+<li><span style="font-family: Arial;">July 30 &#8211; August 3, Berkeley, citizen media workshop</span></li>
+<li><span style="font-family: Arial;">August 9-11, Washington, </span><a href="http://www.aejmc.org/_events/convention/highlights/index.php"><span style="font-family: Arial;">AEJMC</span></a><span style="font-family: Arial;">conference</span></li>
+<li><span style="font-family: Arial;">August 27, Bogotá, Columbia, media conference</span></li>
+<li><span style="font-family: Arial;">Sept. 30 &#8211; October 6, Ekaterinburg and Chelyabinsk, Russia; workshops/visits with Russian journalists</span></li>
+<li><span style="font-family: Arial;">Oct. 15-17, Cambridge, Mass., </span><a href="http://cyber.law.harvard.edu"><span style="font-family: Arial;">Berkman Center</span></a></li>
+<li><span style="font-family: Arial;">Oct. 18-19, Toronto, Online News Association </span><a href="http://www.journalists.org/2007conference/"><span style="font-family: Arial;">conference</span></a></li>
+<li><span style="font-family: Arial;">Oct. 29-30, Santiago, Chile, talks at </span><a href="http://tvn.cl/"><span style="font-family: Arial;">TVN</span></a><span style="font-family: Arial;"> and </span><a href="http://www.umayor.cl/"><span style="font-family: Arial;">Universidad Mayor</span></a></li>
+</ul>
+</div>
+<div><strong><span style="font-family: Arial;">2006</span></strong></div>
+<ul>
+<li><span style="background-color: transparent; font-family: Arial; color: black;">Jan. 17-19: Cambridge, Mass., </span><a href="http://cyber.law.harvard.edu/"><span style="background-color: transparent; font-family: Arial;">Berkman Center</span></a><span style="background-color: transparent; font-family: Arial; color: black;">, Harvard University</span></li>
+<li><span style="background-color: transparent; font-family: Arial; color: black;">Jan. 23-24: Munich, Germany, </span><a href="http://www.digital-lifestyle-day.com/"><span style="background-color: transparent; font-family: Arial;">Digital Lifestyle Day</span></a></li>
+<li><span style="font-family: Arial;"><span style="background-color: transparent; color: black;">Jan. 30, Doha, Qatar,  Enabling Voices: Media, Democracy, and Reform conference</span> </span></li>
+<li><span style="font-family: Arial;">Feb. 12-15: Cambridge, Mass., </span><a href="http://cyber.law.harvard.edu/"><span style="font-family: Arial;">Berkman Center</span></a><span style="font-family: Arial;">, Harvard University</span></li>
+<li><span style="font-family: Arial;">March 3: Palo Alto, Calif., </span><a href="http://www.newcommforum.com/"><span style="font-family: Arial;">New Communications Forum</span></a></li>
+<li><span style="font-family: Arial;">April 7-8: Athens, Ohio, </span><a href="http://scrippsjschool.org/iij.php"><span style="font-family: Arial;">Institute for International Journalism</span></a><span style="font-family: Arial;">, Ohio University</span></li>
+<li><span style="font-family: Arial;">April 13, Montpelier, Vermont: </span><a href="http://www.iburlington.com/article.php/gillmorvtcollege"><span style="font-family: Arial;">Lecture and Discussion</span></a></li>
+<li><span style="font-family: Arial;">April 16-20, Cambridge, Mass. with public talk on April 19 at Harvard University (specifics TBA).</span></li>
+<li><span style="font-family: Arial;">April 27: New York, </span><a href="http://www.jrn.columbia.edu/events/hearst/"><span style="font-family: Arial;">Hearst Lecture</span></a><span style="font-family: Arial;">, Columbia University </span></li>
+<li><span style="font-family: Arial;">May 2-3, Berlin, International Institute for Journalism</span></li>
+<li><span style="font-family: Arial;">May 4, London: </span><a href="http://www.mediacenter.org/pages/mcevents/06/london/home/"><span style="font-family: Arial;">We Media</span></a><span style="font-family: Arial;"> conference</span></li>
+<li><span style="font-family: Arial;">May 10-13, Cambridge, Mass., including</span><a href="http://www.beyondbroadcast.net/"><span style="font-family: Arial;">Beyond Broadcast</span></a><span style="font-family: Arial;"> gathering at Harvard Law School on May 12-13</span></li>
+<li><span style="font-family: Arial;">May 14-16, San Diego: </span><a href="http://www.futureinreview.com/participants.php"><span style="font-family: Arial;">Future in Review</span></a></li>
+<li><span style="font-family: Arial;">May 28, Edinburgh, Scotland: International Press Institute </span><a href="http://www.ipiedinburgh.com/index.php"><span style="font-family: Arial;">World Congress</span></a></li>
+<li><span style="font-family: Arial;">May 30, San Jose: </span><a href="http://www.netsquared.org/"><span style="font-family: Arial;">NetSquared</span></a><span style="font-family: Arial;">: Remixing the Web for Social Change</span></li>
+<li><span style="font-family: Arial;">May 31-June 1, Carslbad, California: </span><a href="http://d.wsj.com/"><span style="font-family: Arial;">D: All Things Digital</span></a></li>
+<li><span style="font-family: Arial;">June 13-17, Helsinki</span></li>
+<li><span style="font-family: Arial;">June 27-30, Aspen: </span><a href="http://www.timeinc.net/fortune/conferences/brainstorm06/overview.html"><span style="font-family: Arial;">Brainstorm</span></a></li>
+</ul>
+<p><strong><span style="font-family: Arial;">2005</span></strong></p>
+<ul>
+<li><span style="font-family: Arial;">Jan. 21: Cambridge, Mass., member of &#8220;Blogging, Journalism and Credibility&#8221; roundtable at Kennedy School of Government, Harvard</span></li>
+<li><span style="font-family: Arial;">Feb. 1: St. Petersburg, Fla., speaker at Poynter Institute seminar</span></li>
+<li><span style="font-family: Arial;">Feb. 14: Chapel Hill, N.C., lecture at University of North Carolina</span></li>
+<li><span style="font-family: Arial;">March 10: Madrid, member, working group on terrorism and the Internet at the International Summit on Democracy, Security and Terrorism</span></li>
+<li><span style="font-family: Arial;">March 13: Austin, Texas, speech at South by Southwest Interactive conference</span></li>
+<li><span style="font-family: Arial;">April 7:  Austin, keynote at International Symposium on Online Journalism, University of Texas</span></li>
+<li><span style="font-family: Arial;">April 12: Washington, panelist at American Society of Newspaper Editors annual meeting</span></li>
+<li><span style="font-family: Arial;">April 15: Berkeley, panelist at &#8220;The Changing Economics of News&#8221; conference, University of California-Berkeley</span></li>
+<li><span style="font-family: Arial;">April 20: Las Vegas, panelist at Radio/Television News Directors annual meeting</span></li>
+<li><span style="font-family: Arial;">May 1: Seattle, panelist, Society of American Business Writers and Editors annual meeting</span></li>
+<li><span style="font-family: Arial;">May 16: New York, panelist, Personal Democracy Forum</span></li>
+<li><span style="font-family: Arial;">May 24: Carlsbad, Cal., panelist, Wall Street Journal&#8217;s &#8220;D: All Things Digital&#8221; conference</span></li>
+<li><span style="font-family: Arial;">May 30: Seoul, keynote at World Editors Forum</span></li>
+<li><span style="font-family: Arial;">June 4: Denver, panelist, Investigative Reporters &amp; Editors annual conference</span></li>
+<li><span style="font-family: Arial;">Aug. 1: Salzburg, Austria, led seminar on online journalism for young European journalists</span></li>
+<li><span style="font-family: Arial;">Aug. 25: Half Moon Bay, Cal., speaker at McClatchy Co. annual editors and publishers retreat</span></li>
+<li><span style="font-family: Arial;">Sept. 13: Jersey City, N.J., panelist at Johnson &amp; Johnson Global Communications Conference</span></li>
+<li><span style="font-family: Arial;">Sept. 22: Ann Arbor, Michigan, Graham Hovey Lecture at Knight Wallace Fellows Program</span></li>
+<li><span style="font-family: Arial;">Sept. 29: New York, keynote at Conference Board Corporate Communication and Technology Conference</span></li>
+<li><span style="font-family: Arial;">Oct. 14-15, Fullerton, Calif., keynote and panel at California First Amendment Coalition meeting</span></li>
+<li><span style="font-family: Arial;">Oct. 28, San Jose, panel at Associated Press Managing Editors conference</span></li>
+<li><span style="font-family: Arial;">Nov. 4, Prague, panelist at Media Development Loan Fund&#8217;s Media Forum</span></li>
+<li><span style="font-family: Arial;">Nov. 15, Tunis, International Institute for Journalism panel at WSIS meeting</span></li>
+<li><span style="font-family: Arial;">Dec. 10, London, participant in Global Voices  summit</span></li>
+</ul>
+<p><strong><span style="font-family: Arial;"> 2004 </span></strong></p>
+<ul>
+<li><span style="font-family: Arial;">Jan. 9: Las Vegas, panel moderator at Consumer Electronics Show</span></li>
+<li><span style="font-family: Arial;">Feb. 13: San Diego, panelist, Digital Democracy symposium</span></li>
+<li><span style="font-family: Arial;">March 13: Austin, speaker at South by Southwest Interactive</span></li>
+<li><span style="font-family: Arial;">April 17: Cambridge, Mass., session leader at BloggerCon conference</span></li>
+<li><span style="font-family: Arial;">June 17: Palo Alto, panelist at Churchill Club event</span></li>
+<li><span style="font-family: Arial;">July 28: Portland, Oregon, speaker at Open Source Convention</span></li>
+<li><span style="font-family: Arial;">Aug. 3: Toronto, panelist at participatory journalism conference</span></li>
+<li><span style="font-family: Arial;">Aug. 13: Santa Cruz, Cal., keynote speaker at Hypertext 2004 conference</span></li>
+<li><span style="font-family: Arial;">Aug. 24: Aspen, speaker at Progress &amp; Freedom Foundation conference</span></li>
+<li><span style="font-family: Arial;">Sept. 21: Palo Alto, talk at Palo Alto Research Center</span></li>
+<li><span style="font-family: Arial;">Sept. 27: New York, speech at Markle Foundation</span></li>
+<li><span style="font-family: Arial;">Sept. 28: New York, speech at Cardozo Law School</span></li>
+<li><span style="font-family: Arial;">Oct. 2: Lake Tahoe, panelist at Gnomedex conference</span></li>
+<li><span style="font-family: Arial;">Oct. 21: London, keynote at U.K. Association of Online Publishers conference</span></li>
+<li><span style="font-family: Arial;">Oct. 4: San Jose, speech at Commonwealth Club event</span></li>
+<li><span style="font-family: Arial;">Oct. 29: Los Angeles, panelist at 35th Anniversary of the Internet Symposium at UCLA</span></li>
+<li><span style="font-family: Arial;">Nov. 6: Stanford, speaker at Accelerating Change conference</span></li>
+<li><span style="font-family: Arial;">Nov. 14: Shanghai, talk at Foreign Correspondents Club</span></li>
+<li><span style="font-family: Arial;">Nov. 15: Shanghai, lecture at Fudan University</span></li>
+<li><span style="font-family: Arial;">Dec. 10: Cambridge, Mass., panelist at Berkman Center for Internet &amp; Society (Harvard Law School) conference</span></li>
+</ul>
+          </div><!-- .entry-content -->
+</article><!-- #post-296 -->
+
+            <div id="comments">
+  
+  
+  
+  
+  
+</div><!-- #comments -->
+
+        
+      </main><!-- #content -->
+    </section><!-- #primary -->
+
+  <aside id="sidebar">
+    <div id="secondary" class="widget-area" role="complementary">
+            <section id="text-423219941" class="widget widget_text">			<div class="textwidget"><img src="http://dangillmor.com/wp-content/uploads/2014/11/danpic1aa.png" alt="Dan Gillmor picture" />
+
+<p>
+<a rel="author me"
+href="https://plus.google.com/+DanGillmor">  </a></p></div>
+		</section>    </div><!-- #secondary .widget-area -->
+
+        <div id="tertiary" class="widget-area" role="complementary">
+      <section id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="http://dangillmor.com/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form></section><section id="categories-406917141" class="widget widget_categories"><h3 class="widget-title">Categories</h3><label class="screen-reader-text" for="cat">Categories</label><select name='cat' id='cat' class='postform' >
+	<option value='-1'>Select Category</option>
+	<option class="level-0" value="14">Arizona</option>
+	<option class="level-0" value="39">ASU</option>
+	<option class="level-0" value="4">Customer Service</option>
+	<option class="level-0" value="30">Education</option>
+	<option class="level-0" value="3">Etcetera</option>
+	<option class="level-0" value="15">Events</option>
+	<option class="level-0" value="42">Journalism</option>
+	<option class="level-0" value="20">Liberty</option>
+	<option class="level-0" value="10">Media</option>
+	<option class="level-0" value="40">MOOC</option>
+	<option class="level-0" value="7">People</option>
+	<option class="level-0" value="29">Permission Taken</option>
+	<option class="level-0" value="43">Personal</option>
+	<option class="level-0" value="1">Policy</option>
+	<option class="level-0" value="37">Privacy</option>
+	<option class="level-0" value="27">Projects</option>
+	<option class="level-0" value="6">Silicon Valley</option>
+	<option class="level-0" value="38">Tech</option>
+</select>
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "cat" );
+	function onCatChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
+			location.href = "http://dangillmor.com/?cat=" + dropdown.options[ dropdown.selectedIndex ].value;
+		}
+	}
+	dropdown.onchange = onCatChange;
+})();
+/* ]]> */
+</script>
+
+</section>		<section id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+					<li>
+				<a href="http://dangillmor.com/2016/08/27/indie-web-camp/">Indie Web Camp</a>
+						</li>
+					<li>
+				<a href="http://dangillmor.com/2016/07/12/witnessing-activism-journalism-and-the-boundaries-of-free-speech-in-the-facebook-age/">Witnessing, activism, journalism &#8212; and the boundaries of free speech in the Facebook age</a>
+						</li>
+					<li>
+				<a href="http://dangillmor.com/2016/06/08/decentralized-web-summit-day-one/">Decentralized Web Summit &#8212; Day One</a>
+						</li>
+					<li>
+				<a href="http://dangillmor.com/2016/06/07/decentralized-web-summit/">Decentralized Web Summit &#8212; Builders Day</a>
+						</li>
+					<li>
+				<a href="http://dangillmor.com/2016/04/09/journalists-stop-complaining-about-facebook-and-do-something-about-it/">Journalists: Stop complaining about Facebook, and do something about it</a>
+						</li>
+				</ul>
+		</section>		    </div><!-- #tertiary .widget-area -->
+      </aside>
+  </div><!-- #main -->
+
+  <footer id="colophon" role="contentinfo">
+    <div id="site-generator">
+            This site is powered by <a href="http://wordpress.org/" rel="generator">WordPress</a> and styled with <a href="http://notizblog.org/projects/sempress/">SemPress</a>    </div>
+  </footer><!-- #colophon -->
+</div><!-- #page -->
+
+<script type='text/javascript' src='http://dangillmor.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/dangillmor.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"sending":"Sending ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://dangillmor.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.5'></script>
+<script type='text/javascript' src='http://dangillmor.com/wp-includes/js/wp-embed.min.js?ver=99ee574c47176f372c838f4c4dee3c0d'></script>
+
+</body>
+</html>

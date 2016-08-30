@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Blog | Dan Gillmor | Just in case you were wondering&#8230; | Page 19</title>
+<link rel="profile" href="http://microformats.org/profile/specs" />
+<link rel="profile" href="http://microformats.org/profile/hatom" />
+<link rel="pingback" href="http://dangillmor.com/xmlrpc.php" />
+
+<link rel="alternate" type="application/rss+xml" title="Dan Gillmor &raquo; Feed" href="http://dangillmor.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Dan Gillmor &raquo; Comments Feed" href="http://dangillmor.com/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/dangillmor.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=99ee574c47176f372c838f4c4dee3c0d"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='contact-form-7-css'  href='http://dangillmor.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='indieweb-css'  href='http://dangillmor.com/wp-content/plugins/indieweb/css/indieweb.css?ver=99ee574c47176f372c838f4c4dee3c0d' type='text/css' media='all' />
+<link rel='stylesheet' id='sempress-style-css'  href='http://dangillmor.com/wp-content/themes/sempress/style.css?ver=99ee574c47176f372c838f4c4dee3c0d' type='text/css' media='all' />
+<script type='text/javascript' src='http://dangillmor.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://dangillmor.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='http://dangillmor.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://dangillmor.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://dangillmor.com/wp-includes/wlwmanifest.xml" /> 
+
+<script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//dangillmor.com/?wordfence_logHuman=1&hid=5D8E4689EFBF7D079BDF8D4173FF48DC');
+</script>  <style type="text/css" id="sempress-custom-colors">
+    body { text-shadow: 0 1px 0 #ffffff; }
+    body, a { color: #03010c; }
+    .widget, #access {
+      border-bottom: 1px solid #000000;
+      -moz-box-shadow: #ffffff 0 1px 0 0;
+      -webkit-box-shadow: #ffffff 0 1px 0 0;
+      box-shadow: #ffffff 0 1px 0 0;
+    }
+    article.comment {
+      border-top: 1px solid #ffffff;
+      -moz-box-shadow: #000000 0 -1px 0 0;
+      -webkit-box-shadow: #000000 0 -1px 0 0;
+      box-shadow: #000000 0 -1px 0 0;
+    }
+  </style>
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+</head>
+
+<body class="blog paged custom-background paged-19 multi-column hfeed h-feed feed" itemscope="" itemtype="http://schema.org/Blog">
+<div id="page">
+  <header id="branding" role="banner">
+    <h1 id="site-title" itemprop="name" class="p-title"><a href="http://dangillmor.com/" title="Dan Gillmor" rel="home" itemprop="url" class="u-url url">Dan Gillmor</a></h1>
+    <h2 id="site-description" itemprop="description" class="p-summary e-content">Just in case you were wondering&#8230;</h2>
+    
+        
+    <nav id="access" role="navigation">
+      <h1 class="assistive-text section-heading"><a href="#access" title="Main menu">Main menu</a></h1>
+      <div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
+
+      <div class="menu-blog-container"><ul id="menu-blog" class="menu"><li id="menu-item-812" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-810 current_page_item current_page_parent menu-item-812"><a href="http://dangillmor.com/blog/">Blog</a></li>
+<li id="menu-item-809" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-809"><a href="http://dangillmor.com/about/">About Dan</a></li>
+<li id="menu-item-806" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-806"><a href="http://dangillmor.com/projects/">Mediactive</a></li>
+<li id="menu-item-808" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-808"><a href="http://dangillmor.com/speaking/">Speaking/Calendar</a></li>
+<li id="menu-item-807" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-807"><a href="http://dangillmor.com/contact/">Contact</a></li>
+</ul></div>    </nav><!-- #access -->
+  </header><!-- #branding -->
+
+  <div id="main">
+
+    <section id="primary">
+      <main id="content" role="main">
+
+      
+          <nav id="nav-above">
+    <h1 class="assistive-text section-heading">Post navigation</h1>
+
+  
+        <div class="nav-previous"><a href="http://dangillmor.com/blog/page/20/"  rel="prev"><span class="meta-nav">&larr;</span> Older posts</a></div>
+    
+        <div class="nav-next"><a href="http://dangillmor.com/blog/page/18/"  rel="next">Newer posts <span class="meta-nav">&rarr;</span></a></div>
+    
+  
+  </nav><!-- #nav-above -->
+  
+                
+          <article id="post-125" class="post-125 post type-post status-publish format-standard category-etcetera h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2008/03/27/joshua-micah-marshall-to-be-a-keynote-speaker-at-berkman10-conference/" class="u-url url" title="Permalink to Joshua Micah Marshall To Be a Keynote Speaker at Berkman@10 Conference" rel="bookmark" itemprop="url">Joshua Micah Marshall To Be a Keynote Speaker at Berkman@10 Conference</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2008/03/27/joshua-micah-marshall-to-be-a-keynote-speaker-at-berkman10-conference/" title="11:33 pm" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2008-03-27T23:33:29+00:00" itemprop="dateModified">March 27, 2008</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dangillmor/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p><a href="http://www.berkmanat10.org"><img alt="Berkman at 10" id="wym-1206554709026" src="http://cyber.law.harvard.edu/sites/cyber.law.harvard.edu/files/berkmanat10.jpg" height="136" width="100" align="left"/></a>I hope some of you can join us May 15-16 at Harvard&#8217;s Berkman Center for Internet &#38; Society for the <a href="http://cyber.law.harvard.edu/node/4114">Berkman@10 Conference: The Future of the Internet</a>. This gathering, marking the center&#8217;s 10th anniversary, is shaping up to be an extraordinary affair.</p>
+<p>As a Berkman Fellow the past several years, I&#8217;ve had a chance to spend (not nearly enough) time with some great people who are doing some of the best work on understanding the Net&#8217;s already powerful impact on our lives. The May conference will, in part, offer a summary of where we are and where we may be going. As the conference home page asks: &#8220;In tracing the trajectory of the past and attempting to lean into the future, what are the contours of the moment we find ourselves in? What are the most important questions that will propel us into the next decade?&#8221;</p>
+<p>Among the many, many great speakers will be our lunchtime keynoter on Friday, May 16 &#8212; someone who&#8217;ll need little introduction to regular readers of this blog. He is Joshua Micah Marshall, founder and editor of <a href="http://www.talkingpointsmemo.com">Talking Points Memo</a> and several related political blogs. What he and his team do each day has become essential reading for people who care about politics and policy, and he recently was honored for his work with a truly high honor in journalism, the George Polk Award.</p>
+<p>I&#8217;ll have the honor of introducing Josh Marshall. He has been a touchstone for my own work, and has shown one way forward for the journalism &#8220;by the people, for the people,&#8221; in which I so fervently believe.</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/etcetera/" rel="category tag">Etcetera</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2008/03/27/joshua-micah-marshall-to-be-a-keynote-speaker-at-berkman10-conference/#comments">1 Comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-125 -->
+        
+          <article id="post-124" class="post-124 post type-post status-publish format-standard category-etcetera h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2008/03/25/housing-bubble-coverage-defending-the-indefensible/" class="u-url url" title="Permalink to Housing Bubble Coverage: Defending the Indefensible" rel="bookmark" itemprop="url">Housing Bubble Coverage: Defending the Indefensible</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2008/03/25/housing-bubble-coverage-defending-the-indefensible/" title="10:24 pm" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2008-03-25T22:24:59+00:00" itemprop="dateModified">March 25, 2008</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dangillmor/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <blockquote><p>Editor &#38; Publisher: <a href="http://www.editorandpublisher.com/eandp/news/article_display.jsp?vnu_content_id=1003732823">Newspaper Biz Editors Defend Mortgage Crisis Coverage</a>. <em>Did the growing mortgage credit crisis, which took a huge turn with last week&#8217;s collapse of Bear Stearns, get enough early coverage from newspapers?  Top business editors at several of the nation&#8217;s major papers say yes, although a few admit some of the more complicated elements may not have been broken out enough for readers.<br />
+</em></p></blockquote>
+<p>What tripe. The newspaper industry almost totally failed to do its job, and the public got screwed once again.</p>
+<p>Citing a story here and there, as several editors do in the E&#38;P piece, is not evidence of newspapers doing their job. It&#8217;s quite the opposite.</p>
+<p>When an economic catastrophe of this sort &#8212; and entirely predicable one &#8212; is building, journalists are failing to do their jobs when they don&#8217;t harp on it.</p>
+<p>As I said in a previous posting, newspapers and broadcasters were raking in billions in advertising from the real estate and banking industries as this bubble inflated. I do not believe this is a coincidence. I also don’t believe it was deliberate malfeasance; but you just don’t see lots of tough coverage in media of the people and companies paying the bills.</p>
+<p>Many if not most papers have special weekly real estate pages or sections where you would find little hint of the potential for trouble. I know I looked for it in the papers I read. That’s where the discussion belonged &#8212; as well, of course, as Page One &#8212; not solely in the occasional business page stories. Hundreds of references to bubbles, most in the past year and not when there was a chance to slow down that train, were dwarfed by comparison to the buying advice that dominated coverage of real estate overall.</p>
+<p>Oh, sure, there were extremely infrequent stories containing warnings in a few publications — and occasional quotes from skeptics in the prices-just-keep-rising stories that overwhelmingly dominated the coverage. But the reality is that journalists mostly didn’t have a clue, or didn’t want to have a clue. I don’t know which is worse.</p>
+<p>Some bloggers, and some economists, did shout warnings. They were ignored, or worse, insulted by wishful thinkers and (I suspect) people who stood to gain from the continuing bubble.</p>
+<p>Again, from a previous post, here are some questions the media all but ignored until too late:</p>
+<p>Where were the stories we should have been seeing, noting that &#8220;buyers&#8221; &#8212; a word that is ludicrous in context &#8211;were running headlong toward a financial cliff? What happened to the coverage of a housing market that fewer and fewer people could afford to enter except with no-interest or no-down-payment loans, where home prices were so far out of sync with the economy that there was no precedent for such imbalance?</p>
+<p>Where were the stories pointing out that the secondary (and far beyond) mortgage markets were salting hugely risky debt all through the American economy? You think your bank or pension fund doesn’t have some of this garbage somewhere in its books? Think again.</p>
+<p>The media also bungled by not fingering the makers of this bubble apart from foolish “buyers” who proved to be such suckers. This boom was fueled by people who knew it couldn’t last: brokers, bankers and, above all, Wall Street’s ever-clever wizards who risk other people’s money for gigantic fees.</p>
+<p>This is another journalistic scandal. It’s not quite on the order of the bended-knee, pre-war coverage — stenography of government officials’ lies and deceptions — that helped steer America into the Iraq war, but only because it’s not killing people in large numbers.</p>
+<p>It’s a massive enough scandal, though. There’s plenty of pain left in this deflation, possibly including an outright tanking of the economy.</p>
+<p>The journalism craft should take a long, hard look at what it’s failed to do, yet again, in the housing bubble. It has failed to warn — as loudly and incessanty as it did in promoting the housing bubble — that a financial crunch was on the way.</p>
+<p>There’s plenty of blame to go around in this mess. The finger-pointing has barely begun. But when it gets going for real, I hope that journalists who do some of that pointing will at least look in a mirror.</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/etcetera/" rel="category tag">Etcetera</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2008/03/25/housing-bubble-coverage-defending-the-indefensible/#comments">11 Comments</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-124 -->
+        
+          <article id="post-123" class="post-123 post type-post status-publish format-standard category-silicon-valley h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2008/03/19/odious-and-expected/" class="u-url url" title="Permalink to Odious, and Expected" rel="bookmark" itemprop="url">Odious, and Expected</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2008/03/19/odious-and-expected/" title="8:20 am" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2008-03-19T08:20:20+00:00" itemprop="dateModified">March 19, 2008</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dangillmor/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p>Frank Quattrone &#8220;<a href="http://www.mercurynews.com/business/ci_8622609">makes return with boutique investment firm</a>&#8221; (Mercury News). Not guilty legally? Yes. But he&#8217;s <a href="http://money.cnn.com/magazines/fortune/fortune_archive/2001/09/03/309270/index.htm">no innocent</a>. </p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/silicon-valley/" rel="category tag">Silicon Valley</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2008/03/19/odious-and-expected/#respond">Leave a comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-123 -->
+        
+          <article id="post-122" class="post-122 post type-post status-publish format-standard category-silicon-valley h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2008/03/16/my-older-wiser-brothers-new-blog/" class="u-url url" title="Permalink to My Older, Wiser Brother&#8217;s New Blog" rel="bookmark" itemprop="url">My Older, Wiser Brother&#8217;s New Blog</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2008/03/16/my-older-wiser-brothers-new-blog/" title="8:38 am" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2008-03-16T08:38:02+00:00" itemprop="dateModified">March 16, 2008</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dangillmor/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p>Steve&#8217;s new postings are under the <a href="http://blogs.eweek.com/newsgang/">NewsGang</a> moniker at eWeek. Great stuff as you&#8217;d expect.</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/silicon-valley/" rel="category tag">Silicon Valley</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2008/03/16/my-older-wiser-brothers-new-blog/#respond">Leave a comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-122 -->
+        
+          <article id="post-121" class="post-121 post type-post status-publish format-standard category-policy h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2008/03/08/off-the-record-not-unless-you-agree-ahead-of-time/" class="u-url url" title="Permalink to Off the Record? Not Unless You Agree Ahead of Time" rel="bookmark" itemprop="url">Off the Record? Not Unless You Agree Ahead of Time</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2008/03/08/off-the-record-not-unless-you-agree-ahead-of-time/" title="2:15 am" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2008-03-08T02:15:08+00:00" itemprop="dateModified">March 8, 2008</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dangillmor/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p><a href="http://www.salon.com/opinion/greenwald/?last_story=/opinion/greenwald/2008/03/08/carlson/">Glenn Greenwald</a> (Salon) writes:</p>
+<blockquote><p><em>The most interesting part of the controversy over Obama advisor Samantha Power&#8217;s referring to Hillary Clinton as a &#8220;monster&#8221; &#8212; one might say the only interesting part &#8212; is that immediately after Power said it, she tried to proclaim that it was &#8220;off the record.&#8221; Here was Power&#8217;s exact quote:</em></p></blockquote>
+<blockquote><p>&#8220;She is a monster, too –- that is off the record –- she is stooping to anything.&#8221;<em><br />
+</em></p></blockquote>
+<blockquote><p><em>But the reporter who was interviewing her, Britain&#8217;s Gerri Peev of The Scotsman, printed the comment anyway &#8212; as she should have, because Peev had never agreed that any parts of the interview would be &#8220;off the record,&#8221; and nobody has the right to demand unilaterally, and after the fact, that journalists keep their embarrassing remarks a secret.</em></p></blockquote>
+<p>Read the whole piece for a solid, if repetitive, analysis of U.S. journalists often-pathetic deference to power.</p>
+<p>When I was a reporter and then a columnist, I had a rule that no public figure &#8212; that is, anyone who&#8217;d had experience with being interviewed &#8212; had the right to declare anything off the record after the fact. Now I might agree not to publish something if it wasn&#8217;t relevant, but if something was to be off the record it would be decided ahead of time.</p>
+<p>I didn&#8217;t have the same policy with people who weren&#8217;t media-savvy. Sometimes I&#8217;d actually say to someone, &#8220;Do you realize that I what you&#8217;re telling me might go into the newspaper?&#8221;  I&#8217;d let them reconsider their words.</p>
+<p>In the past several days I&#8217;ve had a brief email correspondence with a journalism student (not from my own school) who is determined to conflate citizen journalism with the deliberate and unfair maligning of people for political reasons. He knows what he is going to say and only wants a quote or two from me to reinforce it. I declined to be part of his broad slam on a genre that is much more nuanced than he&#8217;s apparently trying to portray.</p>
+<p>I will be publishing the emails in another post, with my commentary. My current intention is not to publish his name or institution, because I suspect he &#8212; despite his course of study &#8212; is not savvy about the media in any serious way.</p>
+<p>Sadly, savvy in media for U.S. journalists tends to mean doing what powerful people want you to do. That&#8217;s the more serious problem, far more so than Powers&#8217; unfortunate remark.</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/policy/" rel="category tag">Policy</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2008/03/08/off-the-record-not-unless-you-agree-ahead-of-time/#respond">Leave a comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-121 -->
+        
+          <article id="post-120" class="post-120 post type-post status-publish format-standard category-policy h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2008/03/08/torturer-in-chief/" class="u-url url" title="Permalink to Torturer in Chief" rel="bookmark" itemprop="url">Torturer in Chief</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2008/03/08/torturer-in-chief/" title="1:54 am" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2008-03-08T01:54:38+00:00" itemprop="dateModified">March 8, 2008</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dangillmor/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p>The NYT has the text of President Bush&#8217;s radio speech in which he announces his veto of legislation that would have banned the CIA from torturing suspects. See: <a href="http://www.nytimes.com/2008/03/08/washington/08cnd-ptext.html">Text: Bush on Veto of Intelligence Bill</a> for the sickening reality that Bush aims to go down in history as the president who proudly and unapologetically endorsed torture as America&#8217;s state policy.</p>
+<p>He has shamed himself so many times now that it&#8217;s commonplace. But he shames us all &#8212; and Congress in particular, unless the lawmakers recover enough of their honor to override this travesty.</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/policy/" rel="category tag">Policy</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2008/03/08/torturer-in-chief/#respond">Leave a comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-120 -->
+        
+          <article id="post-119" class="post-119 post type-post status-publish format-standard category-policy h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2008/03/07/more-progress-toward-a-british-surveillance-state/" class="u-url url" title="Permalink to More &#8220;Progress&#8221; Toward a British Surveillance State" rel="bookmark" itemprop="url">More &#8220;Progress&#8221; Toward a British Surveillance State</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2008/03/07/more-progress-toward-a-british-surveillance-state/" title="11:28 pm" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2008-03-07T23:28:59+00:00" itemprop="dateModified">March 7, 2008</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dangillmor/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <blockquote><p>Telegraph: <a href="http://www.telegraph.co.uk/news/main.jhtml?xml=/news/2008/03/07/nheathrow107.xml">Heathrow airport first to fingerprint</a>. <em>All four million domestic passengers who will pass through Terminal 5 annually after it opens on March 27 will have four fingerprints taken, as well as being photographed, when they check in.</em><em><br />
+</em></p></blockquote>
+<p>The culture that created the Magna Carta is utterly turning its back on liberty. The current American government merely wishes it could do stuff like this, but there&#8217;s still just enough left of the Bill of Rights to prevent it &#8212; for the time being, anyway.</p>
+<p>I avoid Heathrow for many other reasons. This attitude on the part of the authorities there provides one more. </p>
+<p>Saddest of all: The British people are happily letting their government turn the nation into a police state. They will rue their inaction, but probably not until it&#8217;s too late.</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/policy/" rel="category tag">Policy</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2008/03/07/more-progress-toward-a-british-surveillance-state/#comments">1 Comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-119 -->
+        
+          <article id="post-118" class="post-118 post type-post status-publish format-standard category-policy h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2008/03/05/countering-british-government-paranoia/" class="u-url url" title="Permalink to Countering British Government Paranoia" rel="bookmark" itemprop="url">Countering British Government Paranoia</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2008/03/05/countering-british-government-paranoia/" title="2:07 am" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2008-03-05T02:07:06+00:00" itemprop="dateModified">March 5, 2008</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dangillmor/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <blockquote><p>Boing Boing: <a href="http://www.boingboing.net/2008/03/05/remixing-the-london.html">Remixing the London police&#8217;s anti-photographer terrror posters</a>.<br />
+<em>Responding to the London Metropolitan Police&#8217;s new anti-photographer snitch campaign, wherein posters urge Londoners to turn in people who might be taking pictures of CCTV cameras, many people have taken a crack at redesigning the posters to point out the absurdity of them.</em></p></blockquote>
+<p>This is how people, creating their own media, can help expose government (and other) overreaching. Another way in this case would be to encourage everyone to take photos everywhere.</p>
+<p>The speed with which the U.K. is turning into a police state is just amazing, and frightening.</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/policy/" rel="category tag">Policy</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2008/03/05/countering-british-government-paranoia/#respond">Leave a comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-118 -->
+        
+          <article id="post-117" class="post-117 post type-post status-publish format-standard category-policy h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2008/02/29/our-dangerous-fiscal-policy/" class="u-url url" title="Permalink to Our Dangerous Fiscal Policy" rel="bookmark" itemprop="url">Our Dangerous Fiscal Policy</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2008/02/29/our-dangerous-fiscal-policy/" title="1:39 am" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2008-02-29T01:39:02+00:00" itemprop="dateModified">February 29, 2008</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dangillmor/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <blockquote><p>Wall Street Journal: <a href="http://online.wsj.com/article/SB120424639824701397.html?mod=hps_us_at_glance_opinion">The Bernanke Reflation</a>. <em>The people who aren&#8217;t being fooled by all this are the American people. They don&#8217;t pay their bills with &#8220;core&#8221; dollar bills, and they know those dollars buy less with each passing month. This explains their rising economic anxiety &#8212; and anger &#8212; better than trade or job losses do, especially since the job market has remained relatively healthy. Inflation is the great thief of the middle class, as even Americans who don&#8217;t recall the 1970s are learning. With its all-in reflation bet, the Bernanke Fed is gambling with their money.</em><em><br />
+</em></p></blockquote>
+<p>They are exactly right about this. To &#8220;cure&#8221; the hangover from the credit bubble &#8212; which the Fed helped create &#8212; the Fed is now aiming us into potential hyperinflation.</p>
+<p>Scary.</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/policy/" rel="category tag">Policy</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2008/02/29/our-dangerous-fiscal-policy/#respond">Leave a comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-117 -->
+        
+          <article id="post-116" class="post-116 post type-post status-publish format-standard category-policy h-entry hentry h-as-article" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2008/02/26/the-net-remembers-for-good-and-bad/" class="u-url url" title="Permalink to The Net Remembers, for Good and Bad" rel="bookmark" itemprop="url">The Net Remembers, for Good and Bad</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2008/02/26/the-net-remembers-for-good-and-bad/" title="1:48 am" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2008-02-26T01:48:04+00:00" itemprop="dateModified">February 26, 2008</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dangillmor/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p><em>I have a column running on the Guardian&#8217;s website today. It&#8217;s entitled &#8220;</em><em><a href="http://commentisfree.guardian.co.uk/dan_gillmor/2008/02/freedom_of_information.html">Freedom of information</a></em><em>&#8221; &#8212; and is reprinted below:<br />
+</em><br />
+What does a Swiss bank that does business in the Cayman Islands have in common with a Hong Kong actor who jets around the globe? They are object lessons this month in a reality that anyone handling information needs to understand. Like toothpaste squeezed from a tube, information, once out in the wild, is all but uncontainable.</p>
+<p>The Julius Baer Bank is a protagonist in the now-famous <a href="http://www.citmedialaw.org/blog/2008/court-orders-wikileaksorg-shutdown-then-grants-limited-reprieve">Wikileaks case</a>. The bank&#8217;s lawyers managed to persuade a US federal judge, Jeffrey White, that the first amendment of the US Constitution had no meaning, obtaining an <a href="http://blogs.guardian.co.uk/technology/2008/02/18/incredibly_wikileaks_is_deleted_from_the_internet_via_dns.html">injunction and follow-up order</a> that, among other things, required blocking the visibility of the domain wikileaks.org in the internet&#8217;s Domain Name System (DNS). A former bank employee had posted documents on the anonymous whistle-blowing website, allegedly describing shady dealings &#8211; hmmm, Cayman Islands, Swiss banks &#8211; on behalf of clients.</p>
+<p>&#8220;The orders don&#8217;t just direct the take down of existing content, they also enjoin any future publication of the material,&#8221; says David Ardia, director of the Citizen Media Law Project at Harvard University Law School&#8217;s Berkman Center for Internet &#38; Society (of which I&#8217;m a co-founder). &#8220;Even more significantly, the second order requires anyone who receives notice of the order to refrain from publishing, distributing or linking to the documents.&#8221;</p>
+<p>In a <a href="http://www.citmedialaw.org/blog/2008/making-sense-wikileaks-fiasco-prior-restraints-internet-age">blog post</a> on the project&#8217;s site, Ardia called the judge&#8217;s action &#8220;unthinkable&#8221;:</p>
+<p>&#8220;He issued an order that is so broad I haven&#8217;t been able to find a single example in the US that comes close: he ordered the complete shutdown of the Wikileaks website. He did this not by ordering that the parties shut off access to the offending documents (that came in a second order), but by ordering that [Wikileaks&#8217;s domain registrar] erase the &#8216;navigation information&#8217; that directs people to the site &#8230; . That is like telling a newspaper it can continue to print its paper, but the delivery drivers all have to go home.&#8221;</p>
+<p>The judge blatantly abused his power. Luckily, due to the nature of the internet and the anger of the online community, it had precisely the opposite effect of what was intended.</p>
+<p>First, Wikileaks&#8217;s proprietors are not stupid. They have several &#8220;mirror&#8221; sites with other domain names (such as wikileaks.be) where the bank documents, among 1.2 million other documents contributed by whistle-blowers around the world, can also be found. Meanwhile, people sympathetic to Wikileaks immediately began putting up their own mirrors and distributing the documents in question. And due to the judge&#8217;s (and bank&#8217;s) utter cluelessness about how the internet actually works, the injunction (essentially a rubber-stamp of something the bank&#8217;s lawyers wrote) didn&#8217;t prevent the Wikileaks site from being visible via its more direct URL &#8211; http://88.80.13.160/ &#8211; which the DNS translates into words we recognise.</p>
+<p>If I were a customer of that bank, I&#8217;d quickly withdraw my business on several grounds, not least the institution&#8217;s inability to keep records secure in the first instance but also the way it flailed about once the records were public. (If I were a member of the US Congress I&#8217;d be launching an official inquiry into judge White&#8217;s fitness for office as well, though Congress is not noted these days for its understanding of, much less appreciation for, the Constitution.)</p>
+<p>But the bank&#8217;s dilemma does elicit some sympathy, and suggests a larger issue that proponents of whistle-blowing and transparency &#8211; count me loudly among them &#8211; should acknowledge. The dissemination of information may be all but unstoppable, barring an absolute crackdown on and censorship of all online data (which could never be fully effective in any event). But there are troubling implications.</p>
+<p>Consider, in that context, the <a href="http://www.guardian.co.uk/world/2008/feb/13/china.news">sad case of Edison Chen</a>, a Vancouver-born actor who now makes his base in Hong Kong. He famously took photographs of himself and at least five women (sequentially, not all together) in sexual situations and stored them on his laptop computer. After he took the machine for repairs, the photos made their way to the internet, apparently copied by a technician at the shop and then put online. It is trivially easy to find the images online now.</p>
+<p>This was not about blowing whistles on possible corruption. Chen doesn&#8217;t deserve this, however foolish he was to leave the pictures, unencrypted, on a disk that he put in someone else&#8217;s hands. The women especially don&#8217;t deserve it, however foolish they were to participate in the photo sessions. These pictures were never meant to be public, and the people who participated in their distribution &#8211; including, in my view, anyone who continues to send them around &#8211; are morally and legally wrong. (Disclosure: I did obtain them to verify how easily this could be done, and then immediately deleted them from my computer.)</p>
+<p>Chen, the women and the authorities can and probably should pursue various legal remedies to punish whoever put the photos on the internet. Apart from asking the rest of us to be decent and honourable, however, they have few further options.</p>
+<p>The situations of Julius Baer Bank, Edison Chen and a host of others are fodder for the control freaks of our age. Governments and big business fear their power will dissolve. Moral crusaders fear almost everything. They all quake at the consequences of what they consider liberty run amuck.</p>
+<p>So there are powerful forces at work to clamp down on this infinitely valuable medium. It can never be a 100% solution, of course, because digital information can be encrypted, disguised and otherwise manipulated to make porous even the most seemingly impenetrable barriers. But the rich and powerful interests that want to control our lives can make it vastly more difficult to have any measure of free speech.</p>
+<p>I tend toward the absolutist side of the argument. Yes, there are negative consequences to freedom. Liberty brings risk. We take those risks because they are essential to progress, and to fundamental human rights. Abuses by the wielders of great power are much more dangerous than those by the rest of us.</p>
+<p>But that doesn&#8217;t absolve us from doing the right thing. Let&#8217;s keep the control freaks at bay, but exercise some self-control, too.</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/policy/" rel="category tag">Policy</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2008/02/26/the-net-remembers-for-good-and-bad/#respond">Leave a comment</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-116 -->
+        
+          <nav id="nav-below">
+    <h1 class="assistive-text section-heading">Post navigation</h1>
+
+  
+        <div class="nav-previous"><a href="http://dangillmor.com/blog/page/20/"  rel="prev"><span class="meta-nav">&larr;</span> Older posts</a></div>
+    
+        <div class="nav-next"><a href="http://dangillmor.com/blog/page/18/"  rel="next">Newer posts <span class="meta-nav">&rarr;</span></a></div>
+    
+  
+  </nav><!-- #nav-below -->
+  
+      
+      </main><!-- #content -->
+    </section><!-- #primary -->
+
+  <aside id="sidebar">
+    <div id="secondary" class="widget-area" role="complementary">
+            <section id="text-423219941" class="widget widget_text">			<div class="textwidget"><img src="http://dangillmor.com/wp-content/uploads/2014/11/danpic1aa.png" alt="Dan Gillmor picture" />
+
+<p>
+<a rel="author me"
+href="https://plus.google.com/+DanGillmor">  </a></p></div>
+		</section>    </div><!-- #secondary .widget-area -->
+
+        <div id="tertiary" class="widget-area" role="complementary">
+      <section id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="http://dangillmor.com/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form></section><section id="categories-406917141" class="widget widget_categories"><h3 class="widget-title">Categories</h3><label class="screen-reader-text" for="cat">Categories</label><select name='cat' id='cat' class='postform' >
+	<option value='-1'>Select Category</option>
+	<option class="level-0" value="14">Arizona</option>
+	<option class="level-0" value="39">ASU</option>
+	<option class="level-0" value="4">Customer Service</option>
+	<option class="level-0" value="30">Education</option>
+	<option class="level-0" value="3">Etcetera</option>
+	<option class="level-0" value="15">Events</option>
+	<option class="level-0" value="42">Journalism</option>
+	<option class="level-0" value="20">Liberty</option>
+	<option class="level-0" value="10">Media</option>
+	<option class="level-0" value="40">MOOC</option>
+	<option class="level-0" value="7">People</option>
+	<option class="level-0" value="29">Permission Taken</option>
+	<option class="level-0" value="43">Personal</option>
+	<option class="level-0" value="1">Policy</option>
+	<option class="level-0" value="37">Privacy</option>
+	<option class="level-0" value="27">Projects</option>
+	<option class="level-0" value="6">Silicon Valley</option>
+	<option class="level-0" value="38">Tech</option>
+</select>
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "cat" );
+	function onCatChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
+			location.href = "http://dangillmor.com/?cat=" + dropdown.options[ dropdown.selectedIndex ].value;
+		}
+	}
+	dropdown.onchange = onCatChange;
+})();
+/* ]]> */
+</script>
+
+</section>		<section id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+					<li>
+				<a href="http://dangillmor.com/2016/08/27/indie-web-camp/">Indie Web Camp</a>
+						</li>
+					<li>
+				<a href="http://dangillmor.com/2016/07/12/witnessing-activism-journalism-and-the-boundaries-of-free-speech-in-the-facebook-age/">Witnessing, activism, journalism &#8212; and the boundaries of free speech in the Facebook age</a>
+						</li>
+					<li>
+				<a href="http://dangillmor.com/2016/06/08/decentralized-web-summit-day-one/">Decentralized Web Summit &#8212; Day One</a>
+						</li>
+					<li>
+				<a href="http://dangillmor.com/2016/06/07/decentralized-web-summit/">Decentralized Web Summit &#8212; Builders Day</a>
+						</li>
+					<li>
+				<a href="http://dangillmor.com/2016/04/09/journalists-stop-complaining-about-facebook-and-do-something-about-it/">Journalists: Stop complaining about Facebook, and do something about it</a>
+						</li>
+				</ul>
+		</section>		    </div><!-- #tertiary .widget-area -->
+      </aside>
+  </div><!-- #main -->
+
+  <footer id="colophon" role="contentinfo">
+    <div id="site-generator">
+            This site is powered by <a href="http://wordpress.org/" rel="generator">WordPress</a> and styled with <a href="http://notizblog.org/projects/sempress/">SemPress</a>    </div>
+  </footer><!-- #colophon -->
+</div><!-- #page -->
+
+<script type='text/javascript' src='http://dangillmor.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/dangillmor.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"sending":"Sending ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://dangillmor.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.5'></script>
+<script type='text/javascript' src='http://dangillmor.com/wp-includes/js/wp-embed.min.js?ver=99ee574c47176f372c838f4c4dee3c0d'></script>
+
+</body>
+</html>

@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Learning about, and deploying IndieWeb tools | Dan Gillmor</title>
+<link rel="profile" href="http://microformats.org/profile/specs" />
+<link rel="profile" href="http://microformats.org/profile/hatom" />
+<link rel="pingback" href="http://dangillmor.com/xmlrpc.php" />
+
+<link rel="alternate" type="application/rss+xml" title="Dan Gillmor &raquo; Feed" href="http://dangillmor.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Dan Gillmor &raquo; Comments Feed" href="http://dangillmor.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Dan Gillmor &raquo; Learning about, and deploying IndieWeb tools Comments Feed" href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/dangillmor.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=99ee574c47176f372c838f4c4dee3c0d"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='contact-form-7-css'  href='http://dangillmor.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='indieweb-css'  href='http://dangillmor.com/wp-content/plugins/indieweb/css/indieweb.css?ver=99ee574c47176f372c838f4c4dee3c0d' type='text/css' media='all' />
+<link rel='stylesheet' id='sempress-style-css'  href='http://dangillmor.com/wp-content/themes/sempress/style.css?ver=99ee574c47176f372c838f4c4dee3c0d' type='text/css' media='all' />
+<script type='text/javascript' src='http://dangillmor.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://dangillmor.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='http://dangillmor.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://dangillmor.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://dangillmor.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Wise advice' href='http://dangillmor.com/2014/03/08/wise-advice/' />
+<link rel='next' title='Snowden: Suspicionless surveillance makes us all less safe' href='http://dangillmor.com/2014/03/08/snowden-suspicionless-surveillance-makes-us-all-less-safe/' />
+
+<link rel="canonical" href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/" />
+<link rel='shortlink' href='http://dangillmor.com/?p=803' />
+<link rel="alternate" type="application/json+oembed" href="http://dangillmor.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fdangillmor.com%2F2014%2F03%2F08%2Flearning-about-and-deploying-indieweb-tools%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://dangillmor.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fdangillmor.com%2F2014%2F03%2F08%2Flearning-about-and-deploying-indieweb-tools%2F&#038;format=xml" />
+<script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//dangillmor.com/?wordfence_logHuman=1&hid=8162AEA2C1450599431377A6981B7200');
+</script>  <style type="text/css" id="sempress-custom-colors">
+    body { text-shadow: 0 1px 0 #ffffff; }
+    body, a { color: #03010c; }
+    .widget, #access {
+      border-bottom: 1px solid #000000;
+      -moz-box-shadow: #ffffff 0 1px 0 0;
+      -webkit-box-shadow: #ffffff 0 1px 0 0;
+      box-shadow: #ffffff 0 1px 0 0;
+    }
+    article.comment {
+      border-top: 1px solid #ffffff;
+      -moz-box-shadow: #000000 0 -1px 0 0;
+      -webkit-box-shadow: #000000 0 -1px 0 0;
+      box-shadow: #000000 0 -1px 0 0;
+    }
+  </style>
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+<link rel="amphtml" href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/amp/" /></head>
+
+<body class="single single-post postid-803 single-format-standard custom-background multi-column h-entry hentry h-as-article" itemscope="" itemtype="http://schema.org/BlogPosting">
+<div id="page">
+  <header id="branding" role="banner">
+    <h1 id="site-title"><a href="http://dangillmor.com/" title="Dan Gillmor" rel="home">Dan Gillmor</a></h1>
+    <h2 id="site-description">Just in case you were wondering&#8230;</h2>
+    
+        
+    <nav id="access" role="navigation">
+      <h1 class="assistive-text section-heading"><a href="#access" title="Main menu">Main menu</a></h1>
+      <div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
+
+      <div class="menu-blog-container"><ul id="menu-blog" class="menu"><li id="menu-item-812" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-812"><a href="http://dangillmor.com/blog/">Blog</a></li>
+<li id="menu-item-809" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-809"><a href="http://dangillmor.com/about/">About Dan</a></li>
+<li id="menu-item-806" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-806"><a href="http://dangillmor.com/projects/">Mediactive</a></li>
+<li id="menu-item-808" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-808"><a href="http://dangillmor.com/speaking/">Speaking/Calendar</a></li>
+<li id="menu-item-807" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-807"><a href="http://dangillmor.com/contact/">Contact</a></li>
+</ul></div>    </nav><!-- #access -->
+  </header><!-- #branding -->
+
+  <div id="main">
+
+    <section id="primary">
+      <main id="content" role="main">
+
+      
+          <nav id="nav-above">
+    <h1 class="assistive-text section-heading">Post navigation</h1>
+
+  
+    <div class="nav-previous"><a href="http://dangillmor.com/2014/03/08/wise-advice/" rel="prev"><span class="meta-nav">&larr;</span> Wise advice</a></div>    <div class="nav-next"><a href="http://dangillmor.com/2014/03/08/snowden-suspicionless-surveillance-makes-us-all-less-safe/" rel="next">Snowden: Suspicionless surveillance makes us all less safe <span class="meta-nav">&rarr;</span></a></div>
+  
+  </nav><!-- #nav-above -->
+  
+        <article id="post-803" class="post-803 post type-post status-publish format-standard category-permission-taken category-silicon-valley">
+  <header class="entry-header">
+    <h1 class="entry-title p-name" itemprop="name headline"><a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/" class="u-url url" title="Permalink to Learning about, and deploying IndieWeb tools" rel="bookmark" itemprop="url">Learning about, and deploying IndieWeb tools</a></h1>
+
+        <div class="entry-meta">      
+      <span class="sep">Posted on </span><a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/" title="11:04 am" rel="bookmark" class="url u-url"><time class="entry-date updated published dt-updated dt-published" datetime="2014-03-08T11:04:53+00:00" itemprop="dateModified">March 8, 2014</time></a><address class="byline"> <span class="sep"> by </span> <span class="author p-author vcard hcard h-card" itemprop="author" itemscope itemtype="http://schema.org/Person"><img alt='' src='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=80&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-40 photo' height='40' width='40' /> <a class="url uid u-url u-uid fn p-name" href="http://dangillmor.com/author/dangillmor/" title="View all posts by Dan Gillmor" rel="author" itemprop="url"><span itemprop="name">Dan Gillmor</span></a></span></address>    </div><!-- .entry-meta -->
+      </header><!-- .entry-header -->
+
+      <div class="entry-content e-content" itemprop="description articleBody">
+    <p><a href="http://indiewebcamp.com/#IndieWebCampSF_2014"><img class="alignleft" style="margin-right: 2px; margin-left: 2px; border: 0px none;" alt="" src="http://indiewebcamp.com/images/thumb/5/5b/indie-web-camp2014-sf.jpg/250px-indie-web-camp2014-sf.jpg" width="193" height="159" /></a>It&#8217;s the second day of the <a href="http://indiewebcamp.com/2014/SF">IndieWebCamp</a> in San Francisco, where some talented tech folks are discussing, demonstrating and deploying tools designed to keep the Internet as open as possible. I&#8217;m learning a ton about things like <a href="http://microformats.org/">microformats</a>, <a href="https://indiewebcamp.com/webmention‎">webmention</a>, and other useful (if, to relatively non-technical people like me, somewhat arcane) technologies.</p>
+<p>Already, using easily deployed tools, I&#8217;m using this blog to create posts that show up on Twitter, LinkedIn and Google+ (I don&#8217;t use Facebook much). That&#8217;s easy because WordPress has built this kind of functionality straight into the Jetpack plugin.</p>
+<p>What I&#8217;ve also done, using the <a href="https://github.com/pfefferle/wordpress-indieweb">IndieWeb plugin</a> &#8212; created by a member of the growing community dedicated to making this all work &#8212; is to get Twitter replies and retweets to show up as comments on the blog posts. At least that was happening with a different theme; still waiting to see if it works in this one (UPDATE: it does!).</p>
+<p><a href="https://snarfed.org/">Ryan Barrett</a>&#8216;s work is key to this. He created something called <a href="https://www.brid.gy/">Bridgy</a>, which</p>
+<p style="padding-left: 30px;"><em>sends <a href="http://webmention.org/">webmentions</a> for comments, likes, and reshares on Facebook, Twitter, Google+, and Instagram. Bridgy notices when you post links, watches for activity on those posts, and sends them back to your site as webmentions. It also serves them as <a href="http://microformats.org/wiki/microformats2">microformats2</a> for webmention targets to read.</em></p>
+<p>As you can see if you look at the comments, it&#8217;s working nicely for me on this blog. I&#8217;m seriously blown away by what this suggests for the future of an open Internet.</p>
+<p>I&#8217;ll be writing more about this in an upcoming Guardian column, and in <em>Permission Taken</em>, my new book project that&#8217;s dedicated to helping people understand the consequences of centralized technology/communications, and what we can do about it.</p>
+      </div><!-- .entry-content -->
+  
+  <footer class="entry-meta">
+  Posted    <span class="cat-links">
+    in <a href="http://dangillmor.com/category/permission-taken/" rel="category tag">Permission Taken</a>, <a href="http://dangillmor.com/category/silicon-valley/" rel="category tag">Silicon Valley</a>  </span>
+  
+  
+    <span class="sep"> | </span>
+  <span class="comments-link"><a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comments">33 Comments</a></span>
+  
+  </footer><!-- #entry-meta --></article><!-- #post-803 -->
+          <nav id="nav-below">
+    <h1 class="assistive-text section-heading">Post navigation</h1>
+
+  
+    <div class="nav-previous"><a href="http://dangillmor.com/2014/03/08/wise-advice/" rel="prev"><span class="meta-nav">&larr;</span> Wise advice</a></div>    <div class="nav-next"><a href="http://dangillmor.com/2014/03/08/snowden-suspicionless-surveillance-makes-us-all-less-safe/" rel="next">Snowden: Suspicionless surveillance makes us all less safe <span class="meta-nav">&rarr;</span></a></div>
+  
+  </nav><!-- #nav-below -->
+  
+          <div id="comments">
+  
+  
+      <h2 id="comments-title">
+      33 thoughts on &ldquo;<span>Learning about, and deploying IndieWeb tools</span>&rdquo;    </h2>
+
+    
+    <ol class="commentlist">
+        <li class="comment even thread-even depth-1 h-as-comment p-comment h-entry" id="li-comment-28301">
+    <article id="comment-28301" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+          <img alt='' src='http://0.gravatar.com/avatar/?s=50&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/?s=100&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-50 photo avatar-default' height='50' width='50' />          <cite class="fn p-name" itemprop="name"><a href='http://tantek.com/' rel='external nofollow' class='u-url url'>Tantek Çelik</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-28301"><time class="updated published u-updated u-published" datetime="2014-03-08T04:16:00+00:00" itemprop="commentTime">
+          March 8, 2014 at 4:16 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>Amazing work already <a href="https://twitter.com/IndieWebCamp" rel="nofollow">@IndieWebCamp</a> SF hack day, e.g. <a href="https://twitter.com/dangillmor" rel="nofollow">@dangillmor</a> added full POSSE roundtrip: <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/" rel="nofollow">dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/</a></p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=28301#respond' onclick='return addComment.moveForm( "comment-28301", "28301", "respond", "803" )' aria-label='Reply to Tantek Çelik'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention odd alt thread-odd thread-alt depth-1 h-as-comment p-comment h-entry comment" id="li-comment-28295">
+    <article id="comment-28295" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='https://snarfed.org/' rel='external nofollow' class='u-url url'>Ryan Barrett</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-28295"><time class="updated published u-updated u-published" datetime="2014-03-08T11:09:25+00:00" itemprop="commentTime">
+          March 8, 2014 at 11:09 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>  <a href="http://twitter.com/schnarfed/status/442376561166020608" rel="nofollow">retweeted this.</a></p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=28295#respond' onclick='return addComment.moveForm( "comment-28295", "28295", "respond", "803" )' aria-label='Reply to Ryan Barrett'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1 h-as-comment p-comment h-entry" id="li-comment-28293">
+    <article id="comment-28293" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+          <img alt='' src='http://2.gravatar.com/avatar/?s=50&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/?s=100&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-50 photo avatar-default' height='50' width='50' />          <cite class="fn p-name" itemprop="name"><a href='https://snarfed.org/' rel='external nofollow' class='u-url url'>Ryan Barrett</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-28293"><time class="updated published u-updated u-published" datetime="2014-03-08T11:09:57+00:00" itemprop="commentTime">
+          March 8, 2014 at 11:09 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>  <a href="http://twitter.com/dangillmor" rel="nofollow">@dangillmor</a> congrats! glad you&#8217;re here. welcome to the <a href="https://twitter.com/search?q=%23indieweb" rel="nofollow">#indieweb</a>!</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=28293#respond' onclick='return addComment.moveForm( "comment-28293", "28293", "respond", "803" )' aria-label='Reply to Ryan Barrett'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1 h-as-comment p-comment h-entry" id="li-comment-28294">
+    <article id="comment-28294" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+          <img alt='' src='http://2.gravatar.com/avatar/?s=50&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/?s=100&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-50 photo avatar-default' height='50' width='50' />          <cite class="fn p-name" itemprop="name"><a href='http://dangillmor.com/' rel='external nofollow' class='u-url url'>Dan Gillmor</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-28294"><time class="updated published u-updated u-published" datetime="2014-03-08T11:12:32+00:00" itemprop="commentTime">
+          March 8, 2014 at 11:12 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>  <a href="http://twitter.com/schnarfed" rel="nofollow">@schnarfed</a> &#8230;and hoping your reply shows up on my blog (not there yet)</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=28294#respond' onclick='return addComment.moveForm( "comment-28294", "28294", "respond", "803" )' aria-label='Reply to Dan Gillmor'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention even thread-even depth-1 h-as-comment p-comment h-entry comment" id="li-comment-28296">
+    <article id="comment-28296" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='http://twitter.com/ecrosstexas' rel='external nofollow' class='u-url url'>Eric Wallace</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-28296"><time class="updated published u-updated u-published" datetime="2014-03-08T11:25:14+00:00" itemprop="commentTime">
+          March 8, 2014 at 11:25 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>  favorited this.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=28296#respond' onclick='return addComment.moveForm( "comment-28296", "28296", "respond", "803" )' aria-label='Reply to Eric Wallace'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention odd alt thread-odd thread-alt depth-1 h-as-comment p-comment h-entry comment" id="li-comment-28298">
+    <article id="comment-28298" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='http://businessmindhacks.com' rel='external nofollow' class='u-url url'>Alex Schleber</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-28298"><time class="updated published u-updated u-published" datetime="2014-03-08T11:44:13+00:00" itemprop="commentTime">
+          March 8, 2014 at 11:44 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>  <a href="http://twitter.com/AlexSchleber/status/442385317450887168" rel="nofollow">retweeted this.</a></p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=28298#respond' onclick='return addComment.moveForm( "comment-28298", "28298", "respond", "803" )' aria-label='Reply to Alex Schleber'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention even thread-even depth-1 h-as-comment p-comment h-entry comment" id="li-comment-28299">
+    <article id="comment-28299" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='http://twitter.com/t' rel='external nofollow' class='u-url url'>Tantek Çelik</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-28299"><time class="updated published u-updated u-published" datetime="2014-03-08T12:01:29+00:00" itemprop="commentTime">
+          March 8, 2014 at 12:01 pm          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>  favorited this.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=28299#respond' onclick='return addComment.moveForm( "comment-28299", "28299", "respond", "803" )' aria-label='Reply to Tantek Çelik'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention odd alt thread-odd thread-alt depth-1 h-as-comment p-comment h-entry comment" id="li-comment-28300">
+    <article id="comment-28300" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='http://twitter.com/curiousjohn' rel='external nofollow' class='u-url url'>John Love</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-28300"><time class="updated published u-updated u-published" datetime="2014-03-08T12:16:33+00:00" itemprop="commentTime">
+          March 8, 2014 at 12:16 pm          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>  favorited this.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=28300#respond' onclick='return addComment.moveForm( "comment-28300", "28300", "respond", "803" )' aria-label='Reply to John Love'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1 h-as-comment p-comment h-entry" id="li-comment-28305">
+    <article id="comment-28305" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+          <img alt='' src='http://0.gravatar.com/avatar/?s=50&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/?s=100&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-50 photo avatar-default' height='50' width='50' />          <cite class="fn p-name" itemprop="name"><a href='http://tantek.com/' rel='external nofollow' class='u-url url'>Tantek Çelik</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-28305"><time class="updated published u-updated u-published" datetime="2014-03-08T12:17:00+00:00" itemprop="commentTime">
+          March 8, 2014 at 12:17 pm          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>  Amazing work already <a href="http://twitter.com/indiewebcamp" rel="nofollow">@IndieWebCamp</a> SF hack day, e.g. <a href="http://twitter.com/dangillmor" rel="nofollow">@dangillmor</a> added full POSSE roundtrip: <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/" rel="nofollow">dangillmor.com/2014/03/08/lea…</a> (ttk.me t4Ux2)</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=28305#respond' onclick='return addComment.moveForm( "comment-28305", "28305", "respond", "803" )' aria-label='Reply to Tantek Çelik'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1 h-as-comment p-comment h-entry" id="li-comment-28302">
+    <article id="comment-28302" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+          <img alt='' src='http://2.gravatar.com/avatar/?s=50&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/?s=100&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-50 photo avatar-default' height='50' width='50' />          <cite class="fn p-name" itemprop="name"><a href='http://caseorganic.com/' rel='external nofollow' class='u-url url'>Amber Case</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-28302"><time class="updated published u-updated u-published" datetime="2014-03-08T12:21:05+00:00" itemprop="commentTime">
+          March 8, 2014 at 12:21 pm          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p><a href="http://twitter.com/dangillmor" rel="nofollow">@dangillmor</a> Welcome to the IndieWeb! It&#8217;s great to have you here!        </p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=28302#respond' onclick='return addComment.moveForm( "comment-28302", "28302", "respond", "803" )' aria-label='Reply to Amber Case'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention even thread-even depth-1 h-as-comment p-comment h-entry comment" id="li-comment-28303">
+    <article id="comment-28303" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='http://twitter.com/aredhelrim' rel='external nofollow' class='u-url url'>Yusuf Firat Polat</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-28303"><time class="updated published u-updated u-published" datetime="2014-03-08T12:22:37+00:00" itemprop="commentTime">
+          March 8, 2014 at 12:22 pm          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>  favorited this.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=28303#respond' onclick='return addComment.moveForm( "comment-28303", "28303", "respond", "803" )' aria-label='Reply to Yusuf Firat Polat'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1 h-as-comment p-comment h-entry" id="li-comment-28304">
+    <article id="comment-28304" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+          <img alt='' src='http://0.gravatar.com/avatar/?s=50&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/?s=100&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-50 photo avatar-default' height='50' width='50' />          <cite class="fn p-name" itemprop="name"><a href='http://about.me/curiousjohn' rel='external nofollow' class='u-url url'>John Love</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-28304"><time class="updated published u-updated u-published" datetime="2014-03-08T12:26:50+00:00" itemprop="commentTime">
+          March 8, 2014 at 12:26 pm          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>  Wishing I could be at <a href="https://twitter.com/search?q=%23indiewebcampsf" rel="nofollow">#indiewebcampsf</a> w/ <a href="http://twitter.com/dangillmor" rel="nofollow">@dangillmor</a> <a href="http://twitter.com/t" rel="nofollow">@t</a> <a href="http://twitter.com/aaronpk" rel="nofollow">@aaronpk</a> <a href="http://twitter.com/wavis" rel="nofollow">@wavis</a> <a href="http://twitter.com/caseorganic" rel="nofollow">@caseorganic</a> <a href="http://twitter.com/adambrault" rel="nofollow">@adambrault</a> &amp; more: <a href="http://indiewebcamp.com/2014/SF/" rel="nofollow">indiewebcamp.com/2014/SF/</a><a href="https://twitter.com/search?q=%23indieweb" rel="nofollow">F/ #indie</a>web</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=28304#respond' onclick='return addComment.moveForm( "comment-28304", "28304", "respond", "803" )' aria-label='Reply to John Love'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention even thread-even depth-1 h-as-comment p-comment h-entry comment" id="li-comment-28306">
+    <article id="comment-28306" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='http://twitter.com/xtof_fr' rel='external nofollow' class='u-url url'>Christophe Ducamp</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-28306"><time class="updated published u-updated u-published" datetime="2014-03-08T12:29:32+00:00" itemprop="commentTime">
+          March 8, 2014 at 12:29 pm          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>  favorited this.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=28306#respond' onclick='return addComment.moveForm( "comment-28306", "28306", "respond", "803" )' aria-label='Reply to Christophe Ducamp'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention odd alt thread-odd thread-alt depth-1 h-as-comment p-comment h-entry comment" id="li-comment-28307">
+    <article id="comment-28307" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='http://twitter.com/im2b' rel='external nofollow' class='u-url url'>dl willson</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-28307"><time class="updated published u-updated u-published" datetime="2014-03-08T12:34:49+00:00" itemprop="commentTime">
+          March 8, 2014 at 12:34 pm          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>  favorited this.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=28307#respond' onclick='return addComment.moveForm( "comment-28307", "28307", "respond", "803" )' aria-label='Reply to dl willson'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention even thread-even depth-1 h-as-comment p-comment h-entry comment" id="li-comment-28308">
+    <article id="comment-28308" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='http://latrippi.com' rel='external nofollow' class='u-url url'>Laura Trippi</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-28308"><time class="updated published u-updated u-published" datetime="2014-03-08T12:52:07+00:00" itemprop="commentTime">
+          March 8, 2014 at 12:52 pm          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>  <a href="http://twitter.com/latrippi/status/442402406727315456" rel="nofollow">retweeted this.</a></p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=28308#respond' onclick='return addComment.moveForm( "comment-28308", "28308", "respond", "803" )' aria-label='Reply to Laura Trippi'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1 h-as-comment p-comment h-entry" id="li-comment-28315">
+    <article id="comment-28315" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+          <img alt='' src='http://0.gravatar.com/avatar/?s=50&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/?s=100&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-50 photo avatar-default' height='50' width='50' />          <cite class="fn p-name" itemprop="name"><a href='http://dunlaps.net/darius' rel='external nofollow' class='u-url url'>Darius C. Dunlap</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-28315"><time class="updated published u-updated u-published" datetime="2014-03-08T14:08:31+00:00" itemprop="commentTime">
+          March 8, 2014 at 2:08 pm          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>  <a href="http://twitter.com/dangillmor" rel="nofollow">@dangillmor</a> &#8211; small typo: wok -&gt; work</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=28315#respond' onclick='return addComment.moveForm( "comment-28315", "28315", "respond", "803" )' aria-label='Reply to Darius C. Dunlap'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="pingback even thread-even depth-1 h-as-comment p-comment h-entry comment" id="li-comment-28316">
+    <article id="comment-28316" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='http://upon2020.com/banter/2014/03/08/dangillmor-is-enthusiastic-about-indieweb-http-dangillmor-com/' rel='external nofollow' class='u-url url'>@dangillmor is enthusiastic about #indieweb http dangillmor com&#8230; | Johannes&#039; Banter</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-28316"><time class="updated published u-updated u-published" datetime="2014-03-08T14:40:09+00:00" itemprop="commentTime">
+          March 8, 2014 at 2:40 pm          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>jernst</p>
+<p>			14:36 on March 8, 2014<br />
+				Permalink<br />
+				Log in to leave a Comment</p>
+<p>	@dangillmor is enthusiastic about #indieweb: <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/" rel="nofollow">http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/</a></p>
+<p>			Logging In&#8230;<br />
+				You must be logged in to post a comment.</p>
+<p>				Profile cancel<br />
+									You must be logged in to post a comment.												</p>
+<p>				Reply Cancel reply<br />
+									You must be logged in to post a comment.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=28316#respond' onclick='return addComment.moveForm( "comment-28316", "28316", "respond", "803" )' aria-label='Reply to @dangillmor is enthusiastic about #indieweb http dangillmor com&#8230; | Johannes&#039; Banter'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1 h-as-comment p-comment h-entry" id="li-comment-28318">
+    <article id="comment-28318" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+          <img alt='' src='http://2.gravatar.com/avatar/?s=50&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/?s=100&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-50 photo avatar-default' height='50' width='50' />          <cite class="fn p-name" itemprop="name"><a href='http://gRegorLove.com' rel='external nofollow' class='u-url url'>gRegor ♥ Morrill</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-28318"><time class="updated published u-updated u-published" datetime="2014-03-08T14:41:16+00:00" itemprop="commentTime">
+          March 8, 2014 at 2:41 pm          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>  <a href="http://twitter.com/dangillmor" rel="nofollow">@dangillmor</a> Congratulations! Wish I could be there.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=28318#respond' onclick='return addComment.moveForm( "comment-28318", "28318", "respond", "803" )' aria-label='Reply to gRegor ♥ Morrill'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention even thread-even depth-1 h-as-comment p-comment h-entry comment" id="li-comment-28319">
+    <article id="comment-28319" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='http://twitter.com/gRegorLove' rel='external nofollow' class='u-url url'>gRegor ♥ Morrill</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-28319"><time class="updated published u-updated u-published" datetime="2014-03-08T14:49:37+00:00" itemprop="commentTime">
+          March 8, 2014 at 2:49 pm          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>  favorited this.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=28319#respond' onclick='return addComment.moveForm( "comment-28319", "28319", "respond", "803" )' aria-label='Reply to gRegor ♥ Morrill'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention odd alt thread-odd thread-alt depth-1 h-as-comment p-comment h-entry comment" id="li-comment-28324">
+    <article id="comment-28324" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='http://hakan.celomo.de' rel='external nofollow' class='u-url url'>Hakan Cengiz</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-28324"><time class="updated published u-updated u-published" datetime="2014-03-08T14:56:07+00:00" itemprop="commentTime">
+          March 8, 2014 at 2:56 pm          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>  <a href="http://twitter.com/Editor_Page/status/442433608822050816" rel="nofollow">retweeted this.</a></p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=28324#respond' onclick='return addComment.moveForm( "comment-28324", "28324", "respond", "803" )' aria-label='Reply to Hakan Cengiz'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention even thread-even depth-1 h-as-comment p-comment h-entry comment" id="li-comment-28323">
+    <article id="comment-28323" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='http://twitter.com/Editor_Page' rel='external nofollow' class='u-url url'>Hakan Cengiz</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-28323"><time class="updated published u-updated u-published" datetime="2014-03-08T15:02:37+00:00" itemprop="commentTime">
+          March 8, 2014 at 3:02 pm          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>  favorited this.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=28323#respond' onclick='return addComment.moveForm( "comment-28323", "28323", "respond", "803" )' aria-label='Reply to Hakan Cengiz'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention odd alt thread-odd thread-alt depth-1 h-as-comment p-comment h-entry comment" id="li-comment-28329">
+    <article id="comment-28329" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='http://twitter.com/bradneuberg' rel='external nofollow' class='u-url url'>Brad Neuberg</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-28329"><time class="updated published u-updated u-published" datetime="2014-03-08T15:45:03+00:00" itemprop="commentTime">
+          March 8, 2014 at 3:45 pm          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>  favorited this.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=28329#respond' onclick='return addComment.moveForm( "comment-28329", "28329", "respond", "803" )' aria-label='Reply to Brad Neuberg'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention even thread-even depth-1 h-as-comment p-comment h-entry comment" id="li-comment-28331">
+    <article id="comment-28331" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='http://benwerd.com/' rel='external nofollow' class='u-url url'>Ben Werdmüller</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-28331"><time class="updated published u-updated u-published" datetime="2014-03-08T16:42:42+00:00" itemprop="commentTime">
+          March 8, 2014 at 4:42 pm          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>  <a href="http://twitter.com/benwerd/status/442460434147209216" rel="nofollow">retweeted this.</a></p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=28331#respond' onclick='return addComment.moveForm( "comment-28331", "28331", "respond", "803" )' aria-label='Reply to Ben Werdmüller'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention odd alt thread-odd thread-alt depth-1 h-as-comment p-comment h-entry comment" id="li-comment-28345">
+    <article id="comment-28345" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='http://brianhendrickson.com' rel='external nofollow' class='u-url url'>Brian Hendrickson</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-28345"><time class="updated published u-updated u-published" datetime="2014-03-08T21:20:42+00:00" itemprop="commentTime">
+          March 8, 2014 at 9:20 pm          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>Nice piece from Dan Gillmor on his #indieweb site. Go Dan!</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=28345#respond' onclick='return addComment.moveForm( "comment-28345", "28345", "respond", "803" )' aria-label='Reply to Brian Hendrickson'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention even thread-even depth-1 h-as-comment p-comment h-entry comment" id="li-comment-28378">
+    <article id="comment-28378" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='http://twitter.com/tistre' rel='external nofollow' class='u-url url'>Tim Strehle</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-28378"><time class="updated published u-updated u-published" datetime="2014-03-09T12:19:50+00:00" itemprop="commentTime">
+          March 9, 2014 at 12:19 pm          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>  favorited this.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=28378#respond' onclick='return addComment.moveForm( "comment-28378", "28378", "respond", "803" )' aria-label='Reply to Tim Strehle'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention odd alt thread-odd thread-alt depth-1 h-as-comment p-comment h-entry comment" id="li-comment-28448">
+    <article id="comment-28448" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='http://twitter.com/sercigirl' rel='external nofollow' class='u-url url'>Okay?♥</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-28448"><time class="updated published u-updated u-published" datetime="2014-03-11T05:59:58+00:00" itemprop="commentTime">
+          March 11, 2014 at 5:59 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>  favorited this.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=28448#respond' onclick='return addComment.moveForm( "comment-28448", "28448", "respond", "803" )' aria-label='Reply to Okay?♥'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention even thread-even depth-1 h-as-comment p-comment h-entry comment" id="li-comment-28457">
+    <article id="comment-28457" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='http://twitter.com/mirandan247' rel='external nofollow' class='u-url url'>MirandaN</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-28457"><time class="updated published u-updated u-published" datetime="2014-03-11T12:43:44+00:00" itemprop="commentTime">
+          March 11, 2014 at 12:43 pm          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>  favorited this.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=28457#respond' onclick='return addComment.moveForm( "comment-28457", "28457", "respond", "803" )' aria-label='Reply to MirandaN'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention odd alt thread-odd thread-alt depth-1 h-as-comment p-comment h-entry comment" id="li-comment-28461">
+    <article id="comment-28461" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='http://twitter.com/nchenga' rel='external nofollow' class='u-url url'>✁___CollectThisTweet</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-28461"><time class="updated published u-updated u-published" datetime="2014-03-11T13:34:40+00:00" itemprop="commentTime">
+          March 11, 2014 at 1:34 pm          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>  favorited this.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=28461#respond' onclick='return addComment.moveForm( "comment-28461", "28461", "respond", "803" )' aria-label='Reply to ✁___CollectThisTweet'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1 h-as-comment p-comment h-entry" id="li-comment-28492">
+    <article id="comment-28492" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+          <img alt='' src='http://0.gravatar.com/avatar/32bbc53d01eadbe016a04748f7cbb1e2?s=50&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/32bbc53d01eadbe016a04748f7cbb1e2?s=100&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-50 photo' height='50' width='50' />          <cite class="fn p-name" itemprop="name"><a href='http://twitter.com/realbrettrossi' rel='external nofollow' class='u-url url'>Brett Rossi</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-28492"><time class="updated published u-updated u-published" datetime="2014-03-12T05:38:15+00:00" itemprop="commentTime">
+          March 12, 2014 at 5:38 am          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>do you mind if I retweet your post?</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=28492#respond' onclick='return addComment.moveForm( "comment-28492", "28492", "respond", "803" )' aria-label='Reply to Brett Rossi'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  <ul class="children">
+  <li class="comment byuser comment-author-dangillmor bypostauthor odd alt depth-2 h-as-comment p-comment h-entry" id="li-comment-28500">
+    <article id="comment-28500" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+          <img alt='' src='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=50&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a57d3949484051fd7c962b7dd3735412?s=100&amp;d=mm&amp;r=g 2x' class='u-photo avatar avatar-50 photo' height='50' width='50' />          <cite class="fn p-name" itemprop="name">Dan Gillmor</cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-28500"><time class="updated published u-updated u-published" datetime="2014-03-12T17:25:57+00:00" itemprop="commentTime">
+          March 12, 2014 at 5:25 pm          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>Uh, why would I mind?</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=28500#respond' onclick='return addComment.moveForm( "comment-28500", "28500", "respond", "803" )' aria-label='Reply to Dan Gillmor'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="webmention even thread-odd thread-alt depth-1 h-as-comment p-comment h-entry comment" id="li-comment-28498">
+    <article id="comment-28498" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='http://twitter.com/pmarca' rel='external nofollow' class='u-url url'>Marc Andreessen</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-28498"><time class="updated published u-updated u-published" datetime="2014-03-12T16:17:45+00:00" itemprop="commentTime">
+          March 12, 2014 at 4:17 pm          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>  favorited this.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=28498#respond' onclick='return addComment.moveForm( "comment-28498", "28498", "respond", "803" )' aria-label='Reply to Marc Andreessen'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="webmention odd alt thread-even depth-1 h-as-comment p-comment h-entry comment" id="li-comment-28499">
+    <article id="comment-28499" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='http://twitter.com/AnnB03' rel='external nofollow' class='u-url url'>Ann Brocklehurst</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-28499"><time class="updated published u-updated u-published" datetime="2014-03-12T17:15:21+00:00" itemprop="commentTime">
+          March 12, 2014 at 5:15 pm          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>  favorited this.</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=28499#respond' onclick='return addComment.moveForm( "comment-28499", "28499", "respond", "803" )' aria-label='Reply to Ann Brocklehurst'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+  <li class="pingback even thread-odd thread-alt depth-1 h-as-comment p-comment h-entry comment" id="li-comment-35541">
+    <article id="comment-35541" class="comment " itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
+      <footer>
+        <address class="comment-author p-author author vcard hcard h-card" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                    <cite class="fn p-name" itemprop="name"><a href='https://eventswrangling.wordpress.com/2016/06/20/indieweb-and-pdh-talking-points-for-coder-cooperative-june-20-meetup/' rel='external nofollow' class='u-url url'>IndieWeb and PDH: Talking Points For Coder Cooperative June 20 Meetup | Events Wrangling</a></cite> <span class="says">says:</span>        </address><!-- .comment-author .vcard -->
+        
+        <div class="comment-meta commentmetadata">
+          <a href="http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/#comment-35541"><time class="updated published u-updated u-published" datetime="2016-06-20T13:01:42+00:00" itemprop="commentTime">
+          June 20, 2016 at 1:01 pm          </time></a>
+                  </div><!-- .comment-meta .commentmetadata -->
+      </footer>
+
+      <div class="comment-content e-content p-summary p-name" itemprop="commentText name description"><p>[&#8230;] <a href="https://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/" rel="nofollow">https://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/</a> [&#8230;]</p>
+</div>
+
+      <div class="reply">
+        <a rel='nofollow' class='comment-reply-link' href='http://dangillmor.com/2014/03/08/learning-about-and-deploying-indieweb-tools/?replytocom=35541#respond' onclick='return addComment.moveForm( "comment-35541", "35541", "respond", "803" )' aria-label='Reply to IndieWeb and PDH: Talking Points For Coder Cooperative June 20 Meetup | Events Wrangling'>Reply</a>      </div><!-- .reply -->
+    </article><!-- #comment-## -->
+
+  </li><!-- #comment-## -->
+    </ol>
+
+    
+  
+  
+  				<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2014/03/08/learning-about-and-deploying-indieweb-tools/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="http://dangillmor.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+					<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input autocomplete="nickname name"  id="author" name="author" type="text" value="" size="30" maxlength="245" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input autocomplete="email"  id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input autocomplete="url"  id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='803' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="f6d42c73da" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="30"/></p>				</form>
+					</div><!-- #respond -->
+		
+</div><!-- #comments -->
+
+      
+      </main><!-- #content -->
+    </section><!-- #primary -->
+
+  <aside id="sidebar">
+    <div id="secondary" class="widget-area" role="complementary">
+            <section id="text-423219941" class="widget widget_text">			<div class="textwidget"><img src="http://dangillmor.com/wp-content/uploads/2014/11/danpic1aa.png" alt="Dan Gillmor picture" />
+
+<p>
+<a rel="author me"
+href="https://plus.google.com/+DanGillmor">  </a></p></div>
+		</section>    </div><!-- #secondary .widget-area -->
+
+        <div id="tertiary" class="widget-area" role="complementary">
+      <section id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="http://dangillmor.com/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form></section><section id="categories-406917141" class="widget widget_categories"><h3 class="widget-title">Categories</h3><label class="screen-reader-text" for="cat">Categories</label><select name='cat' id='cat' class='postform' >
+	<option value='-1'>Select Category</option>
+	<option class="level-0" value="14">Arizona</option>
+	<option class="level-0" value="39">ASU</option>
+	<option class="level-0" value="4">Customer Service</option>
+	<option class="level-0" value="30">Education</option>
+	<option class="level-0" value="3">Etcetera</option>
+	<option class="level-0" value="15">Events</option>
+	<option class="level-0" value="42">Journalism</option>
+	<option class="level-0" value="20">Liberty</option>
+	<option class="level-0" value="10">Media</option>
+	<option class="level-0" value="40">MOOC</option>
+	<option class="level-0" value="7">People</option>
+	<option class="level-0" value="29">Permission Taken</option>
+	<option class="level-0" value="43">Personal</option>
+	<option class="level-0" value="1">Policy</option>
+	<option class="level-0" value="37">Privacy</option>
+	<option class="level-0" value="27">Projects</option>
+	<option class="level-0" value="6">Silicon Valley</option>
+	<option class="level-0" value="38">Tech</option>
+</select>
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "cat" );
+	function onCatChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
+			location.href = "http://dangillmor.com/?cat=" + dropdown.options[ dropdown.selectedIndex ].value;
+		}
+	}
+	dropdown.onchange = onCatChange;
+})();
+/* ]]> */
+</script>
+
+</section>		<section id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+					<li>
+				<a href="http://dangillmor.com/2016/08/27/indie-web-camp/">Indie Web Camp</a>
+						</li>
+					<li>
+				<a href="http://dangillmor.com/2016/07/12/witnessing-activism-journalism-and-the-boundaries-of-free-speech-in-the-facebook-age/">Witnessing, activism, journalism &#8212; and the boundaries of free speech in the Facebook age</a>
+						</li>
+					<li>
+				<a href="http://dangillmor.com/2016/06/08/decentralized-web-summit-day-one/">Decentralized Web Summit &#8212; Day One</a>
+						</li>
+					<li>
+				<a href="http://dangillmor.com/2016/06/07/decentralized-web-summit/">Decentralized Web Summit &#8212; Builders Day</a>
+						</li>
+					<li>
+				<a href="http://dangillmor.com/2016/04/09/journalists-stop-complaining-about-facebook-and-do-something-about-it/">Journalists: Stop complaining about Facebook, and do something about it</a>
+						</li>
+				</ul>
+		</section>		    </div><!-- #tertiary .widget-area -->
+      </aside>
+  </div><!-- #main -->
+
+  <footer id="colophon" role="contentinfo">
+    <div id="site-generator">
+            This site is powered by <a href="http://wordpress.org/" rel="generator">WordPress</a> and styled with <a href="http://notizblog.org/projects/sempress/">SemPress</a>    </div>
+  </footer><!-- #colophon -->
+</div><!-- #page -->
+
+<script type='text/javascript' src='http://dangillmor.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.11'></script>
+<script type='text/javascript' src='http://dangillmor.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/dangillmor.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"sending":"Sending ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://dangillmor.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.5'></script>
+<script type='text/javascript' src='http://dangillmor.com/wp-includes/js/comment-reply.min.js?ver=99ee574c47176f372c838f4c4dee3c0d'></script>
+<script type='text/javascript' src='http://dangillmor.com/wp-includes/js/wp-embed.min.js?ver=99ee574c47176f372c838f4c4dee3c0d'></script>
+
+</body>
+</html>
